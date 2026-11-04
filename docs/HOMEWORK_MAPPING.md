@@ -49,6 +49,25 @@ equivalent · 🔜 planned for a later notebook
 
 ---
 
+## 1b. `notebooks/02_Features_Scaling.ipynb` — section-by-section mapping
+
+| Notebook section | What it does | Homework exercise | Concept reused | Adaptation for the NBA domain |
+|---|---|---|---|---|
+| §1 Load filtered population | Loads the 379-player EDA export | HW1 1.1 | ✅ Load & verify | Loads a saved intermediate instead of re-filtering |
+| **§2 Feature selection** (13 features, 4 role dimensions) | Chooses rate-based style features; excludes volume, efficiency and impact | **HW1 2.1** (drop columns with written justification) | 🔁 Justified column selection | Selection criterion is *style vs. quality*, specific to archetype discovery |
+| §2 Engineered features (`rim_share`, `mid_share`, `corner3_rate`) | Merges zones; builds corner-3 share of all FGA | HW1 2.2 (transforming raw columns into model-ready ones) | 🔁 Feature construction | 🆕 Domain-driven construction that removes undefined values instead of imputing them |
+| §2 Raw vs. engineered corner-3 ranking | Shows the raw share is topped by 1-attempt centres | HW1 2.3 (consequences of how missing / sparse data is handled) | 🔁 Sanity-checking a preprocessing choice | Small-sample noise handled by weighting with 3PA rate |
+| **§3 VIF check** | VIF of naive zone set (≈ 88,000) vs. selected set (max 8.8) | **HW2 2.3 – 2.4** (multicollinearity: Radio ↔ Newspaper) | 🔁 Multicollinearity diagnosis | 🆕 VIF and compositional (sum-to-1) collinearity go beyond the pairwise correlation used in HW2 |
+| §3 Correlation heatmap (13 features) | Confirms no near-duplicates remain | HW1 1.4 · HW2 2.4 | ✅ Correlation heatmap | Distinguishes duplicate *measurements* from related *skills* |
+| **§4 Three-scaler comparison** | StandardScaler vs. PowerTransformer vs. QuantileTransformer: skew, kurtosis, max \|z\|, spread share | **HW1 2.4** (Member A Power, Member B Quantile-normal, Member C Standard) | ✅ The exact same three scalers | Compared on one shared feature set with quantitative criteria instead of one scaler per member |
+| §4 3 × 4 histogram grid | Visual effect of each scaler on four features | HW1 1.3 / 2.4 (histogram shape before/after) | ✅ Distribution-shape reading | Exposes the QuantileTransformer tie artefact (−5.2 block) |
+| **§5a Distance & neighbour agreement** | Spearman of 71,631 pairwise distances; 10-NN overlap | **HW3 1.1, 2.3** (distances change with scaling) · HW3 1.2 (KNN) | 🔁 Effect of preprocessing on distance-based methods | Measured on the whole geometry rather than on one model's accuracy |
+| §5b Nearest neighbours of well-known players | Face-validity check of the feature space | HW3 1.2 (nearest-neighbour lookup) · HW4 Q3 (similar users) | 🔁 "Most similar" lookup | Neighbours judged by basketball role |
+| §5 Scaling decision table | Power for PCA/clustering, Standard for anomalies | HW1 3.3 (group comparison & conclusion) · HW4 Q2c, Q4c (outliers vs. clusters) | 🔁 Choosing preprocessing by downstream use | Different scaler per downstream task |
+| §6 Export (raw / power / standard) | Saves aligned feature tables with metadata | — | — | Metadata (`pos`, `pos_played`) kept for validation only |
+
+---
+
 ## 2. Concept index — where each course concept appears
 
 | Course concept | Homework | Project location |
@@ -59,12 +78,14 @@ equivalent · 🔜 planned for a later notebook
 | Histograms & distribution shape | HW1 1.3 | 01_EDA §4 |
 | Correlation heatmap | HW1 1.4 | 01_EDA §5 |
 | Boxplot by category | HW1 1.5 | 01_EDA §6 |
-| Dropping unusable columns / rows | HW1 2.1 | 01_EDA §2, §3 |
+| Dropping unusable columns / rows | HW1 2.1 | 01_EDA §2, §3 · 02 §2 |
 | Categorical encoding | HW1 2.2 | Not needed (`pos` is never an input) |
-| Scaling: StandardScaler / PowerTransformer / QuantileTransformer | HW1 2.4 | 01_EDA §4 · 🔜 02 Feature selection & scaling (3-scaler comparison) |
-| Multicollinearity | HW2 2.3 – 2.4 | 01_EDA §5 · 🔜 02 (re-check on the final feature set) |
-| R² / variance explained | HW2 2.2 | 01_EDA §6 (η²) |
-| Distances & effect of scaling | HW3 1.1, 2.3 | 01_EDA §4 rationale · 🔜 03 / 04 |
+| Feature construction | HW1 2.2 | 02 §2 (`mid_share`, `corner3_rate`) |
+| Scaling: StandardScaler / PowerTransformer / QuantileTransformer | HW1 2.4 | 01_EDA §4 · 02 §4 (3-scaler comparison) |
+| Multicollinearity | HW2 2.3 – 2.4 | 01_EDA §5 · 02 §3 (VIF) |
+| R² / variance explained | HW2 2.2 | 01_EDA §6 (η²) · 02 §3 (VIF = 1 / (1 − R²)) |
+| Distances & effect of scaling | HW3 1.1, 2.3 | 01_EDA §4 rationale · 02 §5 (distance & neighbour agreement) |
+| Nearest-neighbour lookup | HW3 1.2 · HW4 Q3 | 02 §5b (similar players) |
 | PCA: scree plot | HW1 3.1 | 🔜 03 Dimensionality reduction |
 | PCA: 2-component scatter coloured by category | HW1 3.2 | 🔜 03 (coloured by listed position) |
 | PCA comparison across preprocessing choices | HW1 3.3 | 🔜 03 (PowerTransformer vs. StandardScaler inputs) |
@@ -84,7 +105,7 @@ equivalent · 🔜 planned for a later notebook
 
 | Notebook | Main steps | Primary homework links |
 |---|---|---|
-| `02_Features_Scaling.ipynb` | Final ~14-feature matrix, redundancy re-check, StandardScaler vs. PowerTransformer vs. QuantileTransformer | HW1 2.1, 2.4 · HW2 2.4 |
+| `02_Features_Scaling.ipynb` ✅ done | 13-feature matrix, VIF check, StandardScaler vs. PowerTransformer vs. QuantileTransformer | HW1 2.1, 2.2, 2.4 · HW2 2.3 – 2.4 · HW3 1.1 – 1.2, 2.3 |
 | `03_PCA.ipynb` | Scree plot, loadings, 2-D projection coloured by position | HW1 3.1 – 3.3 |
 | `04_Clustering.ipynb` | k-means (elbow + silhouette), hierarchical clustering, GMM soft membership | HW4 Q1, Q4a |
 | `05_Anomalies.ipynb` | Isolation Forest, LOF, DBSCAN noise comparison | HW4 Q2, Q4b – c |
