@@ -68,6 +68,23 @@ equivalent · 🔜 planned for a later notebook
 
 ---
 
+## 1c. `notebooks/03_PCA.ipynb` — section-by-section mapping
+
+| Notebook section | What it does | Homework exercise | Concept reused | Adaptation for the NBA domain |
+|---|---|---|---|---|
+| §1 Load scaled features | Power-transformed matrix, mean 0 / std 1 check | HW1 3.1 (PCA on each member's scaled data) | ✅ PCA requires standardised inputs | Input is the scaler chosen in notebook 02 |
+| **§2 Scree plot + cumulative variance** | Eigenvalues, explained and cumulative variance | **HW1 3.1** Scree plot | ✅ Same plot | — |
+| §2 Kaiser rule & parallel analysis | Keeps 3 components (both rules agree) | HW1 3.1 (choosing the number of components) | 🔁 Component retention | 🆕 Parallel analysis (permutation baseline) goes beyond the elbow / variance-threshold rule |
+| **§3 Loadings heatmap + sign convention** | Names PC1–PC3 from feature weights | HW1 3.2 (interpreting the components) | 🔁 Reading loadings | Axes named in basketball terms; anchor-feature sign convention |
+| §3 Extreme players per component | Top / bottom 5 players on PC1–PC3 | HW4 Q1a (reading one point's position relative to groups) | 🔁 Interpreting individual observations | Face validity with real players |
+| **§4 PC1 × PC2 scatter coloured by position** | Player map, listed vs. played position, group medians | **HW1 3.2** 2-component scatter coloured by `Type` | ✅ Same plot | Two colourings (roster label vs. play-by-play usage) and annotated stars |
+| §4 η² of components by position | PC1 η² ≈ 0.6, PC2–PC3 ≤ 0.16 | HW2 2.2 (R² / variance explained) | 🔁 Variance explained by a grouping | Quantifies which style axes positions miss |
+| §4 Biplot | Loadings drawn as arrows over the scores | HW1 3.2 (component interpretation) | 🔁 Linking components back to features | 🆕 Biplot not used in the homework |
+| **§5 Robustness: Power vs. Standard PCA** | \|cos\| of loadings, score correlation | **HW1 3.3** (group comparison of PCA results across preprocessing choices) | ✅ Compare PCA across scalers | Quantitative comparison; explains PC4–PC5 instability (near-equal eigenvalues) |
+| §6 Clustering-input decision & export | Full 13 features primary, 3 PCs as sensitivity check | HW4 Q1 (choosing inputs and k with evidence) | 🔁 Evidence-based modelling choice | Saves scores, loadings, explained variance |
+
+---
+
 ## 2. Concept index — where each course concept appears
 
 | Course concept | Homework | Project location |
@@ -86,9 +103,9 @@ equivalent · 🔜 planned for a later notebook
 | R² / variance explained | HW2 2.2 | 01_EDA §6 (η²) · 02 §3 (VIF = 1 / (1 − R²)) |
 | Distances & effect of scaling | HW3 1.1, 2.3 | 01_EDA §4 rationale · 02 §5 (distance & neighbour agreement) |
 | Nearest-neighbour lookup | HW3 1.2 · HW4 Q3 | 02 §5b (similar players) |
-| PCA: scree plot | HW1 3.1 | 🔜 03 Dimensionality reduction |
-| PCA: 2-component scatter coloured by category | HW1 3.2 | 🔜 03 (coloured by listed position) |
-| PCA comparison across preprocessing choices | HW1 3.3 | 🔜 03 (PowerTransformer vs. StandardScaler inputs) |
+| PCA: scree plot | HW1 3.1 | 03_PCA §2 (+ Kaiser & parallel analysis) |
+| PCA: 2-component scatter coloured by category | HW1 3.2 | 03_PCA §4 (listed & played position) · §3 loadings |
+| PCA comparison across preprocessing choices | HW1 3.3 | 03_PCA §5 (PowerTransformer vs. StandardScaler) |
 | k-means (implementation & behaviour) | HW4 Q4a | 🔜 04 Clustering |
 | Choosing k: inertia vs. silhouette, business constraints | HW4 Q1 | 🔜 04 (number of archetypes) |
 | Per-point silhouette (border points) | HW4 Q1a | 🔜 04 (players between archetypes) |
@@ -106,7 +123,7 @@ equivalent · 🔜 planned for a later notebook
 | Notebook | Main steps | Primary homework links |
 |---|---|---|
 | `02_Features_Scaling.ipynb` ✅ done | 13-feature matrix, VIF check, StandardScaler vs. PowerTransformer vs. QuantileTransformer | HW1 2.1, 2.2, 2.4 · HW2 2.3 – 2.4 · HW3 1.1 – 1.2, 2.3 |
-| `03_PCA.ipynb` | Scree plot, loadings, 2-D projection coloured by position | HW1 3.1 – 3.3 |
+| `03_PCA.ipynb` ✅ done | Scree plot, parallel analysis, loadings, player map, biplot, robustness | HW1 3.1 – 3.3 · HW2 2.2 |
 | `04_Clustering.ipynb` | k-means (elbow + silhouette), hierarchical clustering, GMM soft membership | HW4 Q1, Q4a |
 | `05_Anomalies.ipynb` | Isolation Forest, LOF, DBSCAN noise comparison | HW4 Q2, Q4b – c |
 | `06_Validation.ipynb` | ARI vs. listed and played positions, cluster profiles | HW2 Part 4 · HW3 4.1 |
