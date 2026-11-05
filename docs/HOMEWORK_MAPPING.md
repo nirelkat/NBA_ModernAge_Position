@@ -94,7 +94,6 @@ perspective), both from HW4.
 |---|---|---|---|---|
 | (implementation) k-means | `sklearn.cluster.KMeans`, 50 restarts | **HW4 Q4a** (k-means from scratch: assign to nearest centroid, move centroid to the mean; checked against sklearn) | ✅ Same algorithm | Library version with multiple initialisations |
 | **§2 k-means for k = 2…12: inertia & silhouette** | Elbow plot and average silhouette per k | **HW4 Q1b–c** (inertia always falls with k, so "lowest inertia" can never choose k; silhouette rises then falls) | ✅ Same two criteria, same reasoning | Applied to real data where no k is clearly best |
-| §2 Calinski-Harabasz, Davies-Bouldin | Two more internal validity indices | HW4 Q1 | 🔁 Choosing k with several criteria | 🆕 Additional indices beyond the homework |
 | §2 Bootstrap stability (ARI) | Refit on resampled players | HW3 4.1 (cross-validation: stability / variance of a model) | 🔁 Stability under resampling | 🆕 Bootstrap ARI for an unsupervised model |
 | **§3 Choosing k: statistics vs. usefulness** | k = 3 families (statistical optimum) and k = 8 archetypes (useful granularity) | **HW4 Q1c–d** (StreamFlix: best-silhouette k combined with a business constraint of at most 4 tracks) | ✅ Combining the metric with a practical constraint | Two-level taxonomy instead of a single k |
 | §4 Centroid fingerprints & profiles | Centroids in scaled units, medians in raw units, most typical members | HW4 Q4a (centroids as cluster means) · HW1 1.5 (describing groups) | 🔁 Interpreting centroids | Archetype names attached through anchor players |
@@ -175,6 +174,6 @@ from standardisation, and the silhouette.
 |---|---|---|
 | `02_Features_Scaling.ipynb` ✅ done | 13-feature matrix, VIF check, StandardScaler vs. PowerTransformer vs. QuantileTransformer | HW1 2.1, 2.2, 2.4 · HW2 2.3 – 2.4 · HW3 1.1 – 1.2, 2.3 |
 | `03_PCA.ipynb` ✅ done | Scree plot, parallel analysis, loadings, player map, biplot, robustness | HW1 3.1 – 3.3 · HW2 2.2 |
-| `04_Clustering.ipynb` ✅ done | k-means (5 criteria + stability), 3 families / 8 archetypes, silhouette border players, DBSCAN sweep and noise | HW4 Q1, Q2, Q4 · HW3 4.1 |
+| `04_Clustering.ipynb` ✅ done | k-means (inertia, silhouette, bootstrap stability), 3 families / 8 archetypes, silhouette border players, DBSCAN sweep and noise | HW4 Q1, Q2, Q4 · HW3 4.1 |
 | `05_Anomalies.ipynb` ✅ done | DBSCAN noise persistence, distance to centroid, extreme z-scores, silhouette quadrant | HW4 Q1, Q2, Q4 · HW1 2.4 |
 | `06_Validation.ipynb` | ARI vs. listed and played positions, cluster profiles | HW2 Part 4 · HW3 4.1 |
