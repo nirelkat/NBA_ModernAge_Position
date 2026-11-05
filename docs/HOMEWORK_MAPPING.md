@@ -113,6 +113,27 @@ perspective), both from HW4.
 
 ---
 
+## 1e. `notebooks/05_Anomalies.ipynb` — section-by-section mapping
+
+Anomaly detection is built only from techniques practised in the course: DBSCAN noise, k-means centroids, z-scores
+from standardisation, and the silhouette.
+
+| Notebook section | What it does | Homework exercise | Concept reused | Adaptation for the NBA domain |
+|---|---|---|---|---|
+| §1 Standardised feature space | Anomalies measured on `StandardScaler` features (values = z-scores) | **HW1 2.4** (Member C: StandardScaler) | ✅ Standardisation | Chosen over the power transform because it keeps extremes extreme |
+| **§2 DBSCAN noise persistence (ε-exit)** | Smallest ε at which each player stops being noise | **HW4 Q2d-1** (smallest ε at which D9 stops being noise; the single controlling distance; joins as core or border) | ✅ Same reasoning, applied to every player | 🆕 Exact formula ε-exit = min(k-dist(p), min_q max(d(p,q), k-dist(q))), verified against sklearn |
+| §2 Controlling neighbour | The player whose link ends a player's noise status | **HW4 Q2d-1** ("name the single controlling distance") | ✅ Controlling distance | Read as "closest comparable player" |
+| §2 Noise survival curve | Players still noise vs. ε | **HW4 Q2d-3** (growing ε only adds neighbours: noise is absorbed, never created) | ✅ Monotonicity of DBSCAN in ε | — |
+| **§3 Distance to the archetype centroid** | ‖xᵢ − μ_c(i)‖ for each player | **HW4 Q1** (inertia = Σ‖xᵢ − μ_c(i)‖²) · **HW4 Q2c / Q4c** (k-means forces outliers into a cluster) | ✅ Centroid distance / inertia | Per-player contribution to inertia used as an outlier measure |
+| **§4 Extreme z-scores** | Max \|z\|, its feature, count of \|z\| ≥ 3 | **HW1 2.4** (StandardScaler) · HW1 1.3 (distribution tails) | 🔁 Standardised values as distances from the mean | Distinguishes extreme specialists from rare combinations |
+| **§5a Measure correlations** | Spearman correlation of the three measures and the silhouette | HW1 1.4 (correlation matrix) | 🔁 Correlation analysis | Shows unusual ≠ in-between |
+| **§5b–c Unicorns vs. border players** | Anomaly score (mean percentile rank) × silhouette quadrant | **HW4 Q1a** (silhouette s = (b − a)/max(a, b); near 0 = on the border) | ✅ Per-point silhouette | Four-way classification: unicorn / unique hybrid / border / typical |
+| §5d Signatures & z-score fingerprints | Top-5% players with raw values and z-scores | HW1 1.3 (interpreting extremes) | 🔁 Explaining a value relative to the distribution | — |
+| §6 Robustness | Other `min_samples`; power-transformed space | HW1 3.3 (comparison across preprocessing choices) · HW4 Q2d (effect of DBSCAN parameters) | 🔁 Sensitivity to preprocessing and parameters | Spearman ρ and top-k overlap |
+| §7 Unicorns on the PCA map | PC1 × PC2 with categories highlighted | HW1 3.2 (PCA scatter coloured by category) | ✅ Same plot | — |
+
+---
+
 ## 2. Concept index — where each course concept appears
 
 | Course concept | Homework | Project location |
@@ -136,9 +157,11 @@ perspective), both from HW4.
 | PCA comparison across preprocessing choices | HW1 3.3 | 03_PCA §5 (PowerTransformer vs. StandardScaler) |
 | k-means (implementation & behaviour) | HW4 Q4a | 04_Clustering §2, §4 |
 | Choosing k: inertia vs. silhouette, business constraints | HW4 Q1 | 04_Clustering §2, §3 (3 families / 8 archetypes) |
-| Per-point silhouette (border points) | HW4 Q1a | 04_Clustering §5a, §6 (border players) |
-| DBSCAN, core / border / noise, effect of ε | HW4 Q2, Q4b | 04_Clustering §8 (k-distance plot, ε × min_samples sweep, point types) · 🔜 05 |
-| k-means forces outliers into clusters vs. DBSCAN noise | HW4 Q2c, Q4c | 04_Clustering §8c–d · 🔜 05 |
+| Per-point silhouette (border points) | HW4 Q1a | 04_Clustering §5a, §6 (border players) · 05_Anomalies §5 (unicorns vs. border players) |
+| Inertia as a sum of point-to-centroid distances | HW4 Q1 | 05_Anomalies §3 (distance to centroid as an outlier measure) |
+| Standardised values as z-scores | HW1 2.4 | 05_Anomalies §4 (extreme z-scores, specialist vs. rare combination) |
+| DBSCAN, core / border / noise, effect of ε | HW4 Q2, Q4b | 04_Clustering §8 (k-distance plot, ε × min_samples sweep, point types) · 05_Anomalies §2 (noise persistence, controlling distance) |
+| k-means forces outliers into clusters vs. DBSCAN noise | HW4 Q2c, Q4c | 04_Clustering §8c–d · 05_Anomalies §3 (distance to centroid) |
 | Cosine vs. Euclidean similarity, mean-centring | HW4 Q3 | 🔜 player-similarity / "closest comparable player" lookup |
 | Confusion matrix / agreement metrics | HW2 Part 4 | 🔜 06 Validation (ARI, cluster × position crosstab) |
 | Cross-validation & stability | HW3 4.1 | 🔜 06 (bootstrap stability of clusters) |
@@ -153,5 +176,5 @@ perspective), both from HW4.
 | `02_Features_Scaling.ipynb` ✅ done | 13-feature matrix, VIF check, StandardScaler vs. PowerTransformer vs. QuantileTransformer | HW1 2.1, 2.2, 2.4 · HW2 2.3 – 2.4 · HW3 1.1 – 1.2, 2.3 |
 | `03_PCA.ipynb` ✅ done | Scree plot, parallel analysis, loadings, player map, biplot, robustness | HW1 3.1 – 3.3 · HW2 2.2 |
 | `04_Clustering.ipynb` ✅ done | k-means (5 criteria + stability), 3 families / 8 archetypes, silhouette border players, DBSCAN sweep and noise | HW4 Q1, Q2, Q4 · HW3 4.1 |
-| `05_Anomalies.ipynb` | Isolation Forest, LOF, DBSCAN noise comparison | HW4 Q2, Q4b – c |
+| `05_Anomalies.ipynb` ✅ done | DBSCAN noise persistence, distance to centroid, extreme z-scores, silhouette quadrant | HW4 Q1, Q2, Q4 · HW1 2.4 |
 | `06_Validation.ipynb` | ARI vs. listed and played positions, cluster profiles | HW2 Part 4 · HW3 4.1 |
