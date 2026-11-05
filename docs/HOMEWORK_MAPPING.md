@@ -85,6 +85,27 @@ equivalent · 🔜 planned for a later notebook
 
 ---
 
+## 1d. `notebooks/04_Clustering.ipynb` — section-by-section mapping
+
+| Notebook section | What it does | Homework exercise | Concept reused | Adaptation for the NBA domain |
+|---|---|---|---|---|
+| **§2 k-means for k = 2…12: inertia & silhouette** | Elbow plot and average silhouette per k | **HW4 Q1b–c** (inertia always falls; silhouette rises then falls) | ✅ Same two criteria, same reasoning | Applied to real data where no k is clearly best |
+| §2 Calinski-Harabasz, Davies-Bouldin | Two more internal validity indices | HW4 Q1 | 🔁 Choosing k with several criteria | 🆕 Additional indices beyond the homework |
+| §2 Bootstrap stability (ARI) | Refit on resampled players | HW3 4.1 (cross-validation, stability / variance of a model) | 🔁 Stability under resampling | 🆕 Bootstrap ARI for an unsupervised model |
+| (implementation) k-means | `sklearn.cluster.KMeans` | **HW4 Q4a** (k-means from scratch, checked against sklearn) | ✅ Same algorithm | Library version, `n_init=50` restarts |
+| **§3 Ward dendrogram + cophenetic correlation** | Hierarchical clustering, merge-height gaps | — | — | 🆕 Hierarchical clustering not covered in the homework |
+| **§4 GMM with BIC (full / diag / tied)** | Model selection for mixture models | HW2 Part 3 (complexity vs. overfitting) | 🔁 Penalising model complexity | 🆕 GMM and BIC are new; `full` covariance is penalised just as high polynomial degrees overfit in HW2 |
+| **§5 Choosing k: statistics vs. usefulness** | k = 3 families (statistical optimum) and k = 8 archetypes (useful granularity) | **HW4 Q1d** (StreamFlix: best-silhouette k vs. a business constraint of at most 4 tracks) | ✅ Combining the metric with a practical constraint | Two-level taxonomy instead of one k |
+| §6 Archetype fingerprints & profiles | Cluster means (scaled) and medians (raw units), typical members | HW1 1.5 / 3.2 (describing groups) | 🔁 Group profiling | Names attached through anchor players |
+| §6c Archetypes on the PCA map | PC1 × PC2 and PC1 × PC3 coloured by archetype | HW1 3.2 (PCA scatter coloured by category) | ✅ Same plot | Categories are discovered clusters, not given labels |
+| **§7a Silhouette plot (per player)** | Silhouette of every player by archetype | **HW4 Q1a** (silhouette of one viewer: a, b, s) | ✅ Per-point silhouette | Aggregated per archetype; % negative |
+| §7b Per-archetype bootstrap Jaccard | Stability of each cluster | HW3 4.1 (stability) | 🔁 Resampling-based reliability | 🆕 Cluster-wise Jaccard |
+| **§8 GMM soft membership & hybrids** | Probability per archetype; hybrids = max probability < 0.6 | HW4 Q1a (silhouette near 0 = on the border between groups) | 🔁 Border points between groups | 🆕 Soft clustering quantifies "how much" a player belongs |
+| §9 Agreement across methods & inputs (ARI) | k-means vs. Ward, GMM, Standard scaling, PC scores | HW4 Q4 (`same_partition` check against sklearn) · HW1 3.3 (comparison across preprocessing) | 🔁 Comparing partitions | ARI instead of an exact-match check |
+| §10 Archetype × position crosstab, ARI preview | Archetypes vs. listed positions | HW2 Part 4 (confusion-matrix reading) | 🔁 Cross-tabulation | Full validation in notebook 06 |
+
+---
+
 ## 2. Concept index — where each course concept appears
 
 | Course concept | Homework | Project location |
@@ -106,9 +127,9 @@ equivalent · 🔜 planned for a later notebook
 | PCA: scree plot | HW1 3.1 | 03_PCA §2 (+ Kaiser & parallel analysis) |
 | PCA: 2-component scatter coloured by category | HW1 3.2 | 03_PCA §4 (listed & played position) · §3 loadings |
 | PCA comparison across preprocessing choices | HW1 3.3 | 03_PCA §5 (PowerTransformer vs. StandardScaler) |
-| k-means (implementation & behaviour) | HW4 Q4a | 🔜 04 Clustering |
-| Choosing k: inertia vs. silhouette, business constraints | HW4 Q1 | 🔜 04 (number of archetypes) |
-| Per-point silhouette (border points) | HW4 Q1a | 🔜 04 (players between archetypes) |
+| k-means (implementation & behaviour) | HW4 Q4a | 04_Clustering §2, §6 |
+| Choosing k: inertia vs. silhouette, business constraints | HW4 Q1 | 04_Clustering §2, §5 (3 families / 8 archetypes) |
+| Per-point silhouette (border points) | HW4 Q1a | 04_Clustering §7a · §8 (GMM hybrids) |
 | DBSCAN, core / border / noise, effect of ε | HW4 Q2, Q4b | 🔜 05 Anomaly detection (comparison with Isolation Forest / LOF) |
 | k-means forces outliers into clusters vs. DBSCAN noise | HW4 Q2c, Q4c | 🔜 05 (motivation for anomaly detection) |
 | Cosine vs. Euclidean similarity, mean-centring | HW4 Q3 | 🔜 player-similarity / "closest comparable player" lookup |
@@ -124,6 +145,6 @@ equivalent · 🔜 planned for a later notebook
 |---|---|---|
 | `02_Features_Scaling.ipynb` ✅ done | 13-feature matrix, VIF check, StandardScaler vs. PowerTransformer vs. QuantileTransformer | HW1 2.1, 2.2, 2.4 · HW2 2.3 – 2.4 · HW3 1.1 – 1.2, 2.3 |
 | `03_PCA.ipynb` ✅ done | Scree plot, parallel analysis, loadings, player map, biplot, robustness | HW1 3.1 – 3.3 · HW2 2.2 |
-| `04_Clustering.ipynb` | k-means (elbow + silhouette), hierarchical clustering, GMM soft membership | HW4 Q1, Q4a |
+| `04_Clustering.ipynb` ✅ done | k-means (5 criteria + stability), Ward dendrogram, GMM + BIC, 8 archetypes, hybrids | HW4 Q1, Q4a · HW3 4.1 · HW2 Part 3 |
 | `05_Anomalies.ipynb` | Isolation Forest, LOF, DBSCAN noise comparison | HW4 Q2, Q4b – c |
 | `06_Validation.ipynb` | ARI vs. listed and played positions, cluster profiles | HW2 Part 4 · HW3 4.1 |
