@@ -13,7 +13,7 @@ which groups emerge, how well do they match the official positions, and which pl
 archetypes**, identifies **one-of-a-kind players**, and measures how much the five-position system misses.
 
 **Constraint:** the project deliberately uses **only techniques practised in the course homework** (EDA, scaling,
-PCA, k-means, DBSCAN, silhouette, z-scores). How each step maps to the homework is documented in
+PCA, k-means, DBSCAN, silhouette, z-scores, and for validation ARI, cross-tabulations and R² / η²). How each step maps to the homework is documented in
 [`docs/HOMEWORK_MAPPING.md`](docs/HOMEWORK_MAPPING.md); the notebooks themselves are written as a standalone project.
 
 ---
@@ -162,8 +162,12 @@ Dependencies: [`requirements.txt`](requirements.txt).
 | Anomaly detection | DBSCAN noise persistence, distance to centroid, z-scores |
 | Comparison / validation | Adjusted Rand Index (ARI) with a permutation baseline, cross-tabulations (counts, row and column %), η² per feature, group medians and boxplots |
 
+**η² (eta-squared)** is used throughout as the variance explained by a grouping; it equals the R² of a linear
+regression on the group dummies.
+
 **Supporting checks beyond the homework** (used to verify decisions, not as models): variance inflation factor (VIF),
-parallel analysis for PCA, η² (variance explained by position), bootstrap ARI / Jaccard stability, k-distance plot.
+parallel analysis for PCA, bootstrap ARI / Jaccard stability, k-distance plot, permutation baselines for ARI and η²,
+and held-out style features for a fair η² comparison.
 
 **Deliberately not used** (outside the course): Gaussian Mixture Models, hierarchical / Ward clustering, Isolation
 Forest, Local Outlier Factor, Calinski-Harabasz and Davies-Bouldin indices.
