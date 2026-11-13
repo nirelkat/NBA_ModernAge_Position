@@ -26,7 +26,7 @@ equivalent · 🔜 planned for a later notebook
 | Setup | Imports, constants (`MIN_MP`, `POS_ORDER`) | HW1 setup cell | ✅ pandas / seaborn / sklearn preprocessing stack | — |
 | **§1 Load & Inspect** — `shape`, `info()`, `head()` | Integrity check: row count, dtypes, non-null counts | **HW1 1.1** Load and inspect | ✅ First-look inventory of the data | 127 columns from 6 merged tables → explicit one-row-per-player check |
 | §1 Column-group table | Groups 127 columns by meaning (style / volume / quality) | HW1 2.1 (choosing which columns are usable) | 🔁 Feature relevance reasoning before modelling | Grouping by *style vs. quality* is specific to archetype discovery |
-| §1 `pos` as validation-only | Listed position kept out of the feature matrix | **HW1 3.2** (`Type` used only to colour the PCA scatter) | ✅ Category label used for interpretation, not as an input | Becomes the ARI ground truth at the end of the pipeline |
+| §1 `pos` as validation-only | Listed position kept out of the feature matrix | **HW1 3.2** (`Type` used only to colour the PCA scatter) | ✅ Category label used for interpretation, not as an input | Becomes a validation target at the end of the pipeline (notebook 06) |
 | **§2 500-minute filter** | Removes 203 low-minute players (582 → 379) | HW1 2.1 (drop rows without `Price`) | 🔁 Remove rows that cannot be trusted | 🆕 Reliability filter on *sample size* (rate stats from tiny samples); no direct homework equivalent |
 | §2 BLK% vs. minutes "funnel" scatter | Visual justification of the cut-off | HW2 2.1 (scatter plots to inspect relationships) | 🔁 Scatter plot as a diagnostic | Used to show variance shrinking with sample size |
 | **§3 Missing-value report** — count, %, bar chart | Before/after filter missingness table and plot | **HW1 1.2** Missing values report + bar chart | ✅ Same report format | Shown both before and after the minutes filter |
@@ -42,7 +42,7 @@ equivalent · 🔜 planned for a later notebook
 | §5b Sorted list of pairs with \|r\| ≥ 0.8 | Explicit redundancy list | HW1 1.4 (top 3 correlated pairs + explanation) | ✅ Identify and explain top pairs | Threshold-based list instead of "top 3" |
 | §5 Redundant-groups table + zone-share constraint | One representative per concept | **HW2 2.3 – 2.4** (Radio ↔ Newspaper multicollinearity) | 🔁 Correlated features distort models | In clustering, redundancy = implicit double weighting in the distance; compositional (sum-to-1) collinearity |
 | **§6 Boxplots by listed position** | Six style stats × five positions | **HW1 1.5** Boxplot of `Price` by `Type` | ✅ Same plot type | Inverted question: does the category *fail* to explain the variable? |
-| §6 η² (eta-squared) table | Share of variance explained by position | **HW2 2.2** (R² of simple regressions) | 🔁 Variance explained | η² = R² of a regression on position dummies |
+| §6 R² by position | `LinearRegression` on one-hot position dummies + `r2_score`: share of each stat's variance explained by position | **HW2 2.2** (R² of a regression) · **HW1 2.2** (one-hot encoding) | ✅ Linear regression + R² | Same measure reused in 03 §4 and 06 §4 |
 | §6 Listed vs. played position crosstab | 77% agreement, disagreements only between neighbouring positions | HW2 4.1 (confusion-matrix reading) | 🔁 Reading agreement / disagreement in a cross-tabulation | Play-by-play data used as a second ground truth |
 | §6 Implication → read labels with fit quality | Hard labels plus silhouette | HW4 Q1a (silhouette ≈ "how well a point fits its group", border points) | 🔁 Points on the border between groups | Border players identified with silhouette in notebook 04 §6 |
 | **§7 Summary & export** | Decision table, saves `data/processed/nba_2025_26_mp500.csv` | HW1 3.3 / HW3 4.2 (group comparison & recommendation) | ✅ Decisions backed by numbers | — |
@@ -64,7 +64,7 @@ equivalent · 🔜 planned for a later notebook
 | **§5a Distance & neighbour agreement** | Spearman of 71,631 pairwise distances; 10-NN overlap | **HW3 1.1, 2.3** (distances change with scaling) · HW3 1.2 (KNN) | 🔁 Effect of preprocessing on distance-based methods | Measured on the whole geometry rather than on one model's accuracy |
 | §5b Nearest neighbours of well-known players | Face-validity check of the feature space | HW3 1.2 (nearest-neighbour lookup) · HW4 Q3 (similar users) | 🔁 "Most similar" lookup | Neighbours judged by basketball role |
 | §5 Scaling decision table | Power for PCA/clustering, Standard for anomalies | HW1 3.3 (group comparison & conclusion) · HW4 Q2c, Q4c (outliers vs. clusters) | 🔁 Choosing preprocessing by downstream use | Different scaler per downstream task |
-| §6 Export (raw / power / standard) | Saves aligned feature tables with metadata | — | — | Metadata (`pos`, `pos_played`) kept for validation only |
+| §6 Export (raw / power / standard) | Saves aligned feature tables with minimal metadata (identifiers, `pos`, `pos_played`) | — | — | Position labels kept for validation only |
 
 ---
 
@@ -78,10 +78,10 @@ equivalent · 🔜 planned for a later notebook
 | **§3 Loadings heatmap + sign convention** | Names PC1–PC3 from feature weights | HW1 3.2 (interpreting the components) | 🔁 Reading loadings | Axes named in basketball terms; anchor-feature sign convention |
 | §3 Extreme players per component | Top / bottom 5 players on PC1–PC3 | HW4 Q1a (reading one point's position relative to groups) | 🔁 Interpreting individual observations | Face validity with real players |
 | **§4 PC1 × PC2 scatter coloured by position** | Player map, listed vs. played position, group medians | **HW1 3.2** 2-component scatter coloured by `Type` | ✅ Same plot | Two colourings (roster label vs. play-by-play usage) and annotated stars |
-| §4 η² of components by position | PC1 η² ≈ 0.6, PC2–PC3 ≤ 0.16 | HW2 2.2 (R² / variance explained) | 🔁 Variance explained by a grouping | Quantifies which style axes positions miss |
+| §4 R² of components on position dummies | PC1 R² ≈ 0.6, PC2–PC3 ≤ 0.16 | **HW2 2.2** (R² of a regression) · HW1 2.2 (one-hot encoding) | ✅ Linear regression + R² | Quantifies which style axes positions miss |
 | §4 Biplot | Loadings drawn as arrows over the scores | HW1 3.2 (component interpretation) | 🔁 Linking components back to features | 🆕 Biplot not used in the homework |
 | **§5 Robustness: Power vs. Standard PCA** | \|cos\| of loadings, score correlation | **HW1 3.3** (group comparison of PCA results across preprocessing choices) | ✅ Compare PCA across scalers | Quantitative comparison; explains PC4–PC5 instability (near-equal eigenvalues) |
-| §6 Clustering-input decision & export | Full 13 features primary, 3 PCs as sensitivity check | HW4 Q1 (choosing inputs and k with evidence) | 🔁 Evidence-based modelling choice | Saves scores, loadings, explained variance |
+| §6 Clustering-input decision & export | Full 13 features primary, 3 PCs as sensitivity check | HW4 Q1 (choosing inputs and k with evidence) | 🔁 Evidence-based modelling choice | Saves the PC scores (the only PCA output used downstream) |
 
 ---
 
@@ -100,7 +100,7 @@ perspective), both from HW4.
 | §4c Archetypes on the PCA map | PC1 × PC2 and PC1 × PC3 coloured by archetype, centroids marked | HW1 3.2 (PCA scatter coloured by category) | ✅ Same plot | Categories are discovered clusters, not given labels |
 | **§5a Silhouette plot (per player)** | Silhouette of every player by archetype | **HW4 Q1a** (silhouette of one viewer: a, b, s) | ✅ Per-point silhouette, same formula | Aggregated per archetype; % negative |
 | §5b Per-archetype bootstrap Jaccard | Stability of each cluster | HW3 4.1 (stability) | 🔁 Resampling-based reliability | 🆕 Cluster-wise Jaccard |
-| **§6 Border players** | Silhouette < 0.05; second archetype = the cluster that defines *b* | **HW4 Q1a** (s near 0 = "sits on the border between groups"; *b* = nearest other group) | ✅ Direct use of a, b and s | Applied to all 379 players to find versatile players |
+| **§6 Border players** | Silhouette < 0.05 (flag exported for notebook 05); second archetype = the cluster that defines *b* (shown, not exported) | **HW4 Q1a** (s near 0 = "sits on the border between groups"; *b* = nearest other group) | ✅ Direct use of a, b and s | Applied to all 379 players to find versatile players |
 | §7 Robustness to preprocessing (ARI) | k-means on StandardScaler features and on PC scores | HW4 Q4 (`same_partition` check against sklearn) · HW1 3.3 (comparison across preprocessing) | 🔁 Comparing partitions | ARI instead of an exact-match check |
 | **§8 DBSCAN: core / border / noise** | Point types, clusters as chains of core neighbourhoods | **HW4 Q2a–b** (Northwind: label each depot core / border / noise, list hubs and noise) | ✅ Same definitions | 13-dimensional data instead of a 10-depot distance matrix |
 | §8a k-distance plot | Distance to the `min_samples`-th neighbour, sorted | HW4 Q2d-1 (the single distance that decides when a point stops being noise) | 🔁 Reasoning about ε from neighbour distances | 🆕 k-distance plot as a tool to pick ε |
@@ -108,7 +108,7 @@ perspective), both from HW4.
 | §8b Monotonicity check | Noise never increases with ε | **HW4 Q2d-3** ("growing ε only adds neighbours, so it can only merge clusters or absorb noise, never split") | ✅ Same property, verified empirically | — |
 | **§8c Dense cores vs. k-means archetypes** | ε = 2.25: interior core, perimeter core, noise vs. archetypes | **HW4 Q2c, Q4c** (k-means forces outliers into clusters; DBSCAN leaves them as noise) | ✅ Same comparison | Shows only rim-running bigs are density-separated |
 | §8d Outlier setting (ε = 2.75) | Players still noise when the league is connected | HW4 Q2 (D9, D10 as remote one-offs) · Q4c | 🔁 Noise points as outliers | Bridge to notebook 05 (anomaly detection) |
-| §9 Archetype × position crosstab, ARI preview | Archetypes vs. listed positions and vs. families | HW2 Part 4 (confusion-matrix reading) | 🔁 Cross-tabulation | Full validation in notebook 06 |
+| §9 Families and archetype nesting | Names the k = 3 families via anchor players; archetype × family crosstab; exports `archetypes.csv` | HW2 Part 4 (reading a cross-tabulation) | 🔁 Cross-tabulation | Comparison with positions is left entirely to notebook 06 |
 
 ---
 
@@ -170,11 +170,11 @@ boxplots. The Adjusted Rand Index and its permutation baseline are supporting ch
 | Correlation heatmap | HW1 1.4 | 01_EDA §5 |
 | Boxplot by category | HW1 1.5 | 01_EDA §6 · 06_Validation §7 (BPM by archetype and by position) |
 | Dropping unusable columns / rows | HW1 2.1 | 01_EDA §2, §3 · 02 §2 |
-| Categorical encoding (one-hot) | HW1 2.2 | Never a clustering input · 06_Validation §4 (one-hot dummies of position / archetype / family for R²) |
+| Categorical encoding (one-hot) | HW1 2.2 | Never a clustering input · 01_EDA §6, 03_PCA §4, 06_Validation §4 (one-hot dummies of position / archetype / family for R²) |
 | Feature construction | HW1 2.2 | 02 §2 (`mid_share`, `corner3_rate`) |
 | Scaling: StandardScaler / PowerTransformer / QuantileTransformer | HW1 2.4 | 01_EDA §4 · 02 §4 (3-scaler comparison) |
 | Multicollinearity | HW2 2.3 – 2.4 | 01_EDA §5 · 02 §3 (VIF) |
-| R² / variance explained | HW2 2.2 | 01_EDA §6 (η²) · 02 §3 (VIF = 1 / (1 − R²)) · 03_PCA §4 (η²) · 06_Validation §4 (`LinearRegression` + `r2_score` on group dummies, 13 style features) and §7 (value stats) |
+| R² / variance explained | HW2 2.2 | 01_EDA §6 (R² of style stats on position dummies) · 02 §3 (VIF = 1 / (1 − R²)) · 03_PCA §4 (R² of PC scores on position dummies) · 06_Validation §4 (`LinearRegression` + `r2_score` on group dummies, 13 style features) and §7 (value stats) |
 | Distances & effect of scaling | HW3 1.1, 2.3 | 01_EDA §4 rationale · 02 §5 (distance & neighbour agreement) |
 | Nearest-neighbour lookup | HW3 1.2 · HW4 Q3 | 02 §5b (similar players) |
 | PCA: scree plot | HW1 3.1 | 03_PCA §2 (+ Kaiser & parallel analysis) |

@@ -1,380 +1,380 @@
-player_id,player,team,pos,pos_played,age,g,mp,pg_percent,sg_percent,sf_percent,pf_percent,c_percent,PC1,PC2,PC3,family,archetype,silhouette,second_archetype,border_player,dbscan_group,dbscan_point_type,dbscan_noise_strict
-achiupr01,Precious Achiuwa,SAC,C,PF,26.0,73,1745,0.0,0.0,0.0,83.0,17.0,2.380057764730605,-0.1031840340516139,-0.3928653685475803,Big,Stretch Forward,0.089,Rim-Running Big,False,Dense perimeter core,border,False
-adamsst01,Steven Adams,HOU,C,C,32.0,32,730,0.0,0.0,0.0,0.0,100.0,4.619854869225311,0.8996054855765825,0.892847257351335,Big,Rim-Running Big,0.367,Hub Big,False,Dense interior core,core,False
-adebaba01,Bam Adebayo,MIA,C,C,28.0,73,2365,0.0,0.0,0.0,21.0,79.0,0.8988417739804893,0.8875460965422793,-1.4893502061992343,On-Ball Creator,Hub Big,-0.06,Secondary Scoring Wing,True,Noise,noise,False
-agbajoc01,Ochai Agbaji,2TM,SG,SG,25.0,62,973,8.0,71.0,20.0,0.0,0.0,0.906405919252576,-2.919535302438529,-0.7342765738361675,Off-Ball Perimeter,Stretch Forward,0.219,Spot-Up Floor Spacer,False,Dense perimeter core,border,False
-aldamsa01,Santi Aldama,MEM,PF,PF,25.0,43,1198,0.0,0.0,9.0,84.0,7.0,1.0040873934641676,-0.4519236050953188,-1.1581723215171285,Off-Ball Perimeter,Stretch Forward,0.038,Secondary Scoring Wing,True,Dense perimeter core,border,False
-alexani01,Nickeil Alexander-Walker,ATL,SG,SG,27.0,78,2603,33.0,63.0,4.0,0.0,0.0,-1.3724166424762527,0.2958440857397728,0.0639319399881043,On-Ball Creator,Secondary Scoring Wing,0.139,Shot-Making Guard,False,Dense perimeter core,core,False
-allengr01,Grayson Allen,PHO,SG,SG,30.0,51,1467,31.0,53.0,15.0,0.0,0.0,-2.124974719653816,0.1874767967309556,0.5902487385526399,On-Ball Creator,Shot-Making Guard,0.034,Secondary Scoring Wing,True,Dense perimeter core,border,False
-allenja01,Jarrett Allen,CLE,C,C,27.0,56,1519,0.0,0.0,0.0,0.0,100.0,3.788739118596244,0.8701603654672845,-1.194757119667735,Big,Rim-Running Big,0.103,Hub Big,False,Dense interior core,border,False
-alvarjo01,Jose Alvarado,2TM,PG,PG,27.0,69,1370,100.0,0.0,0.0,0.0,0.0,-2.346817662902025,-0.670809119915877,1.7258393104375145,Off-Ball Perimeter,Defensive Disruptor,-0.0,Shot-Making Guard,True,Dense perimeter core,border,False
-anderky01,Kyle Anderson,3TM,SF,PF,32.0,43,853,0.0,5.0,37.0,51.0,8.0,1.3408542679144275,1.5718965622114034,1.5150104299686655,Big,Hub Big,0.027,Primary Creator,True,Noise,noise,False
-antetgi01,Giannis Antetokounmpo,MIL,PF,PF,31.0,36,1039,0.0,0.0,9.0,62.0,29.0,2.807383321436849,4.262515933663281,-0.6256920235586536,Big,Hub Big,0.212,Primary Creator,False,Noise,noise,False
-anthoco01,Cole Anthony,MIL,PG,PG,25.0,35,527,99.0,1.0,0.0,0.0,0.0,-1.2765731617759652,2.9863599259951505,1.4992936095905622,On-Ball Creator,Primary Creator,0.11,Shot-Making Guard,False,Dense perimeter core,border,False
-anunoog01,OG Anunoby,NYK,PF,PF,28.0,67,2224,0.0,0.0,8.0,90.0,2.0,0.5269480552734764,-1.1551522866013346,0.6802947134218642,Off-Ball Perimeter,Defensive Disruptor,0.049,Stretch Forward,True,Dense perimeter core,core,False
-avdijde01,Deni Avdija,POR,SF,SF,25.0,66,2199,0.0,23.0,62.0,14.0,0.0,0.7853430364468236,3.0051299102210964,-0.3732293702010568,On-Ball Creator,Primary Creator,0.053,Hub Big,False,Dense perimeter core,border,False
-aytonde01,Deandre Ayton,LAL,C,C,27.0,72,1958,0.0,0.0,0.0,0.0,100.0,3.5678899148695025,-0.0517850220811513,-2.155401108645018,Big,Rim-Running Big,0.175,Hub Big,False,Noise,noise,False
-baglema01,Marvin Bagley III,2TM,PF,C,26.0,60,1201,0.0,0.0,0.0,2.0,98.0,3.5278043295038106,0.3354770569596456,-0.7670644364841208,Big,Rim-Running Big,0.221,Hub Big,False,Dense interior core,core,False
-baileac01,Ace Bailey,UTA,SF,SF,19.0,72,1988,0.0,4.0,51.0,41.0,5.0,-0.6761013589798504,-0.6515760046723788,-1.207033341570111,Off-Ball Perimeter,Secondary Scoring Wing,0.162,Stretch Forward,False,Dense perimeter core,border,False
-ballla01,LaMelo Ball,CHO,PG,PG,24.0,72,2017,94.0,6.0,0.0,0.0,0.0,-2.203859799418124,2.165773530461688,0.8214335290175583,On-Ball Creator,Primary Creator,0.059,Shot-Making Guard,False,Dense perimeter core,border,False
-balllo01,Lonzo Ball,CLE,PG,SG,28.0,35,728,43.0,54.0,4.0,0.0,0.0,-1.4282659582436656,-0.9809965366590244,3.359397723149108,Off-Ball Perimeter,Defensive Disruptor,0.167,Shot-Making Guard,False,Noise,noise,True
-banchpa01,Paolo Banchero,ORL,PF,PF,23.0,72,2502,0.0,0.0,0.0,95.0,5.0,0.9094127206147256,3.007039712157553,-1.3530939048016446,On-Ball Creator,Hub Big,0.012,Primary Creator,True,Dense perimeter core,core,False
-banede01,Desmond Bane,ORL,SG,SG,27.0,82,2756,2.0,69.0,29.0,0.0,0.0,-0.5830726300431822,1.2048417897162589,-0.5473922843731707,On-Ball Creator,Secondary Scoring Wing,0.103,Primary Creator,False,Dense perimeter core,core,False
-barlodo01,Dominick Barlow,PHI,PF,PF,22.0,71,1689,0.0,0.0,0.0,89.0,11.0,2.523793676351192,-1.3687118206037103,0.3985322623995861,Big,Stretch Forward,0.16,Rim-Running Big,False,Dense perimeter core,core,False
-barneha02,Harrison Barnes,SAS,PF,PF,33.0,77,1986,0.0,0.0,4.0,88.0,8.0,-1.765192609519412,-2.6203635299105006,-0.4212218720377639,Off-Ball Perimeter,Spot-Up Floor Spacer,0.197,Secondary Scoring Wing,False,Dense perimeter core,core,False
-barnesc01,Scottie Barnes,TOR,PF,PF,24.0,80,2681,0.0,0.0,2.0,67.0,31.0,1.3290406659813525,2.3074515462595,0.3118203345866997,On-Ball Creator,Hub Big,0.146,Primary Creator,False,Dense perimeter core,core,False
-barrerj01,RJ Barrett,TOR,SF,SG,25.0,57,1726,0.0,55.0,39.0,6.0,0.0,0.4694821496204794,0.7429101334349277,-1.2894012872279832,On-Ball Creator,Secondary Scoring Wing,0.217,Stretch Forward,False,Dense perimeter core,core,False
-battlja01,Jamison Battle,TOR,SF,SF,24.0,61,517,0.0,0.0,56.0,43.0,1.0,-0.2095632913001371,-2.9791034303879265,-1.5778444441938717,Off-Ball Perimeter,Spot-Up Floor Spacer,0.046,Stretch Forward,True,Noise,noise,False
-batumni01,Nicolas Batum,LAC,PF,PF,37.0,74,1295,0.0,0.0,24.0,72.0,4.0,-2.505187671102972,-4.886827139309646,1.0620350520220043,Off-Ball Perimeter,Spot-Up Floor Spacer,0.185,Defensive Disruptor,False,Noise,noise,True
-beysa01,Saddiq Bey,NOP,SF,SF,26.0,72,2246,0.0,2.0,51.0,46.0,0.0,-0.557641260390353,-0.1623610894864429,-1.4015748036728848,Off-Ball Perimeter,Secondary Scoring Wing,0.209,Stretch Forward,False,Noise,noise,False
-bitadgo01,Goga Bitadze,ORL,C,C,26.0,64,972,0.0,0.0,0.0,0.0,100.0,4.619402902638903,0.420558243016579,0.6756633643078863,Big,Rim-Running Big,0.382,Hub Big,False,Dense interior core,core,False
-blackan01,Anthony Black,ORL,PG,SG,22.0,64,1910,49.0,50.0,1.0,0.0,0.0,-0.08705896930427,0.7578175522122496,0.7290663622722391,On-Ball Creator,Secondary Scoring Wing,0.074,Primary Creator,False,Dense perimeter core,core,False
-bonaad01,Adem Bona,PHI,C,C,22.0,71,1234,0.0,0.0,0.0,4.0,96.0,4.938997165061865,-0.5865384712347692,0.4438450629183537,Big,Rim-Running Big,0.38,Stretch Forward,False,Dense interior core,border,False
-bookede01,Devin Booker,PHO,SG,SG,29.0,64,2146,5.0,54.0,38.0,3.0,0.0,-1.651815385642387,3.633837712975264,-1.3126838351127077,On-Ball Creator,Primary Creator,0.187,Shot-Making Guard,False,Dense perimeter core,core,False
-bouyeja01,Jamaree Bouyea,PHO,PG,PG,26.0,46,644,100.0,0.0,0.0,0.0,0.0,-0.8467625635299667,0.9914062347316048,0.3113016956856151,On-Ball Creator,Primary Creator,-0.019,Secondary Scoring Wing,True,Dense perimeter core,core,False
-braunch01,Christian Braun,DEN,SG,SG,24.0,44,1399,0.0,42.0,42.0,16.0,0.0,0.8092318589820743,-1.8741123764499097,-1.117147509149262,Off-Ball Perimeter,Stretch Forward,0.073,Secondary Scoring Wing,False,Noise,noise,False
-bridgmi01,Mikal Bridges,NYK,SF,SF,29.0,82,2692,0.0,8.0,65.0,27.0,0.0,-1.1724731210021675,-1.1123789573606857,-0.4240116468933003,Off-Ball Perimeter,Secondary Scoring Wing,0.07,Defensive Disruptor,False,Noise,noise,False
-bridgmi02,Miles Bridges,CHO,PF,PF,27.0,77,2387,0.0,0.0,3.0,95.0,2.0,-0.0023766479471162,-0.0756116144958344,-1.4405254482862482,Off-Ball Perimeter,Secondary Scoring Wing,0.129,Stretch Forward,False,Dense perimeter core,core,False
-brookdi01,Dillon Brooks,PHO,SF,PF,30.0,56,1702,0.0,0.0,7.0,91.0,2.0,-2.3860722985154297,1.605216590004468,-1.3593878773985566,On-Ball Creator,Shot-Making Guard,0.036,Primary Creator,True,Noise,noise,False
-brownbr01,Bruce Brown,DEN,SG,SG,29.0,82,1998,31.0,64.0,5.0,0.0,0.0,0.4279620411854256,-0.3377834011023263,1.2010953345638875,Off-Ball Perimeter,Defensive Disruptor,0.076,Secondary Scoring Wing,False,Dense perimeter core,core,False
-brownja02,Jaylen Brown,BOS,SF,SF,29.0,71,2443,0.0,13.0,64.0,23.0,0.0,-0.6643154894315154,3.672233566606037,-1.0213698278472148,On-Ball Creator,Primary Creator,0.282,Hub Big,False,Dense perimeter core,core,False
-brownko01,Kobe Brown,2TM,PF,PF,26.0,61,963,0.0,0.0,25.0,71.0,4.0,0.5730813908848581,-1.1637686784642662,0.7190872247864216,Off-Ball Perimeter,Stretch Forward,0.036,Defensive Disruptor,True,Dense perimeter core,border,False
-brunsja01,Jalen Brunson,NYK,PG,PG,29.0,74,2590,96.0,4.0,0.0,0.0,0.0,-3.2012917493969533,2.915911586229702,-1.4721643177470227,On-Ball Creator,Shot-Making Guard,0.009,Primary Creator,True,Dense perimeter core,border,False
-bryanca01,Carter Bryant,SAS,PF,PF,20.0,71,818,0.0,1.0,41.0,53.0,5.0,0.5997308304548176,-2.4206253719759765,-1.0744579838852126,Off-Ball Perimeter,Stretch Forward,0.239,Spot-Up Floor Spacer,False,Dense perimeter core,core,False
-bryanth01,Thomas Bryant,CLE,C,C,28.0,60,732,0.0,0.0,0.0,0.0,100.0,2.2555703377205565,-1.823173975140481,-1.6947673498632156,Big,Stretch Forward,0.313,Secondary Scoring Wing,False,Dense perimeter core,core,False
-butleji01,Jimmy Butler,GSW,SF,PF,36.0,38,1182,0.0,6.0,39.0,54.0,0.0,0.6590742798231175,2.0650831404594623,0.0721320977220765,On-Ball Creator,Primary Creator,0.015,Secondary Scoring Wing,True,Noise,noise,False
-buzelma01,Matas Buzelis,CHI,PF,PF,21.0,77,2248,0.0,0.0,12.0,80.0,8.0,1.1719619498676732,-0.5568280693218344,-0.4934164536820842,Off-Ball Perimeter,Stretch Forward,0.16,Secondary Scoring Wing,False,Dense perimeter core,border,False
-caldwke01,Kentavious Caldwell-Pope,MEM,SG,SG,32.0,51,1088,3.0,76.0,19.0,2.0,0.0,-1.7916836105019098,0.3819705198778213,-0.0355870697221608,On-Ball Creator,Shot-Making Guard,-0.024,Secondary Scoring Wing,True,Dense perimeter core,border,False
-camarto01,Toumani Camara,POR,PF,PF,25.0,82,2731,0.0,0.0,2.0,84.0,14.0,-0.5790504524991967,-2.1233375591336165,0.709974640088408,Off-Ball Perimeter,Defensive Disruptor,0.064,Spot-Up Floor Spacer,False,Dense perimeter core,core,False
-capelca01,Clint Capela,HOU,C,C,31.0,75,926,0.0,0.0,0.0,13.0,87.0,4.818606061044909,0.06209590244293,0.6689733063986847,Big,Rim-Running Big,0.419,Hub Big,False,Dense interior core,core,False
-cardwdy01,Dylan Cardwell,SAC,C,C,24.0,44,907,0.0,0.0,0.0,26.0,74.0,4.343583544199063,0.0938624942830014,0.5145592136320267,Big,Rim-Running Big,0.334,Hub Big,False,Dense interior core,core,False
-carrica01,Bub Carrington,WAS,PG,PG,20.0,82,2271,87.0,13.0,0.0,0.0,0.0,-3.03819200332102,1.5815775303829278,0.3819772899482317,On-Ball Creator,Shot-Making Guard,0.226,Primary Creator,False,Noise,noise,False
-cartede02,Devin Carter,SAC,PG,PG,23.0,38,700,95.0,5.0,0.0,0.0,0.0,0.1237881358482538,1.874671045358012,1.0997838959810724,On-Ball Creator,Primary Creator,0.168,Secondary Scoring Wing,False,Dense perimeter core,border,False
-carteje01,Jevon Carter,2TM,PG,PG,30.0,53,867,94.0,6.0,0.0,0.0,0.0,-3.372514979764438,-1.282430889331016,0.5717600762946201,Off-Ball Perimeter,Spot-Up Floor Spacer,0.015,Shot-Making Guard,True,Noise,noise,False
-cartewe01,Wendell Carter Jr.,ORL,C,C,26.0,78,2288,0.0,0.0,0.0,0.0,100.0,1.983236377274223,-0.4081544465237808,-0.8513295368938392,Big,Stretch Forward,0.107,Secondary Scoring Wing,False,Dense perimeter core,border,False
-carusal01,Alex Caruso,OKC,SG,SF,31.0,56,1020,1.0,24.0,52.0,24.0,0.0,-0.4353039887383884,-1.851298206552012,2.239002546051637,Off-Ball Perimeter,Defensive Disruptor,0.275,Stretch Forward,False,Dense perimeter core,border,False
-castlst01,Stephon Castle,SAS,PG,SG,21.0,68,2038,48.0,52.0,0.0,0.0,0.0,0.2484165008449896,2.88425608500452,1.2427688626271225,On-Ball Creator,Primary Creator,0.221,Hub Big,False,Dense perimeter core,border,False
-champju01,Justin Champagnie,WAS,SF,SF,24.0,69,1377,0.0,16.0,61.0,22.0,1.0,2.1759069742503754,-1.2460714341049386,0.1133246971685941,Big,Stretch Forward,0.217,Defensive Disruptor,False,Dense perimeter core,core,False
-champju02,Julian Champagnie,SAS,SF,SF,24.0,82,2266,0.0,5.0,52.0,43.0,1.0,-0.3620889216526993,-3.1081722080358034,-0.8288901568506442,Off-Ball Perimeter,Spot-Up Floor Spacer,0.019,Stretch Forward,True,Dense perimeter core,border,False
-chrisma02,Max Christie,DAL,SG,SG,22.0,77,2244,26.0,68.0,5.0,1.0,0.0,-2.2870153834041043,-1.4983013781316588,-0.9522269430816844,Off-Ball Perimeter,Spot-Up Floor Spacer,0.09,Secondary Scoring Wing,False,Dense perimeter core,border,False
-cissemo01,Moussa Cisse,DAL,C,C,23.0,38,530,0.0,0.0,0.0,0.0,100.0,6.178295624843282,-0.2786767898141785,0.2838070323593833,Big,Rim-Running Big,0.391,Hub Big,False,Noise,noise,False
-cissosi01,Sidy Cissoko,POR,SF,SG,21.0,75,1435,13.0,38.0,36.0,12.0,0.0,-0.2045112863512047,-2.253429631181993,1.5869955869470849,Off-Ball Perimeter,Defensive Disruptor,0.152,Stretch Forward,False,Dense perimeter core,border,False
-clarkja02,Jaylen Clark,MIN,SG,SG,24.0,68,888,11.0,64.0,25.0,0.0,0.0,-0.0971593474402559,-2.0591182158683283,0.9382068843177568,Off-Ball Perimeter,Defensive Disruptor,0.122,Stretch Forward,False,Dense perimeter core,border,False
-clarkjo01,Jordan Clarkson,NYK,SG,SG,33.0,72,1279,1.0,65.0,34.0,0.0,0.0,-1.605172632287741,-0.5618397776916771,-0.6446594197362538,Off-Ball Perimeter,Secondary Scoring Wing,0.095,Shot-Making Guard,False,Noise,noise,False
-claxtni01,Nic Claxton,BRK,C,C,26.0,69,1920,0.0,0.0,0.0,0.0,100.0,3.265962944754218,1.6393323136310076,-0.5680163284977772,Big,Hub Big,-0.033,Rim-Running Big,True,Dense interior core,border,False
-claytwa01,Walter Clayton,2TM,PG,PG,22.0,69,1410,63.0,36.0,0.0,0.0,0.0,-1.6966618622436742,1.3661018651965158,1.0419348890447764,On-Ball Creator,Shot-Making Guard,0.094,Primary Creator,False,Dense perimeter core,core,False
-cliffni01,Nique Clifford,SAC,SG,SG,23.0,75,1882,20.0,48.0,29.0,3.0,0.0,-0.7665299460654731,0.254718109998534,0.4480435498230696,On-Ball Creator,Secondary Scoring Wing,0.077,Shot-Making Guard,False,Dense perimeter core,core,False
-clingdo01,Donovan Clingan,POR,C,C,21.0,77,2094,0.0,0.0,0.0,0.0,100.0,3.710827695961901,-0.1071433959501973,-0.9425328865328588,Big,Rim-Running Big,0.128,Stretch Forward,False,Dense interior core,border,False
-clownno01,Noah Clowney,BRK,PF,PF,21.0,66,1780,0.0,0.0,15.0,81.0,4.0,-0.1480729313637939,-0.9614827321182526,-0.4434120116849706,Off-Ball Perimeter,Secondary Scoring Wing,0.021,Stretch Forward,True,Dense perimeter core,border,False
-colliis01,Isaiah Collier,UTA,PG,PG,21.0,59,1517,52.0,46.0,2.0,0.0,0.0,-0.8694161806825964,3.170500974702471,1.7503590308004924,On-Ball Creator,Primary Creator,0.195,Shot-Making Guard,False,Dense perimeter core,border,False
-collijo01,John Collins,LAC,PF,PF,28.0,69,1872,0.0,0.0,0.0,89.0,10.0,1.377929704635123,-1.2728493195136412,-0.5158714775381592,Off-Ball Perimeter,Stretch Forward,0.19,Secondary Scoring Wing,False,Dense perimeter core,core,False
-conlemi01,Mike Conley,MIN,PG,PG,38.0,54,991,100.0,0.0,0.0,0.0,0.0,-2.261237694572686,-2.2789449241358475,0.8245928293459067,Off-Ball Perimeter,Spot-Up Floor Spacer,0.149,Defensive Disruptor,False,Noise,noise,False
-coopesh01,Sharife Cooper,WAS,PG,PG,24.0,41,700,100.0,0.0,0.0,0.0,0.0,-1.1670155007118763,2.0419542068951126,0.7328785906818865,On-Ball Creator,Primary Creator,0.021,Shot-Making Guard,True,Noise,noise,False
-coulibi01,Bilal Coulibaly,WAS,SG,SF,21.0,56,1468,2.0,41.0,50.0,7.0,0.0,0.5493156603182701,0.5965410937263887,0.8355849375579254,On-Ball Creator,Defensive Disruptor,-0.011,Secondary Scoring Wing,True,Dense perimeter core,core,False
-cowarce01,Cedric Coward,MEM,SG,SG,22.0,62,1598,1.0,65.0,30.0,4.0,0.0,0.425751932843064,0.7272090031059518,-0.6061906743009855,On-Ball Creator,Secondary Scoring Wing,0.165,Hub Big,False,Dense perimeter core,core,False
-cunnica01,Cade Cunningham,DET,PG,PG,24.0,64,2172,83.0,17.0,0.0,0.0,0.0,-0.52851558693165,3.826237327966949,0.4102908968841847,On-Ball Creator,Primary Creator,0.31,Hub Big,False,Dense perimeter core,border,False
-curryst01,Stephen Curry,GSW,PG,PG,37.0,43,1329,100.0,0.0,0.0,0.0,0.0,-2.1157156747941213,1.8363102209517357,-0.4444934136089657,On-Ball Creator,Primary Creator,0.047,Shot-Making Guard,True,Dense perimeter core,border,False
-daniedy01,Dyson Daniels,ATL,SG,SF,22.0,76,2520,1.0,46.0,52.0,1.0,0.0,1.261118310643781,0.7354366885645706,2.0474948859919646,Big,Defensive Disruptor,0.09,Hub Big,False,Noise,noise,False
-dasiltr01,Tristan Da Silva,ORL,SF,SF,24.0,77,1899,0.0,4.0,83.0,13.0,0.0,-0.7926921584633831,-1.7155951320259637,-0.2800873382049139,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.012,Secondary Scoring Wing,True,Dense perimeter core,core,False
-davisan02,Anthony Davis,DAL,PF,C,32.0,20,626,0.0,0.0,0.0,11.0,89.0,2.207876341501444,2.260014157266594,-1.3938659857796167,Big,Hub Big,0.295,Primary Creator,False,Noise,noise,False
-demineg01,Egor Dёmin,BRK,PG,PG,19.0,52,1308,76.0,25.0,0.0,0.0,0.0,-2.0027674003215057,-0.1746219584797073,0.7723399703743158,Off-Ball Perimeter,Shot-Making Guard,0.13,Secondary Scoring Wing,False,Dense perimeter core,border,False
-derozde01,DeMar DeRozan,SAC,PF,SF,36.0,77,2406,0.0,6.0,55.0,39.0,0.0,-2.0020951281513537,2.4431874083850857,-1.7386465981044106,On-Ball Creator,Primary Creator,0.063,Shot-Making Guard,False,Noise,noise,True
-diabamo01,Moussa Diabaté,CHO,C,C,24.0,73,1899,0.0,0.0,0.0,1.0,99.0,4.547941594977854,0.5160017219264663,0.451940488122334,Big,Rim-Running Big,0.422,Hub Big,False,Dense interior core,core,False
-diawamo01,Mohamed Diawara,NYK,SF,PF,20.0,69,634,0.0,0.0,44.0,55.0,1.0,-1.1252016598235606,-1.3546306845746787,-0.2334822805278087,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.015,Secondary Scoring Wing,True,Dense perimeter core,core,False
-dickgr01,Gradey Dick,TOR,SG,SF,22.0,76,1067,0.0,44.0,52.0,4.0,0.0,-0.315566275594271,-1.7274840668700502,-0.5096350995782901,Off-Ball Perimeter,Secondary Scoring Wing,0.081,Defensive Disruptor,False,Dense perimeter core,border,False
-diengou01,Ousmane Dieng,2TM,C,PF,22.0,57,1099,0.0,0.0,4.0,67.0,29.0,-1.3819345615359264,1.072048395828897,-0.3591847126638032,On-Ball Creator,Shot-Making Guard,0.122,Secondary Scoring Wing,False,Dense perimeter core,border,False
-dilliro01,Rob Dillingham,2TM,PG,PG,21.0,65,970,65.0,34.0,1.0,0.0,0.0,-1.531486812576074,2.061744023554685,1.7337375491713498,On-Ball Creator,Primary Creator,0.05,Shot-Making Guard,False,Dense perimeter core,border,False
-divindo01,Donte DiVincenzo,MIN,SG,SG,29.0,82,2494,44.0,50.0,6.0,0.0,0.0,-1.8400511591651,-1.7492034889991792,0.924995151972928,Off-Ball Perimeter,Spot-Up Floor Spacer,0.01,Defensive Disruptor,True,Dense perimeter core,core,False
-doncilu01,Luka Dončić,LAL,PG,PG,26.0,64,2289,86.0,14.0,0.0,0.0,0.0,-1.532843872255849,4.133397935006054,-0.2617237764968677,On-Ball Creator,Primary Creator,0.254,Shot-Making Guard,False,Noise,noise,False
-dortlu01,Luguentz Dort,OKC,SF,PF,26.0,69,1849,0.0,1.0,41.0,56.0,1.0,-1.3566161547768676,-2.664370212590901,-0.7173285513187682,Off-Ball Perimeter,Spot-Up Floor Spacer,0.232,Secondary Scoring Wing,False,Dense perimeter core,core,False
-dosunay01,Ayo Dosunmu,2TM,SG,SG,26.0,69,1881,29.0,58.0,12.0,0.0,0.0,-0.5393524486438425,0.1986669028963378,0.1571740426764314,On-Ball Creator,Secondary Scoring Wing,0.17,Defensive Disruptor,False,Dense perimeter core,core,False
-drumman01,Andre Drummond,PHI,C,C,32.0,63,1231,0.0,0.0,0.0,1.0,99.0,3.3587390981779586,-1.0447299647447552,0.8668037408432556,Big,Stretch Forward,0.099,Rim-Running Big,False,Noise,noise,False
-dunnkr01,Kris Dunn,LAC,PG,PG,31.0,82,2230,85.0,16.0,0.0,0.0,0.0,-1.2658733894721652,-0.3422319659683777,2.996344970494912,Off-Ball Perimeter,Defensive Disruptor,0.198,Shot-Making Guard,False,Dense perimeter core,border,False
-dunnry01,Ryan Dunn,PHO,SF,PF,23.0,70,1355,0.0,4.0,43.0,53.0,0.0,0.912897938174096,-2.1715435842727397,1.5729964100816065,Off-Ball Perimeter,Defensive Disruptor,0.037,Stretch Forward,True,Dense perimeter core,core,False
-duranke01,Kevin Durant,HOU,SF,SF,37.0,78,2840,0.0,32.0,61.0,8.0,0.0,-1.357170627677904,2.7761780923284256,-1.7156049743694142,On-Ball Creator,Primary Creator,0.086,Shot-Making Guard,False,Dense perimeter core,border,False
-durenja01,Jalen Duren,DET,C,C,22.0,70,1976,0.0,0.0,0.0,0.0,100.0,4.188919806372868,1.5907847657433674,-1.016338112340751,Big,Rim-Running Big,0.103,Hub Big,False,Dense interior core,core,False
-easonta01,Tari Eason,HOU,PF,SF,24.0,60,1549,0.0,1.0,58.0,39.0,2.0,0.2164306619244961,-0.9065673118740328,0.7915267800415344,Off-Ball Perimeter,Defensive Disruptor,0.07,Stretch Forward,False,Dense perimeter core,border,False
-edgecvj01,VJ Edgecombe,PHI,SG,SG,20.0,75,2623,28.0,72.0,0.0,0.0,0.0,-0.5218027112720883,1.0307252772039597,0.1868237885972354,On-Ball Creator,Secondary Scoring Wing,0.031,Primary Creator,True,Dense perimeter core,core,False
-edwaran01,Anthony Edwards,MIN,SG,SG,24.0,61,2137,1.0,64.0,34.0,1.0,0.0,-1.0699750328912268,2.6986316388210443,-0.7065603343793343,On-Ball Creator,Primary Creator,0.246,Secondary Scoring Wing,False,Dense perimeter core,core,False
-edwarju01,Justin Edwards,PHI,SF,SF,22.0,64,977,0.0,5.0,83.0,13.0,0.0,-1.862202953440367,-0.8232181557162411,0.8892501862726397,Off-Ball Perimeter,Defensive Disruptor,0.046,Secondary Scoring Wing,True,Dense perimeter core,border,False
-elliske01,Keon Ellis,2TM,SG,SG,26.0,72,1478,28.0,56.0,15.0,2.0,0.0,-0.992853021430976,-3.0961830227596727,0.602402851125666,Off-Ball Perimeter,Spot-Up Floor Spacer,0.016,Defensive Disruptor,True,Noise,noise,False
-embiijo01,Joel Embiid,PHI,C,C,31.0,38,1201,0.0,0.0,0.0,0.0,100.0,1.353138023409578,3.115882279331489,-2.8941789776094646,On-Ball Creator,Hub Big,0.169,Primary Creator,False,Noise,noise,False
-eubandr01,Drew Eubanks,SAC,C,C,28.0,42,552,0.0,0.0,0.0,1.0,99.0,3.284773106135487,-0.061506304113047,-1.1331977362245929,Big,Rim-Running Big,0.19,Hub Big,False,Noise,noise,False
-fearsje01,Jeremiah Fears,NOP,PG,PG,19.0,82,2112,92.0,8.0,0.0,0.0,0.0,-0.2404334974537311,2.203717017798287,0.7746015366952574,On-Ball Creator,Primary Creator,0.231,Secondary Scoring Wing,False,Dense perimeter core,core,False
-filipky01,Kyle Filipowski,UTA,C,C,22.0,77,1801,0.0,0.0,0.0,16.0,84.0,1.8214988538993115,0.1129705705092857,0.6171592916947051,Big,Stretch Forward,0.071,Hub Big,False,Dense perimeter core,core,False
-finnedo01,Dorian Finney-Smith,HOU,PF,SF,32.0,37,620,0.0,2.0,51.0,47.0,0.0,-0.9390155593010268,-3.777636674198277,1.2452364412696943,Off-Ball Perimeter,Spot-Up Floor Spacer,0.063,Defensive Disruptor,False,Noise,noise,False
-flaggco01,Cooper Flagg,DAL,SF,PF,19.0,70,2344,0.0,1.0,37.0,60.0,1.0,0.1785851717608716,2.721823297232468,-0.8542938162542253,On-Ball Creator,Primary Creator,0.134,Hub Big,False,Dense perimeter core,core,False
-flemira01,Rasheer Fleming,PHO,PF,PF,21.0,55,673,0.0,0.0,3.0,86.0,11.0,0.9653073729127774,-3.5699471390569477,-0.002044553378412,Off-Ball Perimeter,Stretch Forward,0.161,Defensive Disruptor,False,Dense perimeter core,border,False
-fontesi01,Simone Fontecchio,MIA,SF,PF,30.0,70,1173,0.0,0.0,24.0,73.0,3.0,-0.8285004650718124,-2.000459977822836,-0.5297887319266703,Off-Ball Perimeter,Spot-Up Floor Spacer,0.058,Secondary Scoring Wing,False,Dense perimeter core,core,False
-foxde01,De'Aaron Fox,SAS,PG,PG,28.0,72,2231,99.0,1.0,0.0,0.0,0.0,-1.869253805042163,2.252969412112844,0.4277384847134619,On-Ball Creator,Primary Creator,0.148,Shot-Making Guard,False,Dense perimeter core,core,False
-furphjo01,Johnny Furphy,IND,SG,SG,21.0,35,643,0.0,49.0,46.0,5.0,0.0,1.3672317103608065,-2.1412782199009546,0.802941834806423,Off-Ball Perimeter,Stretch Forward,0.115,Defensive Disruptor,False,Noise,noise,False
-gaffoda01,Daniel Gafford,DAL,C,C,27.0,55,1195,0.0,0.0,0.0,0.0,100.0,4.70569661731968,0.5988652038928872,0.205153961091521,Big,Rim-Running Big,0.421,Hub Big,False,Dense interior core,core,False
-garlada01,Darius Garland,2TM,PG,PG,26.0,45,1344,92.0,8.0,0.0,0.0,0.0,-2.8873779422719363,2.358053268598625,0.6611447127239354,On-Ball Creator,Shot-Making Guard,0.067,Primary Creator,False,Dense perimeter core,border,False
-garzalu01,Luka Garza,BOS,C,C,27.0,69,1118,0.0,0.0,0.0,4.0,96.0,2.142736860222332,-0.4015076952182168,-0.8508203581320714,Big,Stretch Forward,0.094,Rim-Running Big,False,Dense interior core,border,False
-georgke01,Keyonte George,UTA,PG,PG,22.0,54,1786,100.0,0.0,0.0,0.0,0.0,-1.870134520512364,2.496015255133932,-0.5605448696526695,On-Ball Creator,Primary Creator,0.109,Shot-Making Guard,False,Dense perimeter core,core,False
-georgky01,Kyshawn George,WAS,SF,PF,22.0,48,1391,0.0,1.0,47.0,49.0,3.0,-0.7753932054642414,1.889712897041552,0.4244522354484313,On-Ball Creator,Primary Creator,0.124,Shot-Making Guard,False,Dense perimeter core,core,False
-georgpa01,Paul George,PHI,PF,PF,35.0,37,1135,0.0,0.0,45.0,55.0,0.0,-1.8874567493235312,1.3819409960717577,0.120717999461921,On-Ball Creator,Primary Creator,0.071,Shot-Making Guard,False,Dense perimeter core,border,False
-giddejo01,Josh Giddey,CHI,PG,PG,23.0,54,1731,49.0,48.0,3.0,0.0,0.0,0.4432804754410632,2.7588441384090245,1.113273410389839,On-Ball Creator,Primary Creator,0.122,Hub Big,False,Dense perimeter core,border,False
-gilgesh01,Shai Gilgeous-Alexander,OKC,PG,PG,27.0,68,2259,100.0,0.0,0.0,0.0,0.0,-0.9648687292439696,4.192187335645181,-0.9285944699605,On-Ball Creator,Primary Creator,0.275,Shot-Making Guard,False,Dense perimeter core,border,False
-gillan01,Anthony Gill,WAS,PF,C,33.0,55,951,0.0,0.0,1.0,36.0,64.0,1.9195053302345613,-1.2199249131806509,0.6023387037028402,Big,Stretch Forward,0.118,Defensive Disruptor,False,Dense perimeter core,border,False
-gilleco01,Collin Gillespie,PHO,PG,PG,26.0,80,2282,88.0,12.0,0.0,0.0,0.0,-2.7825003347815733,0.2942756571788807,0.8490292437892616,On-Ball Creator,Shot-Making Guard,0.21,Secondary Scoring Wing,False,Dense perimeter core,border,False
-goberru01,Rudy Gobert,MIN,C,C,33.0,76,2380,0.0,0.0,0.0,0.0,100.0,5.2851050628137,0.3354008235845234,-0.1725210565012398,Big,Rim-Running Big,0.447,Hub Big,False,Dense interior core,core,False
-gonzahu01,Hugo González,BOS,SF,SF,19.0,74,1084,2.0,21.0,67.0,11.0,0.0,1.0962720263737675,-2.861481140093008,1.0354400240449892,Off-Ball Perimeter,Stretch Forward,0.058,Defensive Disruptor,False,Dense perimeter core,border,False
-goodwjo01,Jordan Goodwin,PHO,PG,SG,27.0,70,1572,40.0,52.0,8.0,0.0,0.0,-0.6204053281571847,-0.7747422865212882,1.7714229693988135,Off-Ball Perimeter,Defensive Disruptor,0.196,Secondary Scoring Wing,False,Noise,noise,False
-gordoaa01,Aaron Gordon,DEN,PF,PF,30.0,36,1005,0.0,0.0,0.0,79.0,21.0,0.6094907633269935,0.370721610930738,-2.253584792592769,Off-Ball Perimeter,Secondary Scoring Wing,0.186,Stretch Forward,False,Dense perimeter core,border,False
-grantje01,Jerami Grant,POR,PF,SF,31.0,57,1695,0.0,0.0,58.0,39.0,3.0,-0.2495885863507992,0.0727271932772159,-0.5193148621389954,Off-Ball Perimeter,Secondary Scoring Wing,0.195,Stretch Forward,False,Dense perimeter core,border,False
-greenaj01,A.J. Green,MIL,SG,SG,26.0,78,2270,17.0,61.0,22.0,0.0,0.0,-3.600163599285178,-3.345338152111707,-1.1252511052411192,Off-Ball Perimeter,Spot-Up Floor Spacer,0.295,Shot-Making Guard,False,Noise,noise,False
-greendr01,Draymond Green,GSW,PF,PF,35.0,68,1869,0.0,0.0,6.0,52.0,43.0,0.2739312136316098,-0.8982953888994757,2.0027568320765017,Off-Ball Perimeter,Defensive Disruptor,0.064,Stretch Forward,False,Noise,noise,True
-greenja02,Javonte Green,DET,SG,SG,32.0,82,1446,8.0,60.0,31.0,2.0,0.0,0.5129644290045396,-2.8640580311007318,0.9105613620032896,Off-Ball Perimeter,Defensive Disruptor,0.054,Stretch Forward,False,Dense perimeter core,border,False
-greenja05,Jalen Green,PHO,SG,SG,23.0,32,828,9.0,63.0,27.0,1.0,0.0,-1.707846396819767,1.8931408483025864,-0.0487837997679844,On-Ball Creator,Primary Creator,0.135,Shot-Making Guard,False,Dense perimeter core,core,False
-greenjo02,Josh Green,CHO,SG,SG,25.0,58,908,20.0,66.0,12.0,1.0,0.0,-1.4002984366730855,-4.118926051248449,2.032045353710655,Off-Ball Perimeter,Spot-Up Floor Spacer,0.026,Defensive Disruptor,True,Noise,noise,False
-grimequ01,Quentin Grimes,PHI,SG,SG,25.0,75,2206,1.0,55.0,43.0,0.0,0.0,-0.5168570576127524,0.1507965089212694,0.0369976613745543,Off-Ball Perimeter,Secondary Scoring Wing,0.222,Defensive Disruptor,False,Dense perimeter core,core,False
-gueyemo02,Mouhamed Gueye,ATL,PF,PF,23.0,77,1179,0.0,0.0,0.0,56.0,44.0,1.532638434340628,-2.5164900986224654,0.6803630877237519,Off-Ball Perimeter,Stretch Forward,0.095,Defensive Disruptor,False,Dense perimeter core,core,False
-hachiru01,Rui Hachimura,LAL,PF,PF,27.0,68,1927,0.0,0.0,1.0,89.0,10.0,-1.176842093445619,-2.467774786969512,-2.7815490727103898,Off-Ball Perimeter,Spot-Up Floor Spacer,0.072,Secondary Scoring Wing,False,Noise,noise,False
-hardati02,Tim Hardaway Jr.,DEN,SG,SG,33.0,80,2127,4.0,54.0,40.0,2.0,0.0,-2.860086359148611,-2.27208188107347,-3.163849637615874,Off-Ball Perimeter,Spot-Up Floor Spacer,0.152,Secondary Scoring Wing,False,Noise,noise,False
-hardeja01,James Harden,2TM,PG,SG,36.0,70,2438,46.0,52.0,2.0,0.0,0.0,-1.470693605349657,3.3643021014023686,0.405044813353132,On-Ball Creator,Primary Creator,0.217,Shot-Making Guard,False,Dense perimeter core,border,False
-hardyja02,Jaden Hardy,2TM,SG,SG,23.0,57,898,27.0,60.0,13.0,0.0,0.0,-2.872340200720877,-0.3990735088527523,-1.2734006974591845,Off-Ball Perimeter,Shot-Making Guard,0.085,Secondary Scoring Wing,False,Noise,noise,False
-harklej01,Elijah Harkless,UTA,SG,SG,25.0,26,545,48.0,52.0,1.0,0.0,0.0,-1.4727529864799944,0.0430809397332363,1.601931462163675,On-Ball Creator,Defensive Disruptor,0.05,Secondary Scoring Wing,True,Noise,noise,False
-harpedy01,Dylan Harper,SAS,SG,SG,19.0,69,1558,9.0,60.0,31.0,0.0,0.0,-0.1360505386032935,1.7274589356312686,0.5180797847769714,On-Ball Creator,Primary Creator,0.108,Secondary Scoring Wing,False,Dense perimeter core,core,False
-harriga01,Gary Harris,MIL,SG,SG,31.0,48,661,8.0,63.0,29.0,0.0,0.0,-2.026937629876084,-3.163355651576827,2.063286849446104,Off-Ball Perimeter,Spot-Up Floor Spacer,0.024,Defensive Disruptor,True,Noise,noise,True
-harrito02,Tobias Harris,DET,PF,PF,33.0,63,1746,0.0,0.0,0.0,99.0,1.0,-0.5084029381597134,0.1141373157899997,-1.1283414491259631,Off-Ball Perimeter,Secondary Scoring Wing,0.261,Stretch Forward,False,Noise,noise,False
-harteis01,Isaiah Hartenstein,OKC,C,C,27.0,47,1137,0.0,0.0,0.0,0.0,100.0,3.915624003874357,1.7462479065257306,0.9793209001825044,Big,Hub Big,-0.051,Rim-Running Big,True,Dense interior core,border,False
-hartjo01,Josh Hart,NYK,SF,SF,30.0,66,1994,0.0,41.0,51.0,9.0,0.0,0.5948177789302379,0.354012170500441,1.0029796060354497,Off-Ball Perimeter,Defensive Disruptor,-0.008,Secondary Scoring Wing,True,Dense perimeter core,border,False
-hausesa01,Sam Hauser,BOS,PF,PF,28.0,78,1934,0.0,0.0,20.0,77.0,3.0,-2.329067929656643,-3.6217354517073086,-2.4294576600176896,Off-Ball Perimeter,Spot-Up Floor Spacer,0.281,Secondary Scoring Wing,False,Noise,noise,True
-hawkijo01,Jordan Hawkins,NOP,SG,SG,23.0,51,692,2.0,91.0,7.0,1.0,0.0,-1.6522398732609376,-0.6905730495543584,-1.766523572227966,Off-Ball Perimeter,Secondary Scoring Wing,0.044,Shot-Making Guard,True,Dense perimeter core,border,False
-hayesja02,Jaxson Hayes,LAL,C,C,25.0,66,1207,0.0,0.0,0.0,0.0,100.0,4.612411707133609,-0.6447240743218021,-1.3257934900687498,Big,Rim-Running Big,0.329,Stretch Forward,False,Noise,noise,False
-hendesc01,Scoot Henderson,POR,PG,PG,21.0,30,748,100.0,0.0,0.0,0.0,0.0,-1.3372283036344004,1.670374392484394,0.7805897491008752,On-Ball Creator,Primary Creator,0.091,Shot-Making Guard,False,Dense perimeter core,core,False
-hendrta01,Taylor Hendricks,2TM,PF,C,22.0,59,1118,0.0,0.0,14.0,28.0,58.0,0.9561048242594402,-2.279549392694175,0.5967166769797221,Off-Ball Perimeter,Stretch Forward,0.093,Defensive Disruptor,False,Dense perimeter core,core,False
-herroty01,Tyler Herro,MIA,SG,SG,26.0,33,1033,5.0,75.0,20.0,0.0,0.0,-1.9725101753195051,1.482037409312869,-1.8951048906486248,On-Ball Creator,Shot-Making Guard,0.07,Secondary Scoring Wing,False,Dense perimeter core,core,False
-hieldbu01,Buddy Hield,2TM,SG,SF,33.0,51,819,0.0,26.0,62.0,12.0,0.0,-1.378710590196549,-0.9907081916144852,0.8515932662062605,Off-Ball Perimeter,Defensive Disruptor,0.097,Secondary Scoring Wing,False,Dense perimeter core,core,False
-holidaa01,Aaron Holiday,HOU,PG,PG,29.0,57,781,100.0,0.0,0.0,0.0,0.0,-3.5567564815994244,-0.9008105877843076,0.8586164977285707,Off-Ball Perimeter,Shot-Making Guard,0.105,Spot-Up Floor Spacer,False,Noise,noise,False
-holidjr01,Jrue Holiday,POR,PG,PG,35.0,53,1560,75.0,25.0,0.0,0.0,0.0,-2.0207246930485194,1.6734462417609062,1.126550987914264,On-Ball Creator,Shot-Making Guard,0.062,Primary Creator,False,Dense perimeter core,core,False
-hollaro01,Ron Holland,DET,SF,PF,20.0,78,1551,0.0,0.0,25.0,75.0,0.0,1.182429263510994,-0.8633769310223259,1.5075349496937782,Off-Ball Perimeter,Defensive Disruptor,0.106,Stretch Forward,False,Dense perimeter core,core,False
-holmgch01,Chet Holmgren,OKC,PF,C,23.0,69,1997,0.0,0.0,1.0,37.0,62.0,2.628837336163154,0.4958689825263536,-1.9791069209316687,Big,Hub Big,0.067,Stretch Forward,False,Dense interior core,border,False
-horfoal01,Al Horford,GSW,C,C,39.0,45,969,0.0,0.0,0.0,6.0,94.0,-0.039010387277553,-1.6670970018117195,-0.1733716583918217,Off-Ball Perimeter,Stretch Forward,0.092,Defensive Disruptor,False,Dense perimeter core,border,False
-howarje01,Jett Howard,ORL,SF,SF,22.0,55,695,0.0,22.0,42.0,33.0,3.0,-0.9818190678177844,-2.3954702365633342,-2.709780905849596,Off-Ball Perimeter,Spot-Up Floor Spacer,0.107,Secondary Scoring Wing,False,Noise,noise,False
-huertke01,Kevin Huerter,2TM,SF,SF,27.0,69,1549,0.0,27.0,63.0,10.0,0.0,-0.6242344750583073,-1.0166506396152846,0.1179330614069177,Off-Ball Perimeter,Defensive Disruptor,-0.008,Secondary Scoring Wing,True,Dense perimeter core,core,False
-huffja01,Jay Huff,IND,C,C,27.0,82,1719,0.0,0.0,0.0,0.0,100.0,1.3968490478361424,-1.887109165144314,-1.133955923219677,Off-Ball Perimeter,Stretch Forward,0.247,Secondary Scoring Wing,False,Noise,noise,False
-huntede01,De'Andre Hunter,2TM,SF,SF,28.0,45,1176,0.0,4.0,59.0,37.0,0.0,-1.1289606422874876,0.2245550144563446,-1.3905578662325264,On-Ball Creator,Secondary Scoring Wing,0.213,Shot-Making Guard,False,Dense perimeter core,core,False
-hylanbo01,Bones Hyland,MIN,PG,PG,25.0,71,1177,92.0,8.0,0.0,0.0,0.0,-1.9142385551503205,0.4711154644067706,0.8244884766563667,On-Ball Creator,Shot-Making Guard,0.129,Primary Creator,False,Dense perimeter core,core,False
-ighodos01,Oso Ighodaro,PHO,PF,C,23.0,82,1808,0.0,0.0,0.0,3.0,97.0,3.4966959350649334,0.9249010570200522,1.4189009737406142,Big,Rim-Running Big,0.185,Hub Big,False,Dense interior core,border,False
-ingrabr01,Brandon Ingram,TOR,SF,SF,28.0,77,2604,0.0,4.0,76.0,20.0,0.0,-0.747392024834318,2.2765878464464477,-1.762008467733595,On-Ball Creator,Primary Creator,0.064,Secondary Scoring Wing,False,Dense perimeter core,core,False
-isaacjo01,Jonathan Isaac,ORL,PF,PF,28.0,52,521,0.0,0.0,3.0,77.0,21.0,2.963286425266192,-1.538714438610744,0.2800245203544956,Big,Stretch Forward,0.137,Rim-Running Big,False,Dense perimeter core,border,False
-iveyja01,Jaden Ivey,2TM,SG,SG,23.0,37,670,31.0,62.0,8.0,0.0,0.0,-0.7557529130883465,0.0122782218415602,-0.0430426455249312,Off-Ball Perimeter,Secondary Scoring Wing,0.146,Shot-Making Guard,False,Dense perimeter core,core,False
-jacksgg01,GG Jackson II,MEM,PF,C,21.0,55,1178,0.0,0.0,23.0,33.0,43.0,1.3870394737691776,0.166240170783665,-0.6748443265118634,Big,Stretch Forward,0.06,Secondary Scoring Wing,False,Dense perimeter core,core,False
-jacksis01,Isaiah Jackson,2TM,C,C,24.0,55,908,0.0,0.0,0.0,6.0,94.0,4.502218849899193,0.9401248098912268,0.9112503008866978,Big,Rim-Running Big,0.346,Hub Big,False,Dense interior core,core,False
-jacksja02,Jaren Jackson Jr.,2TM,C,PF,26.0,48,1454,0.0,0.0,0.0,55.0,45.0,0.4604349533240974,0.9026995265942868,-0.9312383912108608,On-Ball Creator,Secondary Scoring Wing,0.095,Hub Big,False,Dense perimeter core,border,False
-jacksqu01,Quenton Jackson,IND,PG,PG,27.0,49,897,85.0,15.0,0.0,0.0,0.0,-0.1763521027409952,1.2093954787941343,0.5029742649748014,On-Ball Creator,Secondary Scoring Wing,0.047,Primary Creator,True,Dense perimeter core,core,False
-jakucka01,Kasparas Jakučionis,MIA,PG,PG,19.0,53,945,85.0,15.0,0.0,0.0,0.0,-0.9382157313280324,-0.9387233480951148,1.799615564528723,Off-Ball Perimeter,Defensive Disruptor,0.139,Secondary Scoring Wing,False,Noise,noise,False
-jamesle01,LeBron James,LAL,SF,SF,41.0,60,1989,0.0,22.0,59.0,19.0,0.0,0.1598489716669186,2.8750935601543186,0.0722579656187556,On-Ball Creator,Primary Creator,0.189,Hub Big,False,Dense perimeter core,core,False
-jamessi01,Sion James,CHO,SG,SG,23.0,82,1843,10.0,64.0,25.0,2.0,0.0,-0.3941298568048994,-1.9706090598816568,1.0141211927993825,Off-Ball Perimeter,Defensive Disruptor,0.083,Stretch Forward,False,Dense perimeter core,border,False
-jaqueja01,Jaime Jaquez Jr.,MIA,SF,PF,24.0,75,2121,1.0,12.0,38.0,50.0,0.0,0.0424036911464757,1.6425547670874632,-0.370968853168916,On-Ball Creator,Primary Creator,-0.018,Secondary Scoring Wing,True,Dense perimeter core,core,False
-jenkida01,Daniss Jenkins,DET,PG,PG,24.0,72,1455,92.0,8.0,0.0,0.0,0.0,-1.3468767827919632,2.043922340450904,1.2275679373730346,On-Ball Creator,Primary Creator,0.13,Shot-Making Guard,False,Dense perimeter core,core,False
-joeis01,Isaiah Joe,OKC,SG,PG,26.0,71,1507,55.0,46.0,0.0,0.0,0.0,-2.0552288442545468,-2.4781154168118857,-1.3316339063389484,Off-Ball Perimeter,Spot-Up Floor Spacer,0.221,Secondary Scoring Wing,False,Dense perimeter core,core,False
-johnsca02,Cameron Johnson,DEN,SF,PF,29.0,54,1647,0.0,0.0,36.0,62.0,2.0,-0.7528590442214224,-1.6990332309505691,-1.2082576426763645,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.034,Secondary Scoring Wing,True,Dense perimeter core,core,False
-johnsja05,Jalen Johnson,ATL,SF,PF,24.0,72,2532,0.0,0.0,8.0,92.0,0.0,0.5634362331811436,3.161113388363362,-0.078685939449629,On-Ball Creator,Primary Creator,0.043,Hub Big,True,Dense perimeter core,core,False
-johnske04,Keldon Johnson,SAS,SF,SF,26.0,82,1911,0.0,22.0,62.0,16.0,0.0,0.8222334069093024,-1.248802935429919,-1.075916690950657,Off-Ball Perimeter,Stretch Forward,0.057,Secondary Scoring Wing,False,Noise,noise,False
-johnstr03,Tre Johnson,WAS,SG,SG,19.0,60,1443,13.0,71.0,16.0,0.0,0.0,-2.4126148342603733,0.6180405133826725,-1.2082394915386647,On-Ball Creator,Shot-Making Guard,0.162,Secondary Scoring Wing,False,Dense perimeter core,core,False
-jokicni01,Nikola Jokić,DEN,C,C,30.0,65,2265,0.0,0.0,0.0,0.0,100.0,1.6543264166617269,3.492744066727532,0.1837222364002527,On-Ball Creator,Hub Big,0.151,Primary Creator,False,Dense perimeter core,border,False
-jonesde02,Derrick Jones Jr.,LAC,SF,SF,28.0,50,1350,0.0,29.0,60.0,11.0,0.0,1.0949005904448803,-2.1748703565459717,-0.2245782553817617,Off-Ball Perimeter,Stretch Forward,0.169,Defensive Disruptor,False,Dense perimeter core,core,False
-joneshe01,Herbert Jones,NOP,SF,SG,27.0,56,1588,17.0,58.0,23.0,2.0,0.0,-0.91429744542188,-1.140651986452608,1.7445365056689328,Off-Ball Perimeter,Defensive Disruptor,0.264,Secondary Scoring Wing,False,Dense perimeter core,core,False
-joneska03,Kam Jones,IND,SG,SG,23.0,37,616,17.0,60.0,22.0,1.0,0.0,-2.780813256363207,-0.0696223002305305,1.8566835795972785,On-Ball Creator,Shot-Making Guard,0.188,Defensive Disruptor,False,Noise,noise,False
-jonessp01,Spencer Jones,DEN,SF,PF,24.0,64,1417,0.0,0.0,39.0,58.0,4.0,0.7593312958478989,-4.0454867522876645,0.6984865948732165,Off-Ball Perimeter,Stretch Forward,0.055,Defensive Disruptor,False,Dense perimeter core,border,False
-jonestr01,Tre Jones,CHI,PG,PG,26.0,65,1752,98.0,2.0,0.0,0.0,0.0,-0.1435887749091248,1.4622826744594546,0.9433948342279964,On-Ball Creator,Primary Creator,0.014,Secondary Scoring Wing,True,Dense perimeter core,border,False
-jonesty01,Tyus Jones,3TM,PG,PG,29.0,67,979,100.0,0.0,0.0,0.0,0.0,-3.9326917375224446,-1.713087924631957,0.7985140584315286,Off-Ball Perimeter,Spot-Up Floor Spacer,0.042,Shot-Making Guard,True,Noise,noise,False
-jovicni01,Nikola Jović,MIA,PF,PF,22.0,47,808,0.0,0.0,0.0,61.0,38.0,0.3162155815852071,-0.2141149136167232,0.2878478631179308,Off-Ball Perimeter,Secondary Scoring Wing,0.032,Stretch Forward,True,Dense perimeter core,core,False
-kalkbry01,Ryan Kalkbrenner,CHO,C,C,24.0,69,1479,0.0,0.0,0.0,0.0,100.0,4.913789537821178,-0.6242400687499192,-0.0432064144735527,Big,Rim-Running Big,0.428,Stretch Forward,False,Dense interior core,core,False
-kennalu01,Luke Kennard,2TM,SG,SG,29.0,78,1681,10.0,50.0,39.0,1.0,0.0,-2.25005294372733,-1.291107623838525,-0.139594849848733,Off-Ball Perimeter,Spot-Up Floor Spacer,0.06,Secondary Scoring Wing,False,Dense perimeter core,border,False
-kispeco01,Corey Kispert,2TM,SF,SF,26.0,58,1080,0.0,26.0,65.0,9.0,0.0,-0.5610477962263833,-1.7298574932854451,-1.7707306992291476,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.012,Secondary Scoring Wing,True,Noise,noise,False
-knechda01,Dalton Knecht,LAL,SF,SG,24.0,54,553,0.0,48.0,44.0,7.0,1.0,-0.755012304836554,-1.9711800181526573,-1.610811615682281,Off-Ball Perimeter,Spot-Up Floor Spacer,0.042,Secondary Scoring Wing,True,Dense perimeter core,core,False
-knuepko01,Kon Knueppel,CHO,SF,SF,20.0,81,2551,0.0,46.0,49.0,5.0,0.0,-1.0558508561575493,-0.1701705140516247,-0.781230319144313,Off-Ball Perimeter,Secondary Scoring Wing,0.158,Shot-Making Guard,False,Dense perimeter core,core,False
-kolekty01,Tyler Kolek,NYK,PG,PG,24.0,62,727,80.0,20.0,0.0,0.0,0.0,-1.9710142143336888,1.4033650565287532,1.2502335262196362,On-Ball Creator,Shot-Making Guard,0.152,Primary Creator,False,Dense perimeter core,core,False
-konchjo01,John Konchar,2TM,SG,SF,29.0,56,1115,3.0,36.0,51.0,9.0,0.0,1.4266924063871012,-2.09162002927039,2.7285400867202854,Off-Ball Perimeter,Defensive Disruptor,0.143,Stretch Forward,False,Noise,noise,False
-kornelu01,Luke Kornet,SAS,C,C,30.0,68,1430,0.0,0.0,0.0,8.0,92.0,4.504432764712284,-0.5800374968823683,-1.138419734115261,Big,Rim-Running Big,0.311,Stretch Forward,False,Noise,noise,False
-krejcvi01,Vít Krejčí,2TM,PG,PG,25.0,65,1392,55.0,42.0,3.0,0.0,0.0,-1.785172663935593,-3.2849419966435893,-0.6865079273370188,Off-Ball Perimeter,Spot-Up Floor Spacer,0.312,Defensive Disruptor,False,Dense perimeter core,core,False
-kuminjo01,Jonathan Kuminga,2TM,PF,PF,23.0,36,830,0.0,0.0,1.0,79.0,20.0,0.8236497655372812,1.3941173793810755,-0.3002269847994415,On-Ball Creator,Hub Big,-0.058,Secondary Scoring Wing,True,Dense perimeter core,core,False
-kuzmaky01,Kyle Kuzma,MIL,PF,SF,30.0,69,1806,0.0,5.0,52.0,43.0,0.0,0.5591266291352172,0.3585071087969044,-0.3313731967723202,Off-Ball Perimeter,Secondary Scoring Wing,0.154,Stretch Forward,False,Dense perimeter core,core,False
-landajo01,Jock Landale,2TM,C,C,30.0,68,1506,0.0,0.0,0.0,0.0,100.0,1.7376276736905858,-0.8529208937641248,-1.293520687542978,Big,Stretch Forward,0.182,Secondary Scoring Wing,False,Dense perimeter core,core,False
-laravja01,Jake LaRavia,LAL,PF,SF,24.0,82,2061,0.0,5.0,56.0,39.0,1.0,0.7930512486511339,-1.7660683961728498,1.379660432292849,Off-Ball Perimeter,Defensive Disruptor,0.124,Stretch Forward,False,Dense perimeter core,core,False
-larsspe01,Pelle Larsson,MIA,SG,SF,24.0,70,1849,1.0,28.0,68.0,3.0,0.0,0.5355863646817592,0.0284433375179391,0.0872156163552503,Off-Ball Perimeter,Secondary Scoring Wing,0.146,Stretch Forward,False,Dense perimeter core,border,False
-lavinza01,Zach LaVine,SAC,SG,SG,30.0,39,1224,33.0,37.0,25.0,5.0,0.0,-2.179378790913959,0.4801586454896908,-1.5277758556201186,On-Ball Creator,Shot-Making Guard,-0.022,Secondary Scoring Wing,True,Dense perimeter core,border,False
-leonaka01,Kawhi Leonard,LAC,SF,SF,34.0,65,2085,0.0,3.0,67.0,30.0,1.0,-0.9263595889130904,2.97645222334638,-0.5853878149657071,On-Ball Creator,Primary Creator,0.202,Secondary Scoring Wing,False,Noise,noise,False
-leverca01,Caris LeVert,DET,SG,SF,31.0,60,1154,4.0,33.0,56.0,8.0,0.0,-0.7756959702064169,0.6439423655270146,1.344405572772315,On-Ball Creator,Defensive Disruptor,0.007,Primary Creator,True,Dense perimeter core,core,False
-lopezbr01,Brook Lopez,LAC,C,C,37.0,75,1635,0.0,0.0,0.0,0.0,100.0,-0.15914683371153,-1.106092587161687,-1.066166538068399,Off-Ball Perimeter,Stretch Forward,0.004,Secondary Scoring Wing,True,Noise,noise,False
-loveca01,Caleb Love,POR,SG,PG,24.0,49,1013,86.0,12.0,2.0,0.0,0.0,-2.711749232142989,0.2760740981498089,-0.3935284607236782,On-Ball Creator,Shot-Making Guard,0.201,Secondary Scoring Wing,False,Dense perimeter core,core,False
-loveke01,Kevin Love,UTA,PF,PF,37.0,37,613,0.0,0.0,10.0,64.0,26.0,0.6385516768471403,-1.1602706667847504,-0.6267514390440778,Off-Ball Perimeter,Stretch Forward,0.131,Secondary Scoring Wing,False,Dense perimeter core,border,False
-mamuksa01,Sandro Mamukelashvili,TOR,C,C,26.0,80,1751,0.0,0.0,0.0,8.0,93.0,1.6443272157968178,-1.135214897499042,-0.4462281355049595,Off-Ball Perimeter,Stretch Forward,0.238,Secondary Scoring Wing,False,Dense perimeter core,core,False
-mannte01,Terance Mann,BRK,SG,SG,29.0,63,1529,9.0,61.0,29.0,1.0,0.0,-0.655497246136871,-0.0754714219536347,0.83866224536397,Off-Ball Perimeter,Secondary Scoring Wing,0.048,Defensive Disruptor,True,Dense perimeter core,border,False
-manntr01,Tre Mann,CHO,PG,PG,24.0,53,669,91.0,9.0,0.0,0.0,0.0,-2.282694664671657,1.06731411399134,0.7929169972197065,On-Ball Creator,Shot-Making Guard,0.157,Primary Creator,False,Dense perimeter core,core,False
-markkla01,Lauri Markkanen,UTA,PF,PF,28.0,42,1443,0.0,0.0,12.0,68.0,20.0,0.5408721246268816,-0.0368574368141314,-2.3671192817993263,Off-Ball Perimeter,Secondary Scoring Wing,0.135,Stretch Forward,False,Noise,noise,False
-marshna01,Naji Marshall,DAL,SF,SF,28.0,74,2184,0.0,22.0,57.0,20.0,0.0,-0.8222427848713517,1.1130096191183134,-0.0081445480592714,On-Ball Creator,Secondary Scoring Wing,0.096,Primary Creator,False,Dense perimeter core,core,False
-martica02,Caleb Martin,DAL,SF,SG,30.0,58,856,1.0,56.0,36.0,6.0,0.0,0.450040697271727,0.0006259839066058,1.4297643038795635,Off-Ball Perimeter,Defensive Disruptor,0.064,Secondary Scoring Wing,False,Dense perimeter core,border,False
-martity01,Tyrese Martin,2TM,SG,SG,26.0,46,777,7.0,64.0,28.0,1.0,0.0,-1.2540105315875856,-0.6959796142935873,0.5653195427035296,Off-Ball Perimeter,Defensive Disruptor,-0.006,Secondary Scoring Wing,True,Dense perimeter core,core,False
-mashaja01,Jahmai Mashack,MEM,SG,SF,23.0,31,673,27.0,26.0,41.0,6.0,0.0,0.3733715204962455,-0.2478673737328675,2.3105688010869296,Off-Ball Perimeter,Defensive Disruptor,0.202,Secondary Scoring Wing,False,Noise,noise,False
-mathube01,Bennedict Mathurin,2TM,SF,SF,23.0,54,1620,2.0,35.0,51.0,12.0,1.0,0.1581892349996936,1.7723646469997478,-1.2590279059686875,On-Ball Creator,Secondary Scoring Wing,0.071,Primary Creator,False,Dense perimeter core,core,False
-matkoka01,Karlo Matković,NOP,PF,PF,24.0,62,912,0.0,0.0,1.0,65.0,34.0,2.6274967452595885,-2.448296698086119,0.1044161959547634,Big,Stretch Forward,0.304,Defensive Disruptor,False,Dense perimeter core,border,False
-maxeyty01,Tyrese Maxey,PHI,PG,PG,25.0,70,2661,98.0,3.0,0.0,0.0,0.0,-1.523029653644595,2.4636917834633807,-0.1186364775532948,On-Ball Creator,Primary Creator,0.2,Shot-Making Guard,False,Dense perimeter core,border,False
-mcbrimi01,Miles McBride,NYK,SG,SG,25.0,41,1080,33.0,67.0,0.0,0.0,0.0,-3.3527583928538163,-1.1054915557756189,-0.7052025831122177,Off-Ball Perimeter,Spot-Up Floor Spacer,0.019,Shot-Making Guard,True,Noise,noise,False
-mccaija01,Jared McCain,2TM,SG,SG,21.0,67,1160,14.0,67.0,19.0,0.0,0.0,-2.417966106373832,-0.1231186454107328,-0.3946104072987424,On-Ball Creator,Shot-Making Guard,0.069,Secondary Scoring Wing,False,Dense perimeter core,border,False
-mccolcj01,CJ McCollum,2TM,PG,PG,34.0,76,2264,77.0,23.0,0.0,0.0,0.0,-1.909143001059137,1.4986895337483694,-1.087149347787851,On-Ball Creator,Shot-Making Guard,0.047,Primary Creator,True,Dense perimeter core,core,False
-mccontj01,T.J. McConnell,IND,PG,PG,33.0,56,963,100.0,0.0,0.0,0.0,0.0,-2.267840674949638,3.32285329425058,1.0109100619470928,On-Ball Creator,Primary Creator,0.074,Shot-Making Guard,False,Noise,noise,True
-mcdanja02,Jaden McDaniels,MIN,PF,SF,25.0,73,2316,0.0,1.0,88.0,9.0,1.0,0.1343148164234424,0.0768424246269665,-0.0645167430771456,Off-Ball Perimeter,Secondary Scoring Wing,0.166,Defensive Disruptor,False,Dense perimeter core,core,False
-mcgowbr01,Bryce McGowens,NOP,SG,SG,23.0,42,880,6.0,65.0,29.0,0.0,0.0,-0.6470534220160773,-1.3708601218017389,-1.15397955154129,Off-Ball Perimeter,Secondary Scoring Wing,0.097,Spot-Up Floor Spacer,False,Noise,noise,False
-meltode01,De'Anthony Melton,GSW,PG,PG,27.0,49,1125,76.0,24.0,0.0,0.0,0.0,-0.802480605313646,0.954602782606634,1.6147068167523095,On-Ball Creator,Primary Creator,0.013,Defensive Disruptor,True,Dense perimeter core,border,False
-merrisa01,Sam Merrill,CLE,SG,SF,29.0,52,1377,0.0,36.0,54.0,10.0,0.0,-2.5586027695176004,-2.4167063413982803,-1.468884612915241,Off-Ball Perimeter,Spot-Up Floor Spacer,0.262,Secondary Scoring Wing,False,Dense perimeter core,border,False
-middlkh01,Khris Middleton,2TM,SF,PF,34.0,63,1439,0.0,4.0,27.0,67.0,2.0,-1.7388535403304803,1.689248069456922,-0.3544326687411455,On-Ball Creator,Shot-Making Guard,0.057,Primary Creator,False,Noise,noise,False
-millebr02,Brandon Miller,CHO,SF,SF,23.0,65,1968,0.0,3.0,87.0,10.0,0.0,-0.8786743854834329,1.3300880616905593,-0.4153205984670818,On-Ball Creator,Primary Creator,0.019,Secondary Scoring Wing,True,Dense perimeter core,core,False
-millejo02,Jordan Miller,LAC,SF,SG,26.0,60,1325,9.0,41.0,41.0,8.0,1.0,0.297128847986503,0.9196219674103376,0.316556604480898,On-Ball Creator,Secondary Scoring Wing,0.129,Primary Creator,False,Dense perimeter core,core,False
-millele01,Leonard Miller,2TM,SF,SF,22.0,46,719,0.0,3.0,54.0,40.0,2.0,1.928380298266069,-1.5589806272301576,-0.5972211022323631,Off-Ball Perimeter,Stretch Forward,0.317,Secondary Scoring Wing,False,Dense perimeter core,core,False
-minotjo01,Josh Minott,2TM,PF,PF,23.0,49,834,0.0,9.0,9.0,48.0,33.0,0.8484341375776099,-1.5996379509496306,1.3614182982862677,Off-Ball Perimeter,Defensive Disruptor,0.075,Stretch Forward,False,Dense perimeter core,core,False
-missiyv01,Yves Missi,NOP,C,C,21.0,66,1297,0.0,0.0,0.0,0.0,100.0,4.494380512070734,0.106397028245714,-0.9643347230617058,Big,Rim-Running Big,0.357,Hub Big,False,Dense interior core,border,False
-mitchaj01,Ajay Mitchell,OKC,SG,SF,23.0,57,1473,13.0,40.0,43.0,4.0,0.0,-0.8772180105305488,1.5320582121207535,0.6559403033684724,On-Ball Creator,Primary Creator,0.121,Secondary Scoring Wing,False,Dense perimeter core,core,False
-mitchda01,Davion Mitchell,MIA,PG,PG,27.0,70,2000,100.0,0.0,0.0,0.0,0.0,-2.136176739150309,0.887415850610546,1.6861089801855125,On-Ball Creator,Shot-Making Guard,0.186,Primary Creator,False,Dense perimeter core,border,False
-mitchdo01,Donovan Mitchell,CLE,SG,SG,29.0,70,2342,19.0,54.0,25.0,2.0,0.0,-1.650515235748903,2.7263913234431514,0.0379800999223454,On-Ball Creator,Primary Creator,0.261,Shot-Making Guard,False,Dense perimeter core,core,False
-mobleev01,Evan Mobley,CLE,PF,C,24.0,65,2074,0.0,0.0,0.0,35.0,65.0,2.725972911623628,1.1222913949717452,-1.4078146758701382,Big,Hub Big,0.158,Rim-Running Big,False,Dense interior core,core,False
-monkma01,Malik Monk,SAC,SG,SG,27.0,62,1364,35.0,57.0,8.0,0.0,0.0,-2.438986170076892,0.9823504099385464,-0.706029997612322,On-Ball Creator,Shot-Making Guard,0.181,Secondary Scoring Wing,False,Dense perimeter core,core,False
-moodymo01,Moses Moody,GSW,SG,SF,23.0,60,1540,0.0,18.0,61.0,21.0,0.0,-1.117329874649611,-2.0325675714499605,-0.3716858568171161,Off-Ball Perimeter,Spot-Up Floor Spacer,0.09,Secondary Scoring Wing,False,Dense perimeter core,core,False
-moranja01,Ja Morant,MEM,PG,PG,26.0,20,569,100.0,0.0,0.0,0.0,0.0,-1.5457367640524522,4.1129292181211135,0.4084416357877561,On-Ball Creator,Primary Creator,0.271,Shot-Making Guard,False,Dense perimeter core,core,False
-murphtr02,Trey Murphy III,NOP,SF,SF,25.0,66,2341,0.0,29.0,63.0,8.0,0.0,-0.4460370392699574,0.0781113696706926,-0.536355198765828,Off-Ball Perimeter,Secondary Scoring Wing,0.213,Defensive Disruptor,False,Dense perimeter core,border,False
-murraco01,Collin Murray-Boyles,TOR,PF,PF,20.0,57,1246,0.0,0.0,8.0,82.0,11.0,3.4993686159606936,-0.313034081840867,0.5101845726716245,Big,Rim-Running Big,0.199,Stretch Forward,False,Dense interior core,border,False
-murraja01,Jamal Murray,DEN,PG,PG,28.0,75,2652,100.0,0.0,0.0,0.0,0.0,-2.210553283662273,2.598518120689253,-1.3871535242618316,On-Ball Creator,Primary Creator,0.057,Shot-Making Guard,False,Dense perimeter core,core,False
-murrake02,Keegan Murray,SAC,PF,PF,25.0,23,793,0.0,0.0,24.0,76.0,0.0,-0.3523608179945483,-0.1253599423015072,-1.9197307731034896,Off-Ball Perimeter,Secondary Scoring Wing,0.14,Stretch Forward,False,Noise,noise,False
-murrakr01,Kris Murray,POR,SF,SG,25.0,57,1333,2.0,46.0,32.0,18.0,2.0,1.168800598698302,-2.802819835355107,1.7000517780274005,Off-Ball Perimeter,Defensive Disruptor,0.008,Stretch Forward,True,Dense perimeter core,border,False
-mykhasv01,Svi Mykhailiuk,UTA,SF,SG,28.0,50,1156,0.0,62.0,35.0,2.0,0.0,-2.460861397622436,-2.786492009725209,-0.2000073926491864,Off-Ball Perimeter,Spot-Up Floor Spacer,0.274,Secondary Scoring Wing,False,Dense perimeter core,border,False
-nancepe01,Pete Nance,MIL,PF,PF,25.0,47,737,0.0,1.0,38.0,44.0,17.0,-0.0629693502886745,-3.001361102780299,-0.4729085564313639,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.048,Stretch Forward,True,Dense perimeter core,border,False
-nembhan01,Andrew Nembhard,IND,PG,PG,26.0,57,1786,77.0,23.0,0.0,0.0,0.0,-2.6151241308598703,2.907994769792212,-0.1236572817341778,On-Ball Creator,Shot-Making Guard,-0.019,Primary Creator,True,Dense perimeter core,core,False
-nembhry01,Ryan Nembhard,DAL,PG,PG,22.0,60,1171,100.0,0.0,0.0,0.0,0.0,-3.613130547372708,2.4126948173603746,0.166140075789705,On-Ball Creator,Shot-Making Guard,0.182,Primary Creator,False,Noise,noise,False
-nesmiaa01,Aaron Nesmith,IND,SF,SF,26.0,45,1335,0.0,37.0,61.0,3.0,0.0,-0.5340379424555084,-1.3354054609105943,-2.000565621157003,Off-Ball Perimeter,Secondary Scoring Wing,0.085,Spot-Up Floor Spacer,False,Dense perimeter core,border,False
-newelas01,Asa Newell,ATL,PF,PF,20.0,44,500,0.0,0.0,1.0,71.0,28.0,1.4888851751243004,-2.5767850525901874,0.4228794575244615,Off-Ball Perimeter,Stretch Forward,0.202,Defensive Disruptor,False,Dense perimeter core,core,False
-nnajize01,Zeke Nnaji,DEN,PF,C,25.0,52,626,0.0,0.0,0.0,29.0,71.0,2.596115102887292,-1.5378199120455285,-0.3115530277366231,Big,Stretch Forward,0.169,Rim-Running Big,False,Dense perimeter core,core,False
-nurkiju01,Jusuf Nurkić,UTA,C,C,31.0,41,1083,0.0,0.0,0.0,0.0,100.0,2.7579463876895502,1.8248819304575312,1.4101171166722235,Big,Hub Big,0.148,Rim-Running Big,False,Noise,noise,False
-okogijo01,Josh Okogie,HOU,SG,SG,27.0,78,1354,3.0,74.0,22.0,0.0,0.0,0.0044367096905767,-2.9340348688813918,1.5628748106616843,Off-Ball Perimeter,Defensive Disruptor,0.142,Stretch Forward,False,Dense perimeter core,core,False
-okongon01,Onyeka Okongwu,ATL,C,C,25.0,74,2297,0.0,0.0,0.0,3.0,97.0,1.424588081051302,-0.7316058483200488,-0.1294285575655454,Off-Ball Perimeter,Stretch Forward,0.215,Secondary Scoring Wing,False,Dense perimeter core,core,False
-okorois01,Isaac Okoro,CHI,SG,SF,25.0,63,1695,0.0,33.0,61.0,6.0,0.0,0.2534525358198442,-3.089483487875109,-0.042206199163463,Off-Ball Perimeter,Stretch Forward,0.064,Spot-Up Floor Spacer,False,Noise,noise,False
-onealro01,Royce O'Neale,PHO,SF,SF,32.0,78,2213,0.0,7.0,69.0,23.0,0.0,-1.7885058033342698,-2.20343221186287,1.1587781283603091,Off-Ball Perimeter,Spot-Up Floor Spacer,0.04,Defensive Disruptor,True,Dense perimeter core,border,False
-oubreke01,Kelly Oubre Jr.,PHI,SF,SF,30.0,50,1574,0.0,2.0,75.0,23.0,0.0,0.0053123497558893,-0.7176125908995902,0.1233718794297639,Off-Ball Perimeter,Secondary Scoring Wing,0.036,Defensive Disruptor,True,Dense perimeter core,core,False
-paytoga02,Gary Payton II,GSW,SG,SG,33.0,73,1142,16.0,62.0,20.0,1.0,0.0,1.6929506399343388,-1.3219795071651794,1.66898112497449,Off-Ball Perimeter,Defensive Disruptor,0.007,Stretch Forward,True,Noise,noise,True
-peavymi01,Micah Peavy,NOP,SG,SF,24.0,61,913,1.0,31.0,56.0,11.0,0.0,-0.6019569800234527,-2.0110412033396416,0.2499719675940291,Off-Ball Perimeter,Defensive Disruptor,0.049,Secondary Scoring Wing,True,Noise,noise,False
-pendano01,Noah Penda,ORL,SF,SF,21.0,59,757,0.0,16.0,65.0,19.0,0.0,1.1433232238437898,-0.5908469667480247,1.602078340115458,Off-Ball Perimeter,Defensive Disruptor,0.052,Stretch Forward,False,Dense perimeter core,border,False
-pickeja02,Jalen Pickett,DEN,SG,PG,26.0,50,807,60.0,40.0,0.0,0.0,0.0,-2.323612153680611,-0.3719315689803035,-0.8321884639767227,Off-Ball Perimeter,Shot-Making Guard,0.128,Secondary Scoring Wing,False,Noise,noise,False
-plowdda01,Daeqwon Plowden,SAC,SG,SF,27.0,32,844,6.0,38.0,46.0,10.0,0.0,-1.067782373004375,-2.9631576761255944,-0.9245290015755002,Off-Ball Perimeter,Spot-Up Floor Spacer,0.223,Stretch Forward,False,Dense perimeter core,core,False
-podzibr01,Brandin Podziemski,GSW,SG,SG,22.0,82,2333,10.0,49.0,37.0,4.0,0.0,-0.9395801662425076,1.103811743074382,-0.1826076363456586,On-Ball Creator,Secondary Scoring Wing,0.074,Primary Creator,False,Dense perimeter core,core,False
-poeltja01,Jakob Poeltl,TOR,C,C,30.0,46,1149,0.0,0.0,0.0,0.0,100.0,3.703521480642312,0.7917655214025946,-0.0548339926512883,Big,Rim-Running Big,0.21,Hub Big,False,Dense interior core,core,False
-poolejo01,Jordan Poole,NOP,PG,SG,26.0,39,933,41.0,59.0,1.0,0.0,0.0,-2.184262510967756,0.6052630832158883,-0.5546130887890885,On-Ball Creator,Shot-Making Guard,0.102,Secondary Scoring Wing,False,Dense perimeter core,border,False
-portecr01,Craig Porter Jr.,CLE,PG,PG,25.0,64,1148,86.0,14.0,0.0,0.0,0.0,0.6420613542754653,0.2410427149397511,2.232553187280081,Off-Ball Perimeter,Defensive Disruptor,0.164,Secondary Scoring Wing,False,Noise,noise,False
-porteke02,Kevin Porter Jr.,MIL,PG,SG,25.0,38,1261,44.0,56.0,0.0,0.0,0.0,-0.5785589098945055,3.335690248589679,1.8579656884948528,On-Ball Creator,Primary Creator,0.308,Shot-Making Guard,False,Dense perimeter core,border,False
-portemi01,Michael Porter Jr.,BRK,SF,SF,27.0,52,1689,0.0,3.0,76.0,21.0,0.0,-0.4701055288950317,1.1646373517024269,-1.26005526294272,On-Ball Creator,Secondary Scoring Wing,0.109,Primary Creator,False,Dense perimeter core,border,False
-portibo01,Bobby Portis,MIL,PF,PF,30.0,67,1619,0.0,0.0,8.0,68.0,24.0,-0.960734393949659,-0.2689516804663224,-2.194788338356945,Off-Ball Perimeter,Secondary Scoring Wing,0.161,Shot-Making Guard,False,Noise,noise,False
-porzikr01,Kristaps Porziņģis,2TM,C,C,30.0,32,769,0.0,0.0,0.0,0.0,100.0,0.6955860283566488,1.5294613795708512,-2.545081432102556,On-Ball Creator,Hub Big,0.015,Secondary Scoring Wing,True,Noise,noise,False
-postqu01,Quinten Post,GSW,PF,C,25.0,67,1159,0.0,0.0,0.0,7.0,93.0,0.0219029296459676,-1.9077839927830185,-0.8626757247506132,Off-Ball Perimeter,Stretch Forward,0.149,Spot-Up Floor Spacer,False,Dense perimeter core,core,False
-pottemi01,Micah Potter,IND,C,C,27.0,47,908,0.0,0.0,0.0,8.0,92.0,1.1326805091980965,-1.6417260567334395,-0.4093562868887634,Off-Ball Perimeter,Stretch Forward,0.215,Secondary Scoring Wing,False,Dense perimeter core,border,False
-poweldr01,Drake Powell,BRK,SG,PG,20.0,63,1320,45.0,43.0,12.0,0.0,0.0,-1.7492029065042989,-0.378199925781328,0.0836953614135987,Off-Ball Perimeter,Shot-Making Guard,0.005,Secondary Scoring Wing,True,Dense perimeter core,border,False
-poweldw01,Dwight Powell,DAL,C,C,34.0,63,904,0.0,0.0,0.0,6.0,94.0,4.975670948979966,-0.1848391192121112,1.8809376452183115,Big,Rim-Running Big,0.294,Hub Big,False,Noise,noise,True
-powelno01,Norman Powell,MIA,SG,SG,32.0,58,1717,9.0,87.0,4.0,0.0,0.0,-1.3350593930640364,0.902550369210318,-0.9810454721359811,On-Ball Creator,Secondary Scoring Wing,0.126,Primary Creator,False,Dense perimeter core,border,False
-princta02,Taurean Prince,MIL,SF,SF,31.0,26,611,0.0,20.0,69.0,11.0,0.0,-3.3242953174179526,-2.3885257476599038,0.0731800129828837,Off-Ball Perimeter,Spot-Up Floor Spacer,0.168,Shot-Making Guard,False,Noise,noise,True
-pritcpa01,Payton Pritchard,BOS,PG,PG,28.0,79,2556,100.0,0.0,0.0,0.0,0.0,-3.0039852602066164,1.3387740086778952,-1.2287382970931993,On-Ball Creator,Shot-Making Guard,0.215,Primary Creator,False,Dense perimeter core,border,False
-proctty01,Tyrese Proctor,CLE,PG,PG,21.0,50,545,49.0,49.0,2.0,0.0,0.0,-2.5501475179333384,0.8064985809414712,1.2218338637338086,On-Ball Creator,Shot-Making Guard,0.122,Primary Creator,False,Noise,noise,False
-prospol01,Olivier-Maxence Prosper,MEM,PF,PF,23.0,53,984,0.0,2.0,19.0,63.0,16.0,1.3823379248887844,-1.4018215617153709,-5.107473913611745e-05,Off-Ball Perimeter,Stretch Forward,0.16,Defensive Disruptor,False,Dense perimeter core,core,False
-queende01,Derik Queen,NOP,C,C,21.0,81,2023,0.0,0.0,0.0,16.0,84.0,2.2328535683842814,2.798675305109024,0.987394029655124,Big,Hub Big,0.205,Primary Creator,False,Dense perimeter core,border,False
-quetane01,Neemias Queta,BOS,C,C,26.0,76,1926,0.0,0.0,0.0,0.0,100.0,4.340701923800369,0.2180126538941177,-0.3733690225027949,Big,Rim-Running Big,0.373,Hub Big,False,Dense interior core,core,False
-quickim01,Immanuel Quickley,TOR,PG,PG,26.0,70,2231,80.0,21.0,0.0,0.0,0.0,-2.7418041043588013,1.2287018354309909,-0.1138208068177118,On-Ball Creator,Shot-Making Guard,0.095,Primary Creator,False,Dense perimeter core,border,False
-randlju01,Julius Randle,MIN,PF,PF,31.0,79,2610,0.0,0.0,3.0,93.0,5.0,0.1019837985969039,2.5325325596374104,-0.2343579531721832,On-Ball Creator,Primary Creator,0.144,Secondary Scoring Wing,False,Dense perimeter core,core,False
-raynama01,Maxime Raynaud,SAC,C,C,22.0,74,1964,0.0,0.0,0.0,0.0,100.0,2.1346898794756357,-0.0143004047347217,-2.276618365623399,Big,Hub Big,0.0,Stretch Forward,True,Noise,noise,False
-reaveau01,Austin Reaves,LAL,SG,SG,27.0,51,1762,16.0,50.0,34.0,1.0,0.0,-0.9499976862526166,2.5540129117525137,-0.0083972814402012,On-Ball Creator,Primary Creator,0.252,Shot-Making Guard,False,Dense perimeter core,core,False
-reedpa01,Paul Reed,DET,C,C,26.0,65,901,0.0,0.0,0.0,7.0,93.0,3.479311640042642,0.945342200568736,0.8655792477670545,Big,Hub Big,0.012,Rim-Running Big,True,Noise,noise,False
-reidna01,Naz Reid,MIN,C,C,26.0,77,2007,0.0,0.0,0.0,45.0,55.0,0.1286896452049585,-0.610298569845403,0.0105544005960395,Off-Ball Perimeter,Stretch Forward,0.053,Defensive Disruptor,False,Dense perimeter core,core,False
-richaja02,Jase Richardson,ORL,SG,SG,20.0,54,587,35.0,60.0,5.0,0.0,0.0,-1.3511055756550208,-0.4586566082716551,0.1725422948695398,Off-Ball Perimeter,Secondary Scoring Wing,0.153,Shot-Making Guard,False,Dense perimeter core,border,False
-richani01,Nick Richards,2TM,C,C,28.0,48,701,0.0,0.0,0.0,1.0,99.0,4.487924408371972,-0.0146778236264933,-1.335346953894854,Big,Rim-Running Big,0.246,Hub Big,False,Noise,noise,True
-richawi02,Will Richard,GSW,SG,SG,23.0,69,1377,19.0,55.0,24.0,2.0,0.0,-0.88573117964846,-2.5852689099136232,2.021303287997601,Off-Ball Perimeter,Defensive Disruptor,0.192,Spot-Up Floor Spacer,False,Dense perimeter core,border,False
-rileywi01,Will Riley,WAS,SF,PF,19.0,74,1633,0.0,0.0,15.0,77.0,8.0,-0.9659091373432316,0.7445912571614858,-0.0796898527381398,On-Ball Creator,Secondary Scoring Wing,0.156,Shot-Making Guard,False,Dense perimeter core,core,False
-risacza01,Zaccharie Risacher,ATL,SF,SF,20.0,67,1503,0.0,2.0,90.0,8.0,0.0,0.5531717268662657,-1.6453803178702722,-0.4277699692192719,Off-Ball Perimeter,Stretch Forward,0.117,Secondary Scoring Wing,False,Dense perimeter core,core,False
-robindu01,Duncan Robinson,DET,SF,SF,31.0,77,2113,0.0,6.0,78.0,16.0,0.0,-2.3148520190833537,-3.147526284709314,-1.644795419402111,Off-Ball Perimeter,Spot-Up Floor Spacer,0.309,Secondary Scoring Wing,False,Dense perimeter core,core,False
-robinmi01,Mitchell Robinson,NYK,C,C,27.0,60,1175,0.0,0.0,0.0,24.0,76.0,5.709377351527944,-0.0207850031016975,1.4092645470954732,Big,Rim-Running Big,0.389,Hub Big,False,Dense interior core,border,False
-rolliry01,Ryan Rollins,MIL,PG,PG,23.0,74,2376,96.0,4.0,0.0,0.0,0.0,-1.5715080858259003,2.050499024009725,1.368839593851504,On-Ball Creator,Primary Creator,0.129,Shot-Making Guard,False,Dense perimeter core,core,False
-ruperra01,Rayan Rupert,2TM,SG,SF,21.0,64,1072,4.0,37.0,38.0,20.0,1.0,-0.3594894631006797,-0.8225537139273624,1.4882549447078803,Off-Ball Perimeter,Defensive Disruptor,0.186,Secondary Scoring Wing,False,Dense perimeter core,core,False
-sabondo01,Domantas Sabonis,SAC,C,C,29.0,19,564,0.0,0.0,0.0,18.0,82.0,2.6383456717094425,1.9254280836320208,0.1730166513392114,Big,Hub Big,0.164,Rim-Running Big,False,Noise,noise,False
-salauti01,Tidjane Salaün,CHO,PF,PF,20.0,37,575,0.0,0.0,0.0,84.0,16.0,1.4784493312163605,-2.267980240786467,0.0680668541534329,Off-Ball Perimeter,Stretch Forward,0.221,Defensive Disruptor,False,Dense perimeter core,border,False
-sandeko01,Kobe Sanders,LAC,SG,SG,23.0,68,1351,17.0,54.0,28.0,2.0,1.0,-1.6803086197219426,-0.3640904374145033,0.9461438105518888,Off-Ball Perimeter,Shot-Making Guard,-0.002,Secondary Scoring Wing,True,Dense perimeter core,core,False
-santogu01,Gui Santos,GSW,PF,PF,23.0,68,1395,0.0,0.0,19.0,79.0,2.0,1.011396964390442,-0.3940385060405361,1.6309611109869686,Off-Ball Perimeter,Defensive Disruptor,0.087,Stretch Forward,False,Dense perimeter core,border,False
-sarafbe01,Ben Saraf,BRK,SG,SG,19.0,44,916,16.0,48.0,30.0,6.0,0.0,-0.3207700078667379,2.063715276862718,2.487351380874011,On-Ball Creator,Primary Creator,0.129,Shot-Making Guard,False,Noise,noise,False
-sarral01,Alex Sarr,WAS,C,C,20.0,48,1305,0.0,0.0,0.0,1.0,99.0,2.024500630958008,1.250058013836287,-1.519275038177909,Big,Hub Big,0.238,Stretch Forward,False,Dense interior core,border,False
-scheiba01,Baylor Scheierman,BOS,SG,SG,25.0,77,1429,5.0,53.0,41.0,1.0,0.0,-1.951501912349734,-2.6554195723139244,0.2075343897848615,Off-Ball Perimeter,Spot-Up Floor Spacer,0.197,Defensive Disruptor,False,Noise,noise,False
-schrode01,Dennis Schröder,2TM,PG,PG,32.0,70,1697,100.0,0.0,0.0,0.0,0.0,-1.8533569110786103,2.5529875139112894,0.4643824778413405,On-Ball Creator,Primary Creator,0.087,Shot-Making Guard,False,Dense perimeter core,core,False
-sengual01,Alperen Şengün,HOU,C,C,23.0,72,2398,0.0,0.0,0.0,14.0,86.0,1.7166757121396357,3.281123974880113,0.1783652756407356,On-Ball Creator,Hub Big,0.169,Primary Creator,False,Dense perimeter core,border,False
-sensabr01,Brice Sensabaugh,UTA,SF,SF,22.0,75,1762,0.0,24.0,56.0,20.0,1.0,-1.5509582999349143,0.1246680558909073,-0.9370713575549492,On-Ball Creator,Secondary Scoring Wing,0.154,Shot-Making Guard,False,Dense perimeter core,core,False
-sextoco01,Collin Sexton,2TM,SG,SG,27.0,68,1614,35.0,54.0,11.0,0.0,0.0,-1.242697265486687,1.938131791024152,1.19913314940615,On-Ball Creator,Primary Creator,0.164,Shot-Making Guard,False,Dense perimeter core,core,False
-shamela01,Landry Shamet,NYK,SG,SG,28.0,51,1171,3.0,85.0,12.0,0.0,0.0,-2.1375054149891124,-3.2688044443607853,-1.0655627344986438,Off-Ball Perimeter,Spot-Up Floor Spacer,0.264,Secondary Scoring Wing,False,Dense perimeter core,border,False
-shannte01,Terrence Shannon Jr.,MIN,SG,SF,25.0,43,538,1.0,29.0,59.0,11.0,0.0,-1.09219700154724,-0.4798840872697333,-0.2044843573938644,Off-Ball Perimeter,Secondary Scoring Wing,0.156,Shot-Making Guard,False,Noise,noise,False
-sharpda01,Day'Ron Sharpe,BRK,C,C,24.0,62,1160,0.0,0.0,0.0,0.0,100.0,3.720185265508594,1.828405459192068,2.5864035045070337,Big,Hub Big,-0.015,Rim-Running Big,True,Noise,noise,True
-sharpsh01,Shaedon Sharpe,POR,SG,SG,22.0,50,1471,41.0,53.0,6.0,0.0,0.0,-1.049049537284544,2.213824430576175,0.3112092646195931,On-Ball Creator,Primary Creator,0.162,Secondary Scoring Wing,False,Dense perimeter core,core,False
-sheadja01,Jamal Shead,TOR,PG,PG,23.0,82,1852,100.0,0.0,0.0,0.0,0.0,-2.391617731314921,1.0495745835421295,2.077949943938114,On-Ball Creator,Shot-Making Guard,0.13,Primary Creator,False,Dense perimeter core,border,False
-sheppbe01,Ben Sheppard,IND,SG,SG,24.0,65,1390,11.0,69.0,20.0,0.0,0.0,-1.2293762409687383,-2.4476144332020437,-0.4784562389130174,Off-Ball Perimeter,Spot-Up Floor Spacer,0.18,Secondary Scoring Wing,False,Dense perimeter core,core,False
-sheppre01,Reed Sheppard,HOU,SG,SG,21.0,82,2147,29.0,64.0,8.0,0.0,0.0,-2.802728906075022,0.6083226334512936,0.8114996390116033,On-Ball Creator,Shot-Making Guard,0.11,Primary Creator,False,Noise,noise,False
-siakapa01,Pascal Siakam,IND,PF,PF,31.0,62,2057,0.0,0.0,6.0,84.0,11.0,-0.1102210384162667,2.4463754150906443,-1.3498956889054134,On-Ball Creator,Primary Creator,0.09,Secondary Scoring Wing,False,Dense perimeter core,core,False
-simonan01,Anfernee Simons,2TM,SG,PG,26.0,55,1372,49.0,48.0,3.0,0.0,0.0,-3.401468183505473,0.8045737411121899,-1.4655248690798033,On-Ball Creator,Shot-Making Guard,0.229,Secondary Scoring Wing,False,Dense perimeter core,border,False
-simsje01,Jericho Sims,MIL,C,C,27.0,67,1318,0.0,0.0,0.0,21.0,79.0,4.45894350985754,0.1815488233427941,0.627881012572265,Big,Rim-Running Big,0.257,Hub Big,False,Noise,noise,True
-smallja01,Javon Small,MEM,PG,PG,23.0,41,830,95.0,5.0,0.0,0.0,0.0,-0.6760880470042798,1.6410309841904684,1.0241541409611936,On-Ball Creator,Primary Creator,0.116,Shot-Making Guard,False,Dense perimeter core,core,False
-smartma01,Marcus Smart,LAL,SG,SG,31.0,62,1769,25.0,72.0,3.0,0.0,0.0,-1.755550375630209,-0.6094409487392538,1.5846023523353014,Off-Ball Perimeter,Defensive Disruptor,0.106,Shot-Making Guard,False,Dense perimeter core,border,False
-smithdr01,Dru Smith,MIA,SG,PG,28.0,70,1141,72.0,27.0,1.0,0.0,0.0,0.2135705885347661,0.0474579529413059,2.832156193779224,Off-Ball Perimeter,Defensive Disruptor,0.236,Secondary Scoring Wing,False,Dense perimeter core,border,False
-smithja04,Jalen Smith,CHI,C,C,25.0,53,1095,0.0,0.0,0.0,38.0,62.0,2.2154531279716525,-1.722926724615753,-1.3148748769621093,Big,Stretch Forward,0.335,Secondary Scoring Wing,False,Dense perimeter core,core,False
-smithja05,Jabari Smith Jr.,HOU,PF,PF,22.0,77,2705,0.0,0.0,8.0,83.0,10.0,-0.138716722020521,-1.188027144188367,-2.098913545480254,Off-Ball Perimeter,Secondary Scoring Wing,0.057,Stretch Forward,False,Dense perimeter core,border,False
-spencca01,Cam Spencer,MEM,SG,PG,25.0,72,1714,53.0,43.0,4.0,0.0,0.0,-2.729860207494239,1.311881154470533,0.0478158871449641,On-Ball Creator,Shot-Making Guard,0.209,Primary Creator,False,Dense perimeter core,border,False
-spencpa01,Pat Spencer,GSW,PG,PG,29.0,66,1229,63.0,36.0,1.0,0.0,0.0,-2.070117779283782,1.615521600166641,1.305956406403954,On-Ball Creator,Shot-Making Guard,0.104,Primary Creator,False,Dense perimeter core,core,False
-stewais01,Isaiah Stewart,DET,C,C,24.0,58,1317,0.0,0.0,0.0,25.0,75.0,3.073353057374344,-1.4855938438021743,-1.5154175664120868,Big,Stretch Forward,0.073,Rim-Running Big,False,Noise,noise,False
-strawju01,Julian Strawther,DEN,SG,SF,23.0,57,861,1.0,36.0,52.0,11.0,0.0,-1.439878417790379,-0.6502539596909209,-1.0978224534451255,Off-Ball Perimeter,Secondary Scoring Wing,0.178,Spot-Up Floor Spacer,False,Dense perimeter core,core,False
-suggsja01,Jalen Suggs,ORL,PG,PG,24.0,57,1574,89.0,11.0,0.0,0.0,0.0,-1.418027995632742,1.6272062517222403,2.2758948768058462,On-Ball Creator,Primary Creator,0.1,Shot-Making Guard,False,Dense perimeter core,border,False
-tatumja01,Jayson Tatum,BOS,PF,PF,27.0,16,522,0.0,0.0,0.0,95.0,5.0,-1.2879871673473249,2.806854404966272,-0.264286750262093,On-Ball Creator,Primary Creator,0.195,Shot-Making Guard,False,Noise,noise,False
-terryda01,Dalen Terry,2TM,SG,SF,23.0,48,551,7.0,36.0,52.0,5.0,0.0,0.3825365556952252,-0.7600876711763414,2.0510750744595603,Off-Ball Perimeter,Defensive Disruptor,0.244,Stretch Forward,False,Dense perimeter core,core,False
-thomaca02,Cam Thomas,2TM,SG,SG,24.0,42,881,32.0,61.0,6.0,0.0,0.0,-2.594934722834477,2.6527335880389997,-2.493184873413673,On-Ball Creator,Shot-Making Guard,0.053,Primary Creator,False,Noise,noise,False
-thompam01,Amen Thompson,HOU,PG,PG,23.0,79,2953,83.0,16.0,1.0,0.0,0.0,1.486056919304562,1.827366014893841,0.5790536188588407,Big,Hub Big,0.104,Primary Creator,False,Dense perimeter core,border,False
-thompau01,Ausar Thompson,DET,SF,SG,23.0,73,1896,1.0,65.0,27.0,7.0,0.0,2.663588509566816,1.4770897215367371,1.820328240123284,Big,Hub Big,0.057,Rim-Running Big,False,Noise,noise,False
-thompet01,Ethan Thompson,IND,SG,SG,26.0,32,653,12.0,79.0,8.0,0.0,0.0,-1.4845284518279602,-1.610841261761159,-0.3245478061353914,Off-Ball Perimeter,Spot-Up Floor Spacer,0.039,Secondary Scoring Wing,True,Dense perimeter core,core,False
-thompkl01,Klay Thompson,DAL,SF,SF,35.0,69,1497,5.0,38.0,53.0,5.0,0.0,-3.1862186847660072,-2.0468151525891907,-2.451419680181989,Off-Ball Perimeter,Spot-Up Floor Spacer,0.195,Secondary Scoring Wing,False,Noise,noise,False
-tomlina01,Nae'Qwan Tomlin,CLE,PF,PF,25.0,64,1004,0.0,0.0,17.0,75.0,8.0,1.785455846884599,-2.517486680165039,0.324128341992707,Off-Ball Perimeter,Stretch Forward,0.164,Defensive Disruptor,False,Dense perimeter core,border,False
-townska01,Karl-Anthony Towns,NYK,C,C,30.0,75,2322,0.0,0.0,0.0,0.0,100.0,2.7869195780660485,1.732436308973609,-0.6673844196056896,Big,Hub Big,0.188,Rim-Running Big,False,Dense interior core,border,False
-traorno01,Nolan Traoré,BRK,PG,PG,19.0,56,1243,97.0,3.0,0.0,0.0,0.0,-1.624716732449638,1.5114207428203197,1.6985634958189082,On-Ball Creator,Shot-Making Guard,-0.001,Primary Creator,True,Dense perimeter core,border,False
-trentga02,Gary Trent Jr.,MIL,SG,SF,27.0,65,1377,2.0,36.0,61.0,1.0,0.0,-4.971655904944645,-2.1842320406219047,-1.2091462046430244,Off-Ball Perimeter,Spot-Up Floor Spacer,0.118,Shot-Making Guard,False,Noise,noise,True
-turnemy01,Myles Turner,MIL,C,C,29.0,71,1912,0.0,0.0,0.0,0.0,100.0,0.8198875483641322,-1.1878403817472676,-1.4617784119686037,Off-Ball Perimeter,Stretch Forward,0.109,Secondary Scoring Wing,False,Dense perimeter core,border,False
-tysonja01,Jaylon Tyson,CLE,SG,SF,23.0,66,1777,0.0,23.0,55.0,23.0,0.0,0.6138399002551597,-1.24854784977371,0.0274755523514696,Off-Ball Perimeter,Stretch Forward,0.134,Defensive Disruptor,False,Dense perimeter core,core,False
-valanjo01,Jonas Valančiūnas,DEN,C,C,33.0,65,871,0.0,0.0,0.0,5.0,95.0,2.9870718381151726,2.489027710890196,-1.9948823673655605,Big,Hub Big,0.191,Rim-Running Big,False,Noise,noise,False
-vandeja01,Jarred Vanderbilt,LAL,PF,PF,26.0,65,1128,0.0,0.0,31.0,65.0,5.0,2.050485322056024,-2.1963837552542955,2.513746558098649,Off-Ball Perimeter,Defensive Disruptor,0.019,Stretch Forward,True,Dense perimeter core,border,False
-vassede01,Devin Vassell,SAS,SG,SG,25.0,67,2044,16.0,54.0,31.0,0.0,0.0,-2.180861680433226,-1.117492747742274,-1.9642658764835652,Off-Ball Perimeter,Spot-Up Floor Spacer,0.007,Secondary Scoring Wing,True,Dense perimeter core,border,False
-vincega01,Gabe Vincent,2TM,PG,PG,29.0,53,879,99.0,1.0,0.0,0.0,0.0,-4.263257701241841,-2.3105229715908435,0.8717032669761562,Off-Ball Perimeter,Spot-Up Floor Spacer,0.082,Shot-Making Guard,False,Noise,noise,False
-vucevni01,Nikola Vučević,2TM,C,C,35.0,64,1818,0.0,0.0,0.0,1.0,99.0,0.9467673803560342,0.1551749301212599,-2.0668343286793145,Big,Hub Big,-0.031,Secondary Scoring Wing,True,Noise,noise,False
-vukcetr01,Tristan Vukcevic,WAS,C,C,22.0,49,671,0.0,0.0,0.0,0.0,100.0,1.1177614918562118,1.28460562930358,-1.026563356742723,Big,Hub Big,0.083,Secondary Scoring Wing,False,Noise,noise,False
-wadede01,Dean Wade,CLE,PF,PF,29.0,59,1318,0.0,0.0,14.0,73.0,14.0,-0.1505008300965596,-3.9992965975015298,-0.7303057788459676,Off-Ball Perimeter,Spot-Up Floor Spacer,0.04,Stretch Forward,True,Noise,noise,False
-wagnefr01,Franz Wagner,ORL,SF,PF,24.0,34,1019,0.0,0.0,49.0,50.0,1.0,0.3484896032695267,1.6604927327632346,-1.168162866894298,On-Ball Creator,Secondary Scoring Wing,0.061,Primary Creator,False,Dense perimeter core,core,False
-walkeja01,Jabari Walker,PHI,PF,PF,23.0,64,762,0.0,0.0,20.0,75.0,4.0,1.710947590418113,-1.7477876763456095,0.0694565667641569,Off-Ball Perimeter,Stretch Forward,0.211,Defensive Disruptor,False,Dense perimeter core,border,False
-walkeja02,Jarace Walker,IND,PF,SF,22.0,76,1953,0.0,2.0,58.0,40.0,0.0,-0.2722661381571544,0.5794654662195259,-0.2906210066490561,On-Ball Creator,Secondary Scoring Wing,0.183,Primary Creator,False,Dense perimeter core,core,False
-wallaca01,Cason Wallace,OKC,SG,SG,22.0,77,2046,19.0,67.0,13.0,0.0,0.0,-0.8817881755390594,-1.3055404403211308,2.187908876590157,Off-Ball Perimeter,Defensive Disruptor,0.267,Secondary Scoring Wing,False,Dense perimeter core,border,False
-wallake01,Keaton Wallace,ATL,PG,PG,26.0,53,536,96.0,4.0,0.0,0.0,0.0,-3.6820483982433694,0.9106592604254,0.7322815423880602,On-Ball Creator,Shot-Making Guard,0.225,Primary Creator,False,Noise,noise,False
-walshjo01,Jordan Walsh,BOS,PF,PF,21.0,68,1212,0.0,3.0,31.0,64.0,2.0,1.759185791564111,-2.367235075888549,0.8286520895063,Off-Ball Perimeter,Stretch Forward,0.144,Defensive Disruptor,False,Dense perimeter core,core,False
-walteja01,Ja'Kobe Walter,TOR,SG,SG,21.0,72,1474,12.0,81.0,8.0,0.0,0.0,-0.7187899272962243,-3.170521370774269,0.4901745153164907,Off-Ball Perimeter,Spot-Up Floor Spacer,0.001,Defensive Disruptor,True,Dense perimeter core,border,False
-wareke01,Kel'el Ware,MIA,C,C,21.0,77,1704,0.0,0.0,0.0,0.0,100.0,3.0617081318809007,-1.8308319603917484,-0.9640059583999812,Big,Stretch Forward,0.198,Rim-Running Big,False,Dense perimeter core,border,False
-washipj01,P.J. Washington,DAL,PF,PF,27.0,56,1736,0.0,0.0,2.0,85.0,14.0,1.2338432653816305,-0.5101933938958966,-0.5153307165032336,Off-Ball Perimeter,Stretch Forward,0.132,Secondary Scoring Wing,False,Dense perimeter core,core,False
-watfotr01,Trendon Watford,PHI,PF,PF,25.0,53,864,0.0,0.0,8.0,83.0,9.0,1.6221891543746751,1.4484978501672363,-0.0509752103629186,Big,Hub Big,0.114,Secondary Scoring Wing,False,Noise,noise,False
-watkija01,Jamir Watkins,WAS,SG,SG,24.0,50,1032,8.0,44.0,40.0,8.0,0.0,0.6124658142090496,-1.5891301886111333,1.1680964049321914,Off-Ball Perimeter,Defensive Disruptor,0.094,Stretch Forward,False,Dense perimeter core,core,False
-watsope01,Peyton Watson,DEN,SF,SF,23.0,54,1598,0.0,16.0,52.0,32.0,0.0,0.8267429262020293,0.0543898520592631,-0.6635434637357672,Off-Ball Perimeter,Secondary Scoring Wing,0.084,Stretch Forward,False,Dense perimeter core,core,False
-wellsja01,Jaylen Wells,MEM,SG,SF,22.0,69,1821,0.0,9.0,77.0,13.0,1.0,-1.5482146516665067,-0.9728873427648946,-0.9062969703023434,Off-Ball Perimeter,Secondary Scoring Wing,0.138,Spot-Up Floor Spacer,False,Dense perimeter core,core,False
-wembavi01,Victor Wembanyama,SAS,C,C,22.0,64,1866,0.0,0.0,0.0,0.0,100.0,2.6323329009983807,2.2984855296978286,-1.560869917434842,Big,Hub Big,0.301,Rim-Running Big,False,Noise,noise,False
-westbru01,Russell Westbrook,SAC,SF,SG,37.0,64,1853,8.0,48.0,38.0,7.0,0.0,-1.514130843886342,2.408198021988861,1.7337854951018958,On-Ball Creator,Primary Creator,0.132,Shot-Making Guard,False,Dense perimeter core,border,False
-whiteco01,Coby White,2TM,SG,PG,25.0,50,1249,47.0,45.0,8.0,0.0,0.0,-1.5324150331527364,2.3515416659726154,-0.6416741738944746,On-Ball Creator,Primary Creator,0.055,Shot-Making Guard,False,Noise,noise,False
-whitede01,Derrick White,BOS,SG,SG,31.0,77,2625,22.0,75.0,4.0,0.0,0.0,-1.5276279722469457,0.7252809527331182,-0.5349709131964737,On-Ball Creator,Shot-Making Guard,0.01,Secondary Scoring Wing,True,Dense perimeter core,border,False
-wiggiaa01,Aaron Wiggins,OKC,SG,SF,27.0,65,1414,2.0,31.0,48.0,18.0,0.0,-0.4379527288806686,-0.8101402603820184,0.8084638314918743,Off-Ball Perimeter,Defensive Disruptor,0.112,Secondary Scoring Wing,False,Dense perimeter core,core,False
-wiggian01,Andrew Wiggins,MIA,SF,SF,30.0,68,2063,1.0,16.0,49.0,35.0,0.0,-0.0537906888190272,0.198259723544734,-0.2294399589481639,Off-Ball Perimeter,Secondary Scoring Wing,0.163,Defensive Disruptor,False,Dense perimeter core,core,False
-willibr03,Brandon Williams,DAL,PG,PG,26.0,66,1463,99.0,1.0,0.0,0.0,0.0,-0.3056057540821873,2.8708793634988767,0.7407911800323154,On-Ball Creator,Primary Creator,0.278,Secondary Scoring Wing,False,Dense perimeter core,core,False
-willico04,Cody Williams,UTA,SG,SG,21.0,67,1631,3.0,46.0,43.0,9.0,0.0,0.0821189669734417,-0.6743059196827129,-0.2976707538652535,Off-Ball Perimeter,Secondary Scoring Wing,0.164,Stretch Forward,False,Dense perimeter core,border,False
-willigr01,Grant Williams,CHO,PF,PF,27.0,36,711,0.0,0.0,0.0,88.0,12.0,-0.2898344507872605,-2.196991340785352,-0.4062573968258721,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.018,Stretch Forward,True,Noise,noise,False
-willija06,Jalen Williams,OKC,SG,SF,24.0,33,936,0.0,18.0,51.0,31.0,0.0,-0.4560852852507374,3.0958625271123377,-0.0790309355847114,On-Ball Creator,Primary Creator,0.278,Secondary Scoring Wing,False,Dense perimeter core,core,False
-willija07,Jaylin Williams,OKC,PF,C,23.0,65,1277,0.0,0.0,4.0,35.0,61.0,0.4893255807575927,-1.7050639408897856,-0.6363267203669872,Off-Ball Perimeter,Stretch Forward,0.106,Secondary Scoring Wing,False,Noise,noise,True
-willike04,Kenrich Williams,OKC,PF,PF,31.0,56,855,0.0,2.0,10.0,70.0,18.0,-0.0561383345325692,0.0978595653991235,0.2860603417652383,Off-Ball Perimeter,Secondary Scoring Wing,0.112,Defensive Disruptor,False,Dense perimeter core,core,False
-willima07,Mark Williams,PHO,C,C,24.0,60,1416,0.0,0.0,0.0,0.0,100.0,4.390403862440335,0.4519924900610046,-0.3459972161127861,Big,Rim-Running Big,0.33,Hub Big,False,Dense interior core,core,False
-willipa01,Patrick Williams,CHI,PF,PF,24.0,72,1474,0.0,1.0,30.0,65.0,6.0,-0.6558079508554817,-0.7510222267887481,0.5438251192391672,Off-Ball Perimeter,Defensive Disruptor,0.016,Secondary Scoring Wing,True,Dense perimeter core,core,False
-williro04,Robert Williams,POR,C,C,28.0,59,1008,0.0,0.0,0.0,5.0,95.0,4.44034861394334,-0.554323173342335,0.7395024686650881,Big,Rim-Running Big,0.25,Stretch Forward,False,Dense interior core,border,False
-willivi01,Vince Williams Jr.,2TM,SG,PG,25.0,40,820,93.0,7.0,0.0,0.0,0.0,-1.0517623331754438,0.9148801672812326,1.3354255137191218,On-Ball Creator,Shot-Making Guard,0.024,Primary Creator,True,Dense perimeter core,border,False
-willizi01,Zion Williamson,NOP,PF,PF,25.0,62,1841,0.0,0.0,7.0,83.0,10.0,2.6081880440778638,2.242651775615994,-0.3252420886901686,Big,Hub Big,0.072,Rim-Running Big,False,Noise,noise,False
-willizi02,Ziaire Williams,BRK,SF,SF,24.0,56,1281,1.0,22.0,63.0,12.0,3.0,-0.4522279590319916,-1.4906590054475637,0.956516098763842,Off-Ball Perimeter,Defensive Disruptor,0.136,Secondary Scoring Wing,False,Dense perimeter core,core,False
-wilsoja03,Jalen Wilson,BRK,PF,PF,25.0,54,859,0.0,1.0,28.0,62.0,9.0,-1.1964283065497223,-0.7260055071887226,-0.4959777603628052,Off-Ball Perimeter,Secondary Scoring Wing,0.155,Spot-Up Floor Spacer,False,Dense perimeter core,border,False
-wolfda01,Danny Wolf,BRK,PF,PF,21.0,57,1187,0.0,0.0,0.0,78.0,22.0,1.1789807169605715,-0.0952517759013331,-0.2769635122515477,Off-Ball Perimeter,Stretch Forward,0.123,Secondary Scoring Wing,False,Dense perimeter core,core,False
-yabusgu01,Guerschon Yabusele,2TM,C,C,30.0,67,1007,0.0,0.0,0.0,33.0,67.0,0.4527914563610686,-2.1041958909917944,-0.6418965355634794,Off-Ball Perimeter,Stretch Forward,0.217,Secondary Scoring Wing,False,Dense perimeter core,core,False
-zubaciv01,Ivica Zubac,2TM,C,C,28.0,48,1446,0.0,0.0,0.0,2.0,98.0,3.676350878215589,1.1023003164944702,-1.9059341046286835,Big,Rim-Running Big,0.097,Hub Big,False,Noise,noise,False
+player_id,player,team,pos,pos_played,PC1,PC2,PC3,family,archetype,silhouette,border_player
+achiupr01,Precious Achiuwa,SAC,C,PF,2.380057764730605,-0.1031840340516139,-0.3928653685475803,Big,Stretch Forward,0.089,False
+adamsst01,Steven Adams,HOU,C,C,4.619854869225311,0.8996054855765825,0.892847257351335,Big,Rim-Running Big,0.367,False
+adebaba01,Bam Adebayo,MIA,C,C,0.8988417739804893,0.8875460965422793,-1.4893502061992343,On-Ball Creator,Hub Big,-0.06,True
+agbajoc01,Ochai Agbaji,2TM,SG,SG,0.906405919252576,-2.919535302438529,-0.7342765738361675,Off-Ball Perimeter,Stretch Forward,0.219,False
+aldamsa01,Santi Aldama,MEM,PF,PF,1.0040873934641676,-0.4519236050953188,-1.1581723215171285,Off-Ball Perimeter,Stretch Forward,0.038,True
+alexani01,Nickeil Alexander-Walker,ATL,SG,SG,-1.3724166424762527,0.2958440857397728,0.0639319399881043,On-Ball Creator,Secondary Scoring Wing,0.139,False
+allengr01,Grayson Allen,PHO,SG,SG,-2.124974719653816,0.1874767967309556,0.5902487385526399,On-Ball Creator,Shot-Making Guard,0.034,True
+allenja01,Jarrett Allen,CLE,C,C,3.788739118596244,0.8701603654672845,-1.194757119667735,Big,Rim-Running Big,0.103,False
+alvarjo01,Jose Alvarado,2TM,PG,PG,-2.346817662902025,-0.670809119915877,1.7258393104375145,Off-Ball Perimeter,Defensive Disruptor,-0.0,True
+anderky01,Kyle Anderson,3TM,SF,PF,1.3408542679144275,1.5718965622114034,1.5150104299686655,Big,Hub Big,0.027,True
+antetgi01,Giannis Antetokounmpo,MIL,PF,PF,2.807383321436849,4.262515933663281,-0.6256920235586536,Big,Hub Big,0.212,False
+anthoco01,Cole Anthony,MIL,PG,PG,-1.2765731617759652,2.9863599259951505,1.4992936095905622,On-Ball Creator,Primary Creator,0.11,False
+anunoog01,OG Anunoby,NYK,PF,PF,0.5269480552734764,-1.1551522866013346,0.6802947134218642,Off-Ball Perimeter,Defensive Disruptor,0.049,True
+avdijde01,Deni Avdija,POR,SF,SF,0.7853430364468236,3.0051299102210964,-0.3732293702010568,On-Ball Creator,Primary Creator,0.053,False
+aytonde01,Deandre Ayton,LAL,C,C,3.5678899148695025,-0.0517850220811513,-2.155401108645018,Big,Rim-Running Big,0.175,False
+baglema01,Marvin Bagley III,2TM,PF,C,3.5278043295038106,0.3354770569596456,-0.7670644364841208,Big,Rim-Running Big,0.221,False
+baileac01,Ace Bailey,UTA,SF,SF,-0.6761013589798504,-0.6515760046723788,-1.207033341570111,Off-Ball Perimeter,Secondary Scoring Wing,0.162,False
+ballla01,LaMelo Ball,CHO,PG,PG,-2.203859799418124,2.165773530461688,0.8214335290175583,On-Ball Creator,Primary Creator,0.059,False
+balllo01,Lonzo Ball,CLE,PG,SG,-1.4282659582436656,-0.9809965366590244,3.359397723149108,Off-Ball Perimeter,Defensive Disruptor,0.167,False
+banchpa01,Paolo Banchero,ORL,PF,PF,0.9094127206147256,3.007039712157553,-1.3530939048016446,On-Ball Creator,Hub Big,0.012,True
+banede01,Desmond Bane,ORL,SG,SG,-0.5830726300431822,1.2048417897162589,-0.5473922843731707,On-Ball Creator,Secondary Scoring Wing,0.103,False
+barlodo01,Dominick Barlow,PHI,PF,PF,2.523793676351192,-1.3687118206037103,0.3985322623995861,Big,Stretch Forward,0.16,False
+barneha02,Harrison Barnes,SAS,PF,PF,-1.765192609519412,-2.6203635299105006,-0.4212218720377639,Off-Ball Perimeter,Spot-Up Floor Spacer,0.197,False
+barnesc01,Scottie Barnes,TOR,PF,PF,1.3290406659813525,2.3074515462595,0.3118203345866997,On-Ball Creator,Hub Big,0.146,False
+barrerj01,RJ Barrett,TOR,SF,SG,0.4694821496204794,0.7429101334349277,-1.2894012872279832,On-Ball Creator,Secondary Scoring Wing,0.217,False
+battlja01,Jamison Battle,TOR,SF,SF,-0.2095632913001371,-2.9791034303879265,-1.5778444441938717,Off-Ball Perimeter,Spot-Up Floor Spacer,0.046,True
+batumni01,Nicolas Batum,LAC,PF,PF,-2.505187671102972,-4.886827139309646,1.0620350520220043,Off-Ball Perimeter,Spot-Up Floor Spacer,0.185,False
+beysa01,Saddiq Bey,NOP,SF,SF,-0.557641260390353,-0.1623610894864429,-1.4015748036728848,Off-Ball Perimeter,Secondary Scoring Wing,0.209,False
+bitadgo01,Goga Bitadze,ORL,C,C,4.619402902638903,0.420558243016579,0.6756633643078863,Big,Rim-Running Big,0.382,False
+blackan01,Anthony Black,ORL,PG,SG,-0.08705896930427,0.7578175522122496,0.7290663622722391,On-Ball Creator,Secondary Scoring Wing,0.074,False
+bonaad01,Adem Bona,PHI,C,C,4.938997165061865,-0.5865384712347692,0.4438450629183537,Big,Rim-Running Big,0.38,False
+bookede01,Devin Booker,PHO,SG,SG,-1.651815385642387,3.633837712975264,-1.3126838351127077,On-Ball Creator,Primary Creator,0.187,False
+bouyeja01,Jamaree Bouyea,PHO,PG,PG,-0.8467625635299667,0.9914062347316048,0.3113016956856151,On-Ball Creator,Primary Creator,-0.019,True
+braunch01,Christian Braun,DEN,SG,SG,0.8092318589820743,-1.8741123764499097,-1.117147509149262,Off-Ball Perimeter,Stretch Forward,0.073,False
+bridgmi01,Mikal Bridges,NYK,SF,SF,-1.1724731210021675,-1.1123789573606857,-0.4240116468933003,Off-Ball Perimeter,Secondary Scoring Wing,0.07,False
+bridgmi02,Miles Bridges,CHO,PF,PF,-0.0023766479471162,-0.0756116144958344,-1.4405254482862482,Off-Ball Perimeter,Secondary Scoring Wing,0.129,False
+brookdi01,Dillon Brooks,PHO,SF,PF,-2.3860722985154297,1.605216590004468,-1.3593878773985566,On-Ball Creator,Shot-Making Guard,0.036,True
+brownbr01,Bruce Brown,DEN,SG,SG,0.4279620411854256,-0.3377834011023263,1.2010953345638875,Off-Ball Perimeter,Defensive Disruptor,0.076,False
+brownja02,Jaylen Brown,BOS,SF,SF,-0.6643154894315154,3.672233566606037,-1.0213698278472148,On-Ball Creator,Primary Creator,0.282,False
+brownko01,Kobe Brown,2TM,PF,PF,0.5730813908848581,-1.1637686784642662,0.7190872247864216,Off-Ball Perimeter,Stretch Forward,0.036,True
+brunsja01,Jalen Brunson,NYK,PG,PG,-3.2012917493969533,2.915911586229702,-1.4721643177470227,On-Ball Creator,Shot-Making Guard,0.009,True
+bryanca01,Carter Bryant,SAS,PF,PF,0.5997308304548176,-2.4206253719759765,-1.0744579838852126,Off-Ball Perimeter,Stretch Forward,0.239,False
+bryanth01,Thomas Bryant,CLE,C,C,2.2555703377205565,-1.823173975140481,-1.6947673498632156,Big,Stretch Forward,0.313,False
+butleji01,Jimmy Butler,GSW,SF,PF,0.6590742798231175,2.0650831404594623,0.0721320977220765,On-Ball Creator,Primary Creator,0.015,True
+buzelma01,Matas Buzelis,CHI,PF,PF,1.1719619498676732,-0.5568280693218344,-0.4934164536820842,Off-Ball Perimeter,Stretch Forward,0.16,False
+caldwke01,Kentavious Caldwell-Pope,MEM,SG,SG,-1.7916836105019098,0.3819705198778213,-0.0355870697221608,On-Ball Creator,Shot-Making Guard,-0.024,True
+camarto01,Toumani Camara,POR,PF,PF,-0.5790504524991967,-2.1233375591336165,0.709974640088408,Off-Ball Perimeter,Defensive Disruptor,0.064,False
+capelca01,Clint Capela,HOU,C,C,4.818606061044909,0.06209590244293,0.6689733063986847,Big,Rim-Running Big,0.419,False
+cardwdy01,Dylan Cardwell,SAC,C,C,4.343583544199063,0.0938624942830014,0.5145592136320267,Big,Rim-Running Big,0.334,False
+carrica01,Bub Carrington,WAS,PG,PG,-3.03819200332102,1.5815775303829278,0.3819772899482317,On-Ball Creator,Shot-Making Guard,0.226,False
+cartede02,Devin Carter,SAC,PG,PG,0.1237881358482538,1.874671045358012,1.0997838959810724,On-Ball Creator,Primary Creator,0.168,False
+carteje01,Jevon Carter,2TM,PG,PG,-3.372514979764438,-1.282430889331016,0.5717600762946201,Off-Ball Perimeter,Spot-Up Floor Spacer,0.015,True
+cartewe01,Wendell Carter Jr.,ORL,C,C,1.983236377274223,-0.4081544465237808,-0.8513295368938392,Big,Stretch Forward,0.107,False
+carusal01,Alex Caruso,OKC,SG,SF,-0.4353039887383884,-1.851298206552012,2.239002546051637,Off-Ball Perimeter,Defensive Disruptor,0.275,False
+castlst01,Stephon Castle,SAS,PG,SG,0.2484165008449896,2.88425608500452,1.2427688626271225,On-Ball Creator,Primary Creator,0.221,False
+champju01,Justin Champagnie,WAS,SF,SF,2.1759069742503754,-1.2460714341049386,0.1133246971685941,Big,Stretch Forward,0.217,False
+champju02,Julian Champagnie,SAS,SF,SF,-0.3620889216526993,-3.1081722080358034,-0.8288901568506442,Off-Ball Perimeter,Spot-Up Floor Spacer,0.019,True
+chrisma02,Max Christie,DAL,SG,SG,-2.2870153834041043,-1.4983013781316588,-0.9522269430816844,Off-Ball Perimeter,Spot-Up Floor Spacer,0.09,False
+cissemo01,Moussa Cisse,DAL,C,C,6.178295624843282,-0.2786767898141785,0.2838070323593833,Big,Rim-Running Big,0.391,False
+cissosi01,Sidy Cissoko,POR,SF,SG,-0.2045112863512047,-2.253429631181993,1.5869955869470849,Off-Ball Perimeter,Defensive Disruptor,0.152,False
+clarkja02,Jaylen Clark,MIN,SG,SG,-0.0971593474402559,-2.0591182158683283,0.9382068843177568,Off-Ball Perimeter,Defensive Disruptor,0.122,False
+clarkjo01,Jordan Clarkson,NYK,SG,SG,-1.605172632287741,-0.5618397776916771,-0.6446594197362538,Off-Ball Perimeter,Secondary Scoring Wing,0.095,False
+claxtni01,Nic Claxton,BRK,C,C,3.265962944754218,1.6393323136310076,-0.5680163284977772,Big,Hub Big,-0.033,True
+claytwa01,Walter Clayton,2TM,PG,PG,-1.6966618622436742,1.3661018651965158,1.0419348890447764,On-Ball Creator,Shot-Making Guard,0.094,False
+cliffni01,Nique Clifford,SAC,SG,SG,-0.7665299460654731,0.254718109998534,0.4480435498230696,On-Ball Creator,Secondary Scoring Wing,0.077,False
+clingdo01,Donovan Clingan,POR,C,C,3.710827695961901,-0.1071433959501973,-0.9425328865328588,Big,Rim-Running Big,0.128,False
+clownno01,Noah Clowney,BRK,PF,PF,-0.1480729313637939,-0.9614827321182526,-0.4434120116849706,Off-Ball Perimeter,Secondary Scoring Wing,0.021,True
+colliis01,Isaiah Collier,UTA,PG,PG,-0.8694161806825964,3.170500974702471,1.7503590308004924,On-Ball Creator,Primary Creator,0.195,False
+collijo01,John Collins,LAC,PF,PF,1.377929704635123,-1.2728493195136412,-0.5158714775381592,Off-Ball Perimeter,Stretch Forward,0.19,False
+conlemi01,Mike Conley,MIN,PG,PG,-2.261237694572686,-2.2789449241358475,0.8245928293459067,Off-Ball Perimeter,Spot-Up Floor Spacer,0.149,False
+coopesh01,Sharife Cooper,WAS,PG,PG,-1.1670155007118763,2.0419542068951126,0.7328785906818865,On-Ball Creator,Primary Creator,0.021,True
+coulibi01,Bilal Coulibaly,WAS,SG,SF,0.5493156603182701,0.5965410937263887,0.8355849375579254,On-Ball Creator,Defensive Disruptor,-0.011,True
+cowarce01,Cedric Coward,MEM,SG,SG,0.425751932843064,0.7272090031059518,-0.6061906743009855,On-Ball Creator,Secondary Scoring Wing,0.165,False
+cunnica01,Cade Cunningham,DET,PG,PG,-0.52851558693165,3.826237327966949,0.4102908968841847,On-Ball Creator,Primary Creator,0.31,False
+curryst01,Stephen Curry,GSW,PG,PG,-2.1157156747941213,1.8363102209517357,-0.4444934136089657,On-Ball Creator,Primary Creator,0.047,True
+daniedy01,Dyson Daniels,ATL,SG,SF,1.261118310643781,0.7354366885645706,2.0474948859919646,Big,Defensive Disruptor,0.09,False
+dasiltr01,Tristan Da Silva,ORL,SF,SF,-0.7926921584633831,-1.7155951320259637,-0.2800873382049139,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.012,True
+davisan02,Anthony Davis,DAL,PF,C,2.207876341501444,2.260014157266594,-1.3938659857796167,Big,Hub Big,0.295,False
+demineg01,Egor Dёmin,BRK,PG,PG,-2.0027674003215057,-0.1746219584797073,0.7723399703743158,Off-Ball Perimeter,Shot-Making Guard,0.13,False
+derozde01,DeMar DeRozan,SAC,PF,SF,-2.0020951281513537,2.4431874083850857,-1.7386465981044106,On-Ball Creator,Primary Creator,0.063,False
+diabamo01,Moussa Diabaté,CHO,C,C,4.547941594977854,0.5160017219264663,0.451940488122334,Big,Rim-Running Big,0.422,False
+diawamo01,Mohamed Diawara,NYK,SF,PF,-1.1252016598235606,-1.3546306845746787,-0.2334822805278087,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.015,True
+dickgr01,Gradey Dick,TOR,SG,SF,-0.315566275594271,-1.7274840668700502,-0.5096350995782901,Off-Ball Perimeter,Secondary Scoring Wing,0.081,False
+diengou01,Ousmane Dieng,2TM,C,PF,-1.3819345615359264,1.072048395828897,-0.3591847126638032,On-Ball Creator,Shot-Making Guard,0.122,False
+dilliro01,Rob Dillingham,2TM,PG,PG,-1.531486812576074,2.061744023554685,1.7337375491713498,On-Ball Creator,Primary Creator,0.05,False
+divindo01,Donte DiVincenzo,MIN,SG,SG,-1.8400511591651,-1.7492034889991792,0.924995151972928,Off-Ball Perimeter,Spot-Up Floor Spacer,0.01,True
+doncilu01,Luka Dončić,LAL,PG,PG,-1.532843872255849,4.133397935006054,-0.2617237764968677,On-Ball Creator,Primary Creator,0.254,False
+dortlu01,Luguentz Dort,OKC,SF,PF,-1.3566161547768676,-2.664370212590901,-0.7173285513187682,Off-Ball Perimeter,Spot-Up Floor Spacer,0.232,False
+dosunay01,Ayo Dosunmu,2TM,SG,SG,-0.5393524486438425,0.1986669028963378,0.1571740426764314,On-Ball Creator,Secondary Scoring Wing,0.17,False
+drumman01,Andre Drummond,PHI,C,C,3.3587390981779586,-1.0447299647447552,0.8668037408432556,Big,Stretch Forward,0.099,False
+dunnkr01,Kris Dunn,LAC,PG,PG,-1.2658733894721652,-0.3422319659683777,2.996344970494912,Off-Ball Perimeter,Defensive Disruptor,0.198,False
+dunnry01,Ryan Dunn,PHO,SF,PF,0.912897938174096,-2.1715435842727397,1.5729964100816065,Off-Ball Perimeter,Defensive Disruptor,0.037,True
+duranke01,Kevin Durant,HOU,SF,SF,-1.357170627677904,2.7761780923284256,-1.7156049743694142,On-Ball Creator,Primary Creator,0.086,False
+durenja01,Jalen Duren,DET,C,C,4.188919806372868,1.5907847657433674,-1.016338112340751,Big,Rim-Running Big,0.103,False
+easonta01,Tari Eason,HOU,PF,SF,0.2164306619244961,-0.9065673118740328,0.7915267800415344,Off-Ball Perimeter,Defensive Disruptor,0.07,False
+edgecvj01,VJ Edgecombe,PHI,SG,SG,-0.5218027112720883,1.0307252772039597,0.1868237885972354,On-Ball Creator,Secondary Scoring Wing,0.031,True
+edwaran01,Anthony Edwards,MIN,SG,SG,-1.0699750328912268,2.6986316388210443,-0.7065603343793343,On-Ball Creator,Primary Creator,0.246,False
+edwarju01,Justin Edwards,PHI,SF,SF,-1.862202953440367,-0.8232181557162411,0.8892501862726397,Off-Ball Perimeter,Defensive Disruptor,0.046,True
+elliske01,Keon Ellis,2TM,SG,SG,-0.992853021430976,-3.0961830227596727,0.602402851125666,Off-Ball Perimeter,Spot-Up Floor Spacer,0.016,True
+embiijo01,Joel Embiid,PHI,C,C,1.353138023409578,3.115882279331489,-2.8941789776094646,On-Ball Creator,Hub Big,0.169,False
+eubandr01,Drew Eubanks,SAC,C,C,3.284773106135487,-0.061506304113047,-1.1331977362245929,Big,Rim-Running Big,0.19,False
+fearsje01,Jeremiah Fears,NOP,PG,PG,-0.2404334974537311,2.203717017798287,0.7746015366952574,On-Ball Creator,Primary Creator,0.231,False
+filipky01,Kyle Filipowski,UTA,C,C,1.8214988538993115,0.1129705705092857,0.6171592916947051,Big,Stretch Forward,0.071,False
+finnedo01,Dorian Finney-Smith,HOU,PF,SF,-0.9390155593010268,-3.777636674198277,1.2452364412696943,Off-Ball Perimeter,Spot-Up Floor Spacer,0.063,False
+flaggco01,Cooper Flagg,DAL,SF,PF,0.1785851717608716,2.721823297232468,-0.8542938162542253,On-Ball Creator,Primary Creator,0.134,False
+flemira01,Rasheer Fleming,PHO,PF,PF,0.9653073729127774,-3.5699471390569477,-0.002044553378412,Off-Ball Perimeter,Stretch Forward,0.161,False
+fontesi01,Simone Fontecchio,MIA,SF,PF,-0.8285004650718124,-2.000459977822836,-0.5297887319266703,Off-Ball Perimeter,Spot-Up Floor Spacer,0.058,False
+foxde01,De'Aaron Fox,SAS,PG,PG,-1.869253805042163,2.252969412112844,0.4277384847134619,On-Ball Creator,Primary Creator,0.148,False
+furphjo01,Johnny Furphy,IND,SG,SG,1.3672317103608065,-2.1412782199009546,0.802941834806423,Off-Ball Perimeter,Stretch Forward,0.115,False
+gaffoda01,Daniel Gafford,DAL,C,C,4.70569661731968,0.5988652038928872,0.205153961091521,Big,Rim-Running Big,0.421,False
+garlada01,Darius Garland,2TM,PG,PG,-2.8873779422719363,2.358053268598625,0.6611447127239354,On-Ball Creator,Shot-Making Guard,0.067,False
+garzalu01,Luka Garza,BOS,C,C,2.142736860222332,-0.4015076952182168,-0.8508203581320714,Big,Stretch Forward,0.094,False
+georgke01,Keyonte George,UTA,PG,PG,-1.870134520512364,2.496015255133932,-0.5605448696526695,On-Ball Creator,Primary Creator,0.109,False
+georgky01,Kyshawn George,WAS,SF,PF,-0.7753932054642414,1.889712897041552,0.4244522354484313,On-Ball Creator,Primary Creator,0.124,False
+georgpa01,Paul George,PHI,PF,PF,-1.8874567493235312,1.3819409960717577,0.120717999461921,On-Ball Creator,Primary Creator,0.071,False
+giddejo01,Josh Giddey,CHI,PG,PG,0.4432804754410632,2.7588441384090245,1.113273410389839,On-Ball Creator,Primary Creator,0.122,False
+gilgesh01,Shai Gilgeous-Alexander,OKC,PG,PG,-0.9648687292439696,4.192187335645181,-0.9285944699605,On-Ball Creator,Primary Creator,0.275,False
+gillan01,Anthony Gill,WAS,PF,C,1.9195053302345613,-1.2199249131806509,0.6023387037028402,Big,Stretch Forward,0.118,False
+gilleco01,Collin Gillespie,PHO,PG,PG,-2.7825003347815733,0.2942756571788807,0.8490292437892616,On-Ball Creator,Shot-Making Guard,0.21,False
+goberru01,Rudy Gobert,MIN,C,C,5.2851050628137,0.3354008235845234,-0.1725210565012398,Big,Rim-Running Big,0.447,False
+gonzahu01,Hugo González,BOS,SF,SF,1.0962720263737675,-2.861481140093008,1.0354400240449892,Off-Ball Perimeter,Stretch Forward,0.058,False
+goodwjo01,Jordan Goodwin,PHO,PG,SG,-0.6204053281571847,-0.7747422865212882,1.7714229693988135,Off-Ball Perimeter,Defensive Disruptor,0.196,False
+gordoaa01,Aaron Gordon,DEN,PF,PF,0.6094907633269935,0.370721610930738,-2.253584792592769,Off-Ball Perimeter,Secondary Scoring Wing,0.186,False
+grantje01,Jerami Grant,POR,PF,SF,-0.2495885863507992,0.0727271932772159,-0.5193148621389954,Off-Ball Perimeter,Secondary Scoring Wing,0.195,False
+greenaj01,A.J. Green,MIL,SG,SG,-3.600163599285178,-3.345338152111707,-1.1252511052411192,Off-Ball Perimeter,Spot-Up Floor Spacer,0.295,False
+greendr01,Draymond Green,GSW,PF,PF,0.2739312136316098,-0.8982953888994757,2.0027568320765017,Off-Ball Perimeter,Defensive Disruptor,0.064,False
+greenja02,Javonte Green,DET,SG,SG,0.5129644290045396,-2.8640580311007318,0.9105613620032896,Off-Ball Perimeter,Defensive Disruptor,0.054,False
+greenja05,Jalen Green,PHO,SG,SG,-1.707846396819767,1.8931408483025864,-0.0487837997679844,On-Ball Creator,Primary Creator,0.135,False
+greenjo02,Josh Green,CHO,SG,SG,-1.4002984366730855,-4.118926051248449,2.032045353710655,Off-Ball Perimeter,Spot-Up Floor Spacer,0.026,True
+grimequ01,Quentin Grimes,PHI,SG,SG,-0.5168570576127524,0.1507965089212694,0.0369976613745543,Off-Ball Perimeter,Secondary Scoring Wing,0.222,False
+gueyemo02,Mouhamed Gueye,ATL,PF,PF,1.532638434340628,-2.5164900986224654,0.6803630877237519,Off-Ball Perimeter,Stretch Forward,0.095,False
+hachiru01,Rui Hachimura,LAL,PF,PF,-1.176842093445619,-2.467774786969512,-2.7815490727103898,Off-Ball Perimeter,Spot-Up Floor Spacer,0.072,False
+hardati02,Tim Hardaway Jr.,DEN,SG,SG,-2.860086359148611,-2.27208188107347,-3.163849637615874,Off-Ball Perimeter,Spot-Up Floor Spacer,0.152,False
+hardeja01,James Harden,2TM,PG,SG,-1.470693605349657,3.3643021014023686,0.405044813353132,On-Ball Creator,Primary Creator,0.217,False
+hardyja02,Jaden Hardy,2TM,SG,SG,-2.872340200720877,-0.3990735088527523,-1.2734006974591845,Off-Ball Perimeter,Shot-Making Guard,0.085,False
+harklej01,Elijah Harkless,UTA,SG,SG,-1.4727529864799944,0.0430809397332363,1.601931462163675,On-Ball Creator,Defensive Disruptor,0.05,True
+harpedy01,Dylan Harper,SAS,SG,SG,-0.1360505386032935,1.7274589356312686,0.5180797847769714,On-Ball Creator,Primary Creator,0.108,False
+harriga01,Gary Harris,MIL,SG,SG,-2.026937629876084,-3.163355651576827,2.063286849446104,Off-Ball Perimeter,Spot-Up Floor Spacer,0.024,True
+harrito02,Tobias Harris,DET,PF,PF,-0.5084029381597134,0.1141373157899997,-1.1283414491259631,Off-Ball Perimeter,Secondary Scoring Wing,0.261,False
+harteis01,Isaiah Hartenstein,OKC,C,C,3.915624003874357,1.7462479065257306,0.9793209001825044,Big,Hub Big,-0.051,True
+hartjo01,Josh Hart,NYK,SF,SF,0.5948177789302379,0.354012170500441,1.0029796060354497,Off-Ball Perimeter,Defensive Disruptor,-0.008,True
+hausesa01,Sam Hauser,BOS,PF,PF,-2.329067929656643,-3.6217354517073086,-2.4294576600176896,Off-Ball Perimeter,Spot-Up Floor Spacer,0.281,False
+hawkijo01,Jordan Hawkins,NOP,SG,SG,-1.6522398732609376,-0.6905730495543584,-1.766523572227966,Off-Ball Perimeter,Secondary Scoring Wing,0.044,True
+hayesja02,Jaxson Hayes,LAL,C,C,4.612411707133609,-0.6447240743218021,-1.3257934900687498,Big,Rim-Running Big,0.329,False
+hendesc01,Scoot Henderson,POR,PG,PG,-1.3372283036344004,1.670374392484394,0.7805897491008752,On-Ball Creator,Primary Creator,0.091,False
+hendrta01,Taylor Hendricks,2TM,PF,C,0.9561048242594402,-2.279549392694175,0.5967166769797221,Off-Ball Perimeter,Stretch Forward,0.093,False
+herroty01,Tyler Herro,MIA,SG,SG,-1.9725101753195051,1.482037409312869,-1.8951048906486248,On-Ball Creator,Shot-Making Guard,0.07,False
+hieldbu01,Buddy Hield,2TM,SG,SF,-1.378710590196549,-0.9907081916144852,0.8515932662062605,Off-Ball Perimeter,Defensive Disruptor,0.097,False
+holidaa01,Aaron Holiday,HOU,PG,PG,-3.5567564815994244,-0.9008105877843076,0.8586164977285707,Off-Ball Perimeter,Shot-Making Guard,0.105,False
+holidjr01,Jrue Holiday,POR,PG,PG,-2.0207246930485194,1.6734462417609062,1.126550987914264,On-Ball Creator,Shot-Making Guard,0.062,False
+hollaro01,Ron Holland,DET,SF,PF,1.182429263510994,-0.8633769310223259,1.5075349496937782,Off-Ball Perimeter,Defensive Disruptor,0.106,False
+holmgch01,Chet Holmgren,OKC,PF,C,2.628837336163154,0.4958689825263536,-1.9791069209316687,Big,Hub Big,0.067,False
+horfoal01,Al Horford,GSW,C,C,-0.039010387277553,-1.6670970018117195,-0.1733716583918217,Off-Ball Perimeter,Stretch Forward,0.092,False
+howarje01,Jett Howard,ORL,SF,SF,-0.9818190678177844,-2.3954702365633342,-2.709780905849596,Off-Ball Perimeter,Spot-Up Floor Spacer,0.107,False
+huertke01,Kevin Huerter,2TM,SF,SF,-0.6242344750583073,-1.0166506396152846,0.1179330614069177,Off-Ball Perimeter,Defensive Disruptor,-0.008,True
+huffja01,Jay Huff,IND,C,C,1.3968490478361424,-1.887109165144314,-1.133955923219677,Off-Ball Perimeter,Stretch Forward,0.247,False
+huntede01,De'Andre Hunter,2TM,SF,SF,-1.1289606422874876,0.2245550144563446,-1.3905578662325264,On-Ball Creator,Secondary Scoring Wing,0.213,False
+hylanbo01,Bones Hyland,MIN,PG,PG,-1.9142385551503205,0.4711154644067706,0.8244884766563667,On-Ball Creator,Shot-Making Guard,0.129,False
+ighodos01,Oso Ighodaro,PHO,PF,C,3.4966959350649334,0.9249010570200522,1.4189009737406142,Big,Rim-Running Big,0.185,False
+ingrabr01,Brandon Ingram,TOR,SF,SF,-0.747392024834318,2.2765878464464477,-1.762008467733595,On-Ball Creator,Primary Creator,0.064,False
+isaacjo01,Jonathan Isaac,ORL,PF,PF,2.963286425266192,-1.538714438610744,0.2800245203544956,Big,Stretch Forward,0.137,False
+iveyja01,Jaden Ivey,2TM,SG,SG,-0.7557529130883465,0.0122782218415602,-0.0430426455249312,Off-Ball Perimeter,Secondary Scoring Wing,0.146,False
+jacksgg01,GG Jackson II,MEM,PF,C,1.3870394737691776,0.166240170783665,-0.6748443265118634,Big,Stretch Forward,0.06,False
+jacksis01,Isaiah Jackson,2TM,C,C,4.502218849899193,0.9401248098912268,0.9112503008866978,Big,Rim-Running Big,0.346,False
+jacksja02,Jaren Jackson Jr.,2TM,C,PF,0.4604349533240974,0.9026995265942868,-0.9312383912108608,On-Ball Creator,Secondary Scoring Wing,0.095,False
+jacksqu01,Quenton Jackson,IND,PG,PG,-0.1763521027409952,1.2093954787941343,0.5029742649748014,On-Ball Creator,Secondary Scoring Wing,0.047,True
+jakucka01,Kasparas Jakučionis,MIA,PG,PG,-0.9382157313280324,-0.9387233480951148,1.799615564528723,Off-Ball Perimeter,Defensive Disruptor,0.139,False
+jamesle01,LeBron James,LAL,SF,SF,0.1598489716669186,2.8750935601543186,0.0722579656187556,On-Ball Creator,Primary Creator,0.189,False
+jamessi01,Sion James,CHO,SG,SG,-0.3941298568048994,-1.9706090598816568,1.0141211927993825,Off-Ball Perimeter,Defensive Disruptor,0.083,False
+jaqueja01,Jaime Jaquez Jr.,MIA,SF,PF,0.0424036911464757,1.6425547670874632,-0.370968853168916,On-Ball Creator,Primary Creator,-0.018,True
+jenkida01,Daniss Jenkins,DET,PG,PG,-1.3468767827919632,2.043922340450904,1.2275679373730346,On-Ball Creator,Primary Creator,0.13,False
+joeis01,Isaiah Joe,OKC,SG,PG,-2.0552288442545468,-2.4781154168118857,-1.3316339063389484,Off-Ball Perimeter,Spot-Up Floor Spacer,0.221,False
+johnsca02,Cameron Johnson,DEN,SF,PF,-0.7528590442214224,-1.6990332309505691,-1.2082576426763645,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.034,True
+johnsja05,Jalen Johnson,ATL,SF,PF,0.5634362331811436,3.161113388363362,-0.078685939449629,On-Ball Creator,Primary Creator,0.043,True
+johnske04,Keldon Johnson,SAS,SF,SF,0.8222334069093024,-1.248802935429919,-1.075916690950657,Off-Ball Perimeter,Stretch Forward,0.057,False
+johnstr03,Tre Johnson,WAS,SG,SG,-2.4126148342603733,0.6180405133826725,-1.2082394915386647,On-Ball Creator,Shot-Making Guard,0.162,False
+jokicni01,Nikola Jokić,DEN,C,C,1.6543264166617269,3.492744066727532,0.1837222364002527,On-Ball Creator,Hub Big,0.151,False
+jonesde02,Derrick Jones Jr.,LAC,SF,SF,1.0949005904448803,-2.1748703565459717,-0.2245782553817617,Off-Ball Perimeter,Stretch Forward,0.169,False
+joneshe01,Herbert Jones,NOP,SF,SG,-0.91429744542188,-1.140651986452608,1.7445365056689328,Off-Ball Perimeter,Defensive Disruptor,0.264,False
+joneska03,Kam Jones,IND,SG,SG,-2.780813256363207,-0.0696223002305305,1.8566835795972785,On-Ball Creator,Shot-Making Guard,0.188,False
+jonessp01,Spencer Jones,DEN,SF,PF,0.7593312958478989,-4.0454867522876645,0.6984865948732165,Off-Ball Perimeter,Stretch Forward,0.055,False
+jonestr01,Tre Jones,CHI,PG,PG,-0.1435887749091248,1.4622826744594546,0.9433948342279964,On-Ball Creator,Primary Creator,0.014,True
+jonesty01,Tyus Jones,3TM,PG,PG,-3.9326917375224446,-1.713087924631957,0.7985140584315286,Off-Ball Perimeter,Spot-Up Floor Spacer,0.042,True
+jovicni01,Nikola Jović,MIA,PF,PF,0.3162155815852071,-0.2141149136167232,0.2878478631179308,Off-Ball Perimeter,Secondary Scoring Wing,0.032,True
+kalkbry01,Ryan Kalkbrenner,CHO,C,C,4.913789537821178,-0.6242400687499192,-0.0432064144735527,Big,Rim-Running Big,0.428,False
+kennalu01,Luke Kennard,2TM,SG,SG,-2.25005294372733,-1.291107623838525,-0.139594849848733,Off-Ball Perimeter,Spot-Up Floor Spacer,0.06,False
+kispeco01,Corey Kispert,2TM,SF,SF,-0.5610477962263833,-1.7298574932854451,-1.7707306992291476,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.012,True
+knechda01,Dalton Knecht,LAL,SF,SG,-0.755012304836554,-1.9711800181526573,-1.610811615682281,Off-Ball Perimeter,Spot-Up Floor Spacer,0.042,True
+knuepko01,Kon Knueppel,CHO,SF,SF,-1.0558508561575493,-0.1701705140516247,-0.781230319144313,Off-Ball Perimeter,Secondary Scoring Wing,0.158,False
+kolekty01,Tyler Kolek,NYK,PG,PG,-1.9710142143336888,1.4033650565287532,1.2502335262196362,On-Ball Creator,Shot-Making Guard,0.152,False
+konchjo01,John Konchar,2TM,SG,SF,1.4266924063871012,-2.09162002927039,2.7285400867202854,Off-Ball Perimeter,Defensive Disruptor,0.143,False
+kornelu01,Luke Kornet,SAS,C,C,4.504432764712284,-0.5800374968823683,-1.138419734115261,Big,Rim-Running Big,0.311,False
+krejcvi01,Vít Krejčí,2TM,PG,PG,-1.785172663935593,-3.2849419966435893,-0.6865079273370188,Off-Ball Perimeter,Spot-Up Floor Spacer,0.312,False
+kuminjo01,Jonathan Kuminga,2TM,PF,PF,0.8236497655372812,1.3941173793810755,-0.3002269847994415,On-Ball Creator,Hub Big,-0.058,True
+kuzmaky01,Kyle Kuzma,MIL,PF,SF,0.5591266291352172,0.3585071087969044,-0.3313731967723202,Off-Ball Perimeter,Secondary Scoring Wing,0.154,False
+landajo01,Jock Landale,2TM,C,C,1.7376276736905858,-0.8529208937641248,-1.293520687542978,Big,Stretch Forward,0.182,False
+laravja01,Jake LaRavia,LAL,PF,SF,0.7930512486511339,-1.7660683961728498,1.379660432292849,Off-Ball Perimeter,Defensive Disruptor,0.124,False
+larsspe01,Pelle Larsson,MIA,SG,SF,0.5355863646817592,0.0284433375179391,0.0872156163552503,Off-Ball Perimeter,Secondary Scoring Wing,0.146,False
+lavinza01,Zach LaVine,SAC,SG,SG,-2.179378790913959,0.4801586454896908,-1.5277758556201186,On-Ball Creator,Shot-Making Guard,-0.022,True
+leonaka01,Kawhi Leonard,LAC,SF,SF,-0.9263595889130904,2.97645222334638,-0.5853878149657071,On-Ball Creator,Primary Creator,0.202,False
+leverca01,Caris LeVert,DET,SG,SF,-0.7756959702064169,0.6439423655270146,1.344405572772315,On-Ball Creator,Defensive Disruptor,0.007,True
+lopezbr01,Brook Lopez,LAC,C,C,-0.15914683371153,-1.106092587161687,-1.066166538068399,Off-Ball Perimeter,Stretch Forward,0.004,True
+loveca01,Caleb Love,POR,SG,PG,-2.711749232142989,0.2760740981498089,-0.3935284607236782,On-Ball Creator,Shot-Making Guard,0.201,False
+loveke01,Kevin Love,UTA,PF,PF,0.6385516768471403,-1.1602706667847504,-0.6267514390440778,Off-Ball Perimeter,Stretch Forward,0.131,False
+mamuksa01,Sandro Mamukelashvili,TOR,C,C,1.6443272157968178,-1.135214897499042,-0.4462281355049595,Off-Ball Perimeter,Stretch Forward,0.238,False
+mannte01,Terance Mann,BRK,SG,SG,-0.655497246136871,-0.0754714219536347,0.83866224536397,Off-Ball Perimeter,Secondary Scoring Wing,0.048,True
+manntr01,Tre Mann,CHO,PG,PG,-2.282694664671657,1.06731411399134,0.7929169972197065,On-Ball Creator,Shot-Making Guard,0.157,False
+markkla01,Lauri Markkanen,UTA,PF,PF,0.5408721246268816,-0.0368574368141314,-2.3671192817993263,Off-Ball Perimeter,Secondary Scoring Wing,0.135,False
+marshna01,Naji Marshall,DAL,SF,SF,-0.8222427848713517,1.1130096191183134,-0.0081445480592714,On-Ball Creator,Secondary Scoring Wing,0.096,False
+martica02,Caleb Martin,DAL,SF,SG,0.450040697271727,0.0006259839066058,1.4297643038795635,Off-Ball Perimeter,Defensive Disruptor,0.064,False
+martity01,Tyrese Martin,2TM,SG,SG,-1.2540105315875856,-0.6959796142935873,0.5653195427035296,Off-Ball Perimeter,Defensive Disruptor,-0.006,True
+mashaja01,Jahmai Mashack,MEM,SG,SF,0.3733715204962455,-0.2478673737328675,2.3105688010869296,Off-Ball Perimeter,Defensive Disruptor,0.202,False
+mathube01,Bennedict Mathurin,2TM,SF,SF,0.1581892349996936,1.7723646469997478,-1.2590279059686875,On-Ball Creator,Secondary Scoring Wing,0.071,False
+matkoka01,Karlo Matković,NOP,PF,PF,2.6274967452595885,-2.448296698086119,0.1044161959547634,Big,Stretch Forward,0.304,False
+maxeyty01,Tyrese Maxey,PHI,PG,PG,-1.523029653644595,2.4636917834633807,-0.1186364775532948,On-Ball Creator,Primary Creator,0.2,False
+mcbrimi01,Miles McBride,NYK,SG,SG,-3.3527583928538163,-1.1054915557756189,-0.7052025831122177,Off-Ball Perimeter,Spot-Up Floor Spacer,0.019,True
+mccaija01,Jared McCain,2TM,SG,SG,-2.417966106373832,-0.1231186454107328,-0.3946104072987424,On-Ball Creator,Shot-Making Guard,0.069,False
+mccolcj01,CJ McCollum,2TM,PG,PG,-1.909143001059137,1.4986895337483694,-1.087149347787851,On-Ball Creator,Shot-Making Guard,0.047,True
+mccontj01,T.J. McConnell,IND,PG,PG,-2.267840674949638,3.32285329425058,1.0109100619470928,On-Ball Creator,Primary Creator,0.074,False
+mcdanja02,Jaden McDaniels,MIN,PF,SF,0.1343148164234424,0.0768424246269665,-0.0645167430771456,Off-Ball Perimeter,Secondary Scoring Wing,0.166,False
+mcgowbr01,Bryce McGowens,NOP,SG,SG,-0.6470534220160773,-1.3708601218017389,-1.15397955154129,Off-Ball Perimeter,Secondary Scoring Wing,0.097,False
+meltode01,De'Anthony Melton,GSW,PG,PG,-0.802480605313646,0.954602782606634,1.6147068167523095,On-Ball Creator,Primary Creator,0.013,True
+merrisa01,Sam Merrill,CLE,SG,SF,-2.5586027695176004,-2.4167063413982803,-1.468884612915241,Off-Ball Perimeter,Spot-Up Floor Spacer,0.262,False
+middlkh01,Khris Middleton,2TM,SF,PF,-1.7388535403304803,1.689248069456922,-0.3544326687411455,On-Ball Creator,Shot-Making Guard,0.057,False
+millebr02,Brandon Miller,CHO,SF,SF,-0.8786743854834329,1.3300880616905593,-0.4153205984670818,On-Ball Creator,Primary Creator,0.019,True
+millejo02,Jordan Miller,LAC,SF,SG,0.297128847986503,0.9196219674103376,0.316556604480898,On-Ball Creator,Secondary Scoring Wing,0.129,False
+millele01,Leonard Miller,2TM,SF,SF,1.928380298266069,-1.5589806272301576,-0.5972211022323631,Off-Ball Perimeter,Stretch Forward,0.317,False
+minotjo01,Josh Minott,2TM,PF,PF,0.8484341375776099,-1.5996379509496306,1.3614182982862677,Off-Ball Perimeter,Defensive Disruptor,0.075,False
+missiyv01,Yves Missi,NOP,C,C,4.494380512070734,0.106397028245714,-0.9643347230617058,Big,Rim-Running Big,0.357,False
+mitchaj01,Ajay Mitchell,OKC,SG,SF,-0.8772180105305488,1.5320582121207535,0.6559403033684724,On-Ball Creator,Primary Creator,0.121,False
+mitchda01,Davion Mitchell,MIA,PG,PG,-2.136176739150309,0.887415850610546,1.6861089801855125,On-Ball Creator,Shot-Making Guard,0.186,False
+mitchdo01,Donovan Mitchell,CLE,SG,SG,-1.650515235748903,2.7263913234431514,0.0379800999223454,On-Ball Creator,Primary Creator,0.261,False
+mobleev01,Evan Mobley,CLE,PF,C,2.725972911623628,1.1222913949717452,-1.4078146758701382,Big,Hub Big,0.158,False
+monkma01,Malik Monk,SAC,SG,SG,-2.438986170076892,0.9823504099385464,-0.706029997612322,On-Ball Creator,Shot-Making Guard,0.181,False
+moodymo01,Moses Moody,GSW,SG,SF,-1.117329874649611,-2.0325675714499605,-0.3716858568171161,Off-Ball Perimeter,Spot-Up Floor Spacer,0.09,False
+moranja01,Ja Morant,MEM,PG,PG,-1.5457367640524522,4.1129292181211135,0.4084416357877561,On-Ball Creator,Primary Creator,0.271,False
+murphtr02,Trey Murphy III,NOP,SF,SF,-0.4460370392699574,0.0781113696706926,-0.536355198765828,Off-Ball Perimeter,Secondary Scoring Wing,0.213,False
+murraco01,Collin Murray-Boyles,TOR,PF,PF,3.4993686159606936,-0.313034081840867,0.5101845726716245,Big,Rim-Running Big,0.199,False
+murraja01,Jamal Murray,DEN,PG,PG,-2.210553283662273,2.598518120689253,-1.3871535242618316,On-Ball Creator,Primary Creator,0.057,False
+murrake02,Keegan Murray,SAC,PF,PF,-0.3523608179945483,-0.1253599423015072,-1.9197307731034896,Off-Ball Perimeter,Secondary Scoring Wing,0.14,False
+murrakr01,Kris Murray,POR,SF,SG,1.168800598698302,-2.802819835355107,1.7000517780274005,Off-Ball Perimeter,Defensive Disruptor,0.008,True
+mykhasv01,Svi Mykhailiuk,UTA,SF,SG,-2.460861397622436,-2.786492009725209,-0.2000073926491864,Off-Ball Perimeter,Spot-Up Floor Spacer,0.274,False
+nancepe01,Pete Nance,MIL,PF,PF,-0.0629693502886745,-3.001361102780299,-0.4729085564313639,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.048,True
+nembhan01,Andrew Nembhard,IND,PG,PG,-2.6151241308598703,2.907994769792212,-0.1236572817341778,On-Ball Creator,Shot-Making Guard,-0.019,True
+nembhry01,Ryan Nembhard,DAL,PG,PG,-3.613130547372708,2.4126948173603746,0.166140075789705,On-Ball Creator,Shot-Making Guard,0.182,False
+nesmiaa01,Aaron Nesmith,IND,SF,SF,-0.5340379424555084,-1.3354054609105943,-2.000565621157003,Off-Ball Perimeter,Secondary Scoring Wing,0.085,False
+newelas01,Asa Newell,ATL,PF,PF,1.4888851751243004,-2.5767850525901874,0.4228794575244615,Off-Ball Perimeter,Stretch Forward,0.202,False
+nnajize01,Zeke Nnaji,DEN,PF,C,2.596115102887292,-1.5378199120455285,-0.3115530277366231,Big,Stretch Forward,0.169,False
+nurkiju01,Jusuf Nurkić,UTA,C,C,2.7579463876895502,1.8248819304575312,1.4101171166722235,Big,Hub Big,0.148,False
+okogijo01,Josh Okogie,HOU,SG,SG,0.0044367096905767,-2.9340348688813918,1.5628748106616843,Off-Ball Perimeter,Defensive Disruptor,0.142,False
+okongon01,Onyeka Okongwu,ATL,C,C,1.424588081051302,-0.7316058483200488,-0.1294285575655454,Off-Ball Perimeter,Stretch Forward,0.215,False
+okorois01,Isaac Okoro,CHI,SG,SF,0.2534525358198442,-3.089483487875109,-0.042206199163463,Off-Ball Perimeter,Stretch Forward,0.064,False
+onealro01,Royce O'Neale,PHO,SF,SF,-1.7885058033342698,-2.20343221186287,1.1587781283603091,Off-Ball Perimeter,Spot-Up Floor Spacer,0.04,True
+oubreke01,Kelly Oubre Jr.,PHI,SF,SF,0.0053123497558893,-0.7176125908995902,0.1233718794297639,Off-Ball Perimeter,Secondary Scoring Wing,0.036,True
+paytoga02,Gary Payton II,GSW,SG,SG,1.6929506399343388,-1.3219795071651794,1.66898112497449,Off-Ball Perimeter,Defensive Disruptor,0.007,True
+peavymi01,Micah Peavy,NOP,SG,SF,-0.6019569800234527,-2.0110412033396416,0.2499719675940291,Off-Ball Perimeter,Defensive Disruptor,0.049,True
+pendano01,Noah Penda,ORL,SF,SF,1.1433232238437898,-0.5908469667480247,1.602078340115458,Off-Ball Perimeter,Defensive Disruptor,0.052,False
+pickeja02,Jalen Pickett,DEN,SG,PG,-2.323612153680611,-0.3719315689803035,-0.8321884639767227,Off-Ball Perimeter,Shot-Making Guard,0.128,False
+plowdda01,Daeqwon Plowden,SAC,SG,SF,-1.067782373004375,-2.9631576761255944,-0.9245290015755002,Off-Ball Perimeter,Spot-Up Floor Spacer,0.223,False
+podzibr01,Brandin Podziemski,GSW,SG,SG,-0.9395801662425076,1.103811743074382,-0.1826076363456586,On-Ball Creator,Secondary Scoring Wing,0.074,False
+poeltja01,Jakob Poeltl,TOR,C,C,3.703521480642312,0.7917655214025946,-0.0548339926512883,Big,Rim-Running Big,0.21,False
+poolejo01,Jordan Poole,NOP,PG,SG,-2.184262510967756,0.6052630832158883,-0.5546130887890885,On-Ball Creator,Shot-Making Guard,0.102,False
+portecr01,Craig Porter Jr.,CLE,PG,PG,0.6420613542754653,0.2410427149397511,2.232553187280081,Off-Ball Perimeter,Defensive Disruptor,0.164,False
+porteke02,Kevin Porter Jr.,MIL,PG,SG,-0.5785589098945055,3.335690248589679,1.8579656884948528,On-Ball Creator,Primary Creator,0.308,False
+portemi01,Michael Porter Jr.,BRK,SF,SF,-0.4701055288950317,1.1646373517024269,-1.26005526294272,On-Ball Creator,Secondary Scoring Wing,0.109,False
+portibo01,Bobby Portis,MIL,PF,PF,-0.960734393949659,-0.2689516804663224,-2.194788338356945,Off-Ball Perimeter,Secondary Scoring Wing,0.161,False
+porzikr01,Kristaps Porziņģis,2TM,C,C,0.6955860283566488,1.5294613795708512,-2.545081432102556,On-Ball Creator,Hub Big,0.015,True
+postqu01,Quinten Post,GSW,PF,C,0.0219029296459676,-1.9077839927830185,-0.8626757247506132,Off-Ball Perimeter,Stretch Forward,0.149,False
+pottemi01,Micah Potter,IND,C,C,1.1326805091980965,-1.6417260567334395,-0.4093562868887634,Off-Ball Perimeter,Stretch Forward,0.215,False
+poweldr01,Drake Powell,BRK,SG,PG,-1.7492029065042989,-0.378199925781328,0.0836953614135987,Off-Ball Perimeter,Shot-Making Guard,0.005,True
+poweldw01,Dwight Powell,DAL,C,C,4.975670948979966,-0.1848391192121112,1.8809376452183115,Big,Rim-Running Big,0.294,False
+powelno01,Norman Powell,MIA,SG,SG,-1.3350593930640364,0.902550369210318,-0.9810454721359811,On-Ball Creator,Secondary Scoring Wing,0.126,False
+princta02,Taurean Prince,MIL,SF,SF,-3.3242953174179526,-2.3885257476599038,0.0731800129828837,Off-Ball Perimeter,Spot-Up Floor Spacer,0.168,False
+pritcpa01,Payton Pritchard,BOS,PG,PG,-3.0039852602066164,1.3387740086778952,-1.2287382970931993,On-Ball Creator,Shot-Making Guard,0.215,False
+proctty01,Tyrese Proctor,CLE,PG,PG,-2.5501475179333384,0.8064985809414712,1.2218338637338086,On-Ball Creator,Shot-Making Guard,0.122,False
+prospol01,Olivier-Maxence Prosper,MEM,PF,PF,1.3823379248887844,-1.4018215617153709,-5.107473913611745e-05,Off-Ball Perimeter,Stretch Forward,0.16,False
+queende01,Derik Queen,NOP,C,C,2.2328535683842814,2.798675305109024,0.987394029655124,Big,Hub Big,0.205,False
+quetane01,Neemias Queta,BOS,C,C,4.340701923800369,0.2180126538941177,-0.3733690225027949,Big,Rim-Running Big,0.373,False
+quickim01,Immanuel Quickley,TOR,PG,PG,-2.7418041043588013,1.2287018354309909,-0.1138208068177118,On-Ball Creator,Shot-Making Guard,0.095,False
+randlju01,Julius Randle,MIN,PF,PF,0.1019837985969039,2.5325325596374104,-0.2343579531721832,On-Ball Creator,Primary Creator,0.144,False
+raynama01,Maxime Raynaud,SAC,C,C,2.1346898794756357,-0.0143004047347217,-2.276618365623399,Big,Hub Big,0.0,True
+reaveau01,Austin Reaves,LAL,SG,SG,-0.9499976862526166,2.5540129117525137,-0.0083972814402012,On-Ball Creator,Primary Creator,0.252,False
+reedpa01,Paul Reed,DET,C,C,3.479311640042642,0.945342200568736,0.8655792477670545,Big,Hub Big,0.012,True
+reidna01,Naz Reid,MIN,C,C,0.1286896452049585,-0.610298569845403,0.0105544005960395,Off-Ball Perimeter,Stretch Forward,0.053,False
+richaja02,Jase Richardson,ORL,SG,SG,-1.3511055756550208,-0.4586566082716551,0.1725422948695398,Off-Ball Perimeter,Secondary Scoring Wing,0.153,False
+richani01,Nick Richards,2TM,C,C,4.487924408371972,-0.0146778236264933,-1.335346953894854,Big,Rim-Running Big,0.246,False
+richawi02,Will Richard,GSW,SG,SG,-0.88573117964846,-2.5852689099136232,2.021303287997601,Off-Ball Perimeter,Defensive Disruptor,0.192,False
+rileywi01,Will Riley,WAS,SF,PF,-0.9659091373432316,0.7445912571614858,-0.0796898527381398,On-Ball Creator,Secondary Scoring Wing,0.156,False
+risacza01,Zaccharie Risacher,ATL,SF,SF,0.5531717268662657,-1.6453803178702722,-0.4277699692192719,Off-Ball Perimeter,Stretch Forward,0.117,False
+robindu01,Duncan Robinson,DET,SF,SF,-2.3148520190833537,-3.147526284709314,-1.644795419402111,Off-Ball Perimeter,Spot-Up Floor Spacer,0.309,False
+robinmi01,Mitchell Robinson,NYK,C,C,5.709377351527944,-0.0207850031016975,1.4092645470954732,Big,Rim-Running Big,0.389,False
+rolliry01,Ryan Rollins,MIL,PG,PG,-1.5715080858259003,2.050499024009725,1.368839593851504,On-Ball Creator,Primary Creator,0.129,False
+ruperra01,Rayan Rupert,2TM,SG,SF,-0.3594894631006797,-0.8225537139273624,1.4882549447078803,Off-Ball Perimeter,Defensive Disruptor,0.186,False
+sabondo01,Domantas Sabonis,SAC,C,C,2.6383456717094425,1.9254280836320208,0.1730166513392114,Big,Hub Big,0.164,False
+salauti01,Tidjane Salaün,CHO,PF,PF,1.4784493312163605,-2.267980240786467,0.0680668541534329,Off-Ball Perimeter,Stretch Forward,0.221,False
+sandeko01,Kobe Sanders,LAC,SG,SG,-1.6803086197219426,-0.3640904374145033,0.9461438105518888,Off-Ball Perimeter,Shot-Making Guard,-0.002,True
+santogu01,Gui Santos,GSW,PF,PF,1.011396964390442,-0.3940385060405361,1.6309611109869686,Off-Ball Perimeter,Defensive Disruptor,0.087,False
+sarafbe01,Ben Saraf,BRK,SG,SG,-0.3207700078667379,2.063715276862718,2.487351380874011,On-Ball Creator,Primary Creator,0.129,False
+sarral01,Alex Sarr,WAS,C,C,2.024500630958008,1.250058013836287,-1.519275038177909,Big,Hub Big,0.238,False
+scheiba01,Baylor Scheierman,BOS,SG,SG,-1.951501912349734,-2.6554195723139244,0.2075343897848615,Off-Ball Perimeter,Spot-Up Floor Spacer,0.197,False
+schrode01,Dennis Schröder,2TM,PG,PG,-1.8533569110786103,2.5529875139112894,0.4643824778413405,On-Ball Creator,Primary Creator,0.087,False
+sengual01,Alperen Şengün,HOU,C,C,1.7166757121396357,3.281123974880113,0.1783652756407356,On-Ball Creator,Hub Big,0.169,False
+sensabr01,Brice Sensabaugh,UTA,SF,SF,-1.5509582999349143,0.1246680558909073,-0.9370713575549492,On-Ball Creator,Secondary Scoring Wing,0.154,False
+sextoco01,Collin Sexton,2TM,SG,SG,-1.242697265486687,1.938131791024152,1.19913314940615,On-Ball Creator,Primary Creator,0.164,False
+shamela01,Landry Shamet,NYK,SG,SG,-2.1375054149891124,-3.2688044443607853,-1.0655627344986438,Off-Ball Perimeter,Spot-Up Floor Spacer,0.264,False
+shannte01,Terrence Shannon Jr.,MIN,SG,SF,-1.09219700154724,-0.4798840872697333,-0.2044843573938644,Off-Ball Perimeter,Secondary Scoring Wing,0.156,False
+sharpda01,Day'Ron Sharpe,BRK,C,C,3.720185265508594,1.828405459192068,2.5864035045070337,Big,Hub Big,-0.015,True
+sharpsh01,Shaedon Sharpe,POR,SG,SG,-1.049049537284544,2.213824430576175,0.3112092646195931,On-Ball Creator,Primary Creator,0.162,False
+sheadja01,Jamal Shead,TOR,PG,PG,-2.391617731314921,1.0495745835421295,2.077949943938114,On-Ball Creator,Shot-Making Guard,0.13,False
+sheppbe01,Ben Sheppard,IND,SG,SG,-1.2293762409687383,-2.4476144332020437,-0.4784562389130174,Off-Ball Perimeter,Spot-Up Floor Spacer,0.18,False
+sheppre01,Reed Sheppard,HOU,SG,SG,-2.802728906075022,0.6083226334512936,0.8114996390116033,On-Ball Creator,Shot-Making Guard,0.11,False
+siakapa01,Pascal Siakam,IND,PF,PF,-0.1102210384162667,2.4463754150906443,-1.3498956889054134,On-Ball Creator,Primary Creator,0.09,False
+simonan01,Anfernee Simons,2TM,SG,PG,-3.401468183505473,0.8045737411121899,-1.4655248690798033,On-Ball Creator,Shot-Making Guard,0.229,False
+simsje01,Jericho Sims,MIL,C,C,4.45894350985754,0.1815488233427941,0.627881012572265,Big,Rim-Running Big,0.257,False
+smallja01,Javon Small,MEM,PG,PG,-0.6760880470042798,1.6410309841904684,1.0241541409611936,On-Ball Creator,Primary Creator,0.116,False
+smartma01,Marcus Smart,LAL,SG,SG,-1.755550375630209,-0.6094409487392538,1.5846023523353014,Off-Ball Perimeter,Defensive Disruptor,0.106,False
+smithdr01,Dru Smith,MIA,SG,PG,0.2135705885347661,0.0474579529413059,2.832156193779224,Off-Ball Perimeter,Defensive Disruptor,0.236,False
+smithja04,Jalen Smith,CHI,C,C,2.2154531279716525,-1.722926724615753,-1.3148748769621093,Big,Stretch Forward,0.335,False
+smithja05,Jabari Smith Jr.,HOU,PF,PF,-0.138716722020521,-1.188027144188367,-2.098913545480254,Off-Ball Perimeter,Secondary Scoring Wing,0.057,False
+spencca01,Cam Spencer,MEM,SG,PG,-2.729860207494239,1.311881154470533,0.0478158871449641,On-Ball Creator,Shot-Making Guard,0.209,False
+spencpa01,Pat Spencer,GSW,PG,PG,-2.070117779283782,1.615521600166641,1.305956406403954,On-Ball Creator,Shot-Making Guard,0.104,False
+stewais01,Isaiah Stewart,DET,C,C,3.073353057374344,-1.4855938438021743,-1.5154175664120868,Big,Stretch Forward,0.073,False
+strawju01,Julian Strawther,DEN,SG,SF,-1.439878417790379,-0.6502539596909209,-1.0978224534451255,Off-Ball Perimeter,Secondary Scoring Wing,0.178,False
+suggsja01,Jalen Suggs,ORL,PG,PG,-1.418027995632742,1.6272062517222403,2.2758948768058462,On-Ball Creator,Primary Creator,0.1,False
+tatumja01,Jayson Tatum,BOS,PF,PF,-1.2879871673473249,2.806854404966272,-0.264286750262093,On-Ball Creator,Primary Creator,0.195,False
+terryda01,Dalen Terry,2TM,SG,SF,0.3825365556952252,-0.7600876711763414,2.0510750744595603,Off-Ball Perimeter,Defensive Disruptor,0.244,False
+thomaca02,Cam Thomas,2TM,SG,SG,-2.594934722834477,2.6527335880389997,-2.493184873413673,On-Ball Creator,Shot-Making Guard,0.053,False
+thompam01,Amen Thompson,HOU,PG,PG,1.486056919304562,1.827366014893841,0.5790536188588407,Big,Hub Big,0.104,False
+thompau01,Ausar Thompson,DET,SF,SG,2.663588509566816,1.4770897215367371,1.820328240123284,Big,Hub Big,0.057,False
+thompet01,Ethan Thompson,IND,SG,SG,-1.4845284518279602,-1.610841261761159,-0.3245478061353914,Off-Ball Perimeter,Spot-Up Floor Spacer,0.039,True
+thompkl01,Klay Thompson,DAL,SF,SF,-3.1862186847660072,-2.0468151525891907,-2.451419680181989,Off-Ball Perimeter,Spot-Up Floor Spacer,0.195,False
+tomlina01,Nae'Qwan Tomlin,CLE,PF,PF,1.785455846884599,-2.517486680165039,0.324128341992707,Off-Ball Perimeter,Stretch Forward,0.164,False
+townska01,Karl-Anthony Towns,NYK,C,C,2.7869195780660485,1.732436308973609,-0.6673844196056896,Big,Hub Big,0.188,False
+traorno01,Nolan Traoré,BRK,PG,PG,-1.624716732449638,1.5114207428203197,1.6985634958189082,On-Ball Creator,Shot-Making Guard,-0.001,True
+trentga02,Gary Trent Jr.,MIL,SG,SF,-4.971655904944645,-2.1842320406219047,-1.2091462046430244,Off-Ball Perimeter,Spot-Up Floor Spacer,0.118,False
+turnemy01,Myles Turner,MIL,C,C,0.8198875483641322,-1.1878403817472676,-1.4617784119686037,Off-Ball Perimeter,Stretch Forward,0.109,False
+tysonja01,Jaylon Tyson,CLE,SG,SF,0.6138399002551597,-1.24854784977371,0.0274755523514696,Off-Ball Perimeter,Stretch Forward,0.134,False
+valanjo01,Jonas Valančiūnas,DEN,C,C,2.9870718381151726,2.489027710890196,-1.9948823673655605,Big,Hub Big,0.191,False
+vandeja01,Jarred Vanderbilt,LAL,PF,PF,2.050485322056024,-2.1963837552542955,2.513746558098649,Off-Ball Perimeter,Defensive Disruptor,0.019,True
+vassede01,Devin Vassell,SAS,SG,SG,-2.180861680433226,-1.117492747742274,-1.9642658764835652,Off-Ball Perimeter,Spot-Up Floor Spacer,0.007,True
+vincega01,Gabe Vincent,2TM,PG,PG,-4.263257701241841,-2.3105229715908435,0.8717032669761562,Off-Ball Perimeter,Spot-Up Floor Spacer,0.082,False
+vucevni01,Nikola Vučević,2TM,C,C,0.9467673803560342,0.1551749301212599,-2.0668343286793145,Big,Hub Big,-0.031,True
+vukcetr01,Tristan Vukcevic,WAS,C,C,1.1177614918562118,1.28460562930358,-1.026563356742723,Big,Hub Big,0.083,False
+wadede01,Dean Wade,CLE,PF,PF,-0.1505008300965596,-3.9992965975015298,-0.7303057788459676,Off-Ball Perimeter,Spot-Up Floor Spacer,0.04,True
+wagnefr01,Franz Wagner,ORL,SF,PF,0.3484896032695267,1.6604927327632346,-1.168162866894298,On-Ball Creator,Secondary Scoring Wing,0.061,False
+walkeja01,Jabari Walker,PHI,PF,PF,1.710947590418113,-1.7477876763456095,0.0694565667641569,Off-Ball Perimeter,Stretch Forward,0.211,False
+walkeja02,Jarace Walker,IND,PF,SF,-0.2722661381571544,0.5794654662195259,-0.2906210066490561,On-Ball Creator,Secondary Scoring Wing,0.183,False
+wallaca01,Cason Wallace,OKC,SG,SG,-0.8817881755390594,-1.3055404403211308,2.187908876590157,Off-Ball Perimeter,Defensive Disruptor,0.267,False
+wallake01,Keaton Wallace,ATL,PG,PG,-3.6820483982433694,0.9106592604254,0.7322815423880602,On-Ball Creator,Shot-Making Guard,0.225,False
+walshjo01,Jordan Walsh,BOS,PF,PF,1.759185791564111,-2.367235075888549,0.8286520895063,Off-Ball Perimeter,Stretch Forward,0.144,False
+walteja01,Ja'Kobe Walter,TOR,SG,SG,-0.7187899272962243,-3.170521370774269,0.4901745153164907,Off-Ball Perimeter,Spot-Up Floor Spacer,0.001,True
+wareke01,Kel'el Ware,MIA,C,C,3.0617081318809007,-1.8308319603917484,-0.9640059583999812,Big,Stretch Forward,0.198,False
+washipj01,P.J. Washington,DAL,PF,PF,1.2338432653816305,-0.5101933938958966,-0.5153307165032336,Off-Ball Perimeter,Stretch Forward,0.132,False
+watfotr01,Trendon Watford,PHI,PF,PF,1.6221891543746751,1.4484978501672363,-0.0509752103629186,Big,Hub Big,0.114,False
+watkija01,Jamir Watkins,WAS,SG,SG,0.6124658142090496,-1.5891301886111333,1.1680964049321914,Off-Ball Perimeter,Defensive Disruptor,0.094,False
+watsope01,Peyton Watson,DEN,SF,SF,0.8267429262020293,0.0543898520592631,-0.6635434637357672,Off-Ball Perimeter,Secondary Scoring Wing,0.084,False
+wellsja01,Jaylen Wells,MEM,SG,SF,-1.5482146516665067,-0.9728873427648946,-0.9062969703023434,Off-Ball Perimeter,Secondary Scoring Wing,0.138,False
+wembavi01,Victor Wembanyama,SAS,C,C,2.6323329009983807,2.2984855296978286,-1.560869917434842,Big,Hub Big,0.301,False
+westbru01,Russell Westbrook,SAC,SF,SG,-1.514130843886342,2.408198021988861,1.7337854951018958,On-Ball Creator,Primary Creator,0.132,False
+whiteco01,Coby White,2TM,SG,PG,-1.5324150331527364,2.3515416659726154,-0.6416741738944746,On-Ball Creator,Primary Creator,0.055,False
+whitede01,Derrick White,BOS,SG,SG,-1.5276279722469457,0.7252809527331182,-0.5349709131964737,On-Ball Creator,Shot-Making Guard,0.01,True
+wiggiaa01,Aaron Wiggins,OKC,SG,SF,-0.4379527288806686,-0.8101402603820184,0.8084638314918743,Off-Ball Perimeter,Defensive Disruptor,0.112,False
+wiggian01,Andrew Wiggins,MIA,SF,SF,-0.0537906888190272,0.198259723544734,-0.2294399589481639,Off-Ball Perimeter,Secondary Scoring Wing,0.163,False
+willibr03,Brandon Williams,DAL,PG,PG,-0.3056057540821873,2.8708793634988767,0.7407911800323154,On-Ball Creator,Primary Creator,0.278,False
+willico04,Cody Williams,UTA,SG,SG,0.0821189669734417,-0.6743059196827129,-0.2976707538652535,Off-Ball Perimeter,Secondary Scoring Wing,0.164,False
+willigr01,Grant Williams,CHO,PF,PF,-0.2898344507872605,-2.196991340785352,-0.4062573968258721,Off-Ball Perimeter,Spot-Up Floor Spacer,-0.018,True
+willija06,Jalen Williams,OKC,SG,SF,-0.4560852852507374,3.0958625271123377,-0.0790309355847114,On-Ball Creator,Primary Creator,0.278,False
+willija07,Jaylin Williams,OKC,PF,C,0.4893255807575927,-1.7050639408897856,-0.6363267203669872,Off-Ball Perimeter,Stretch Forward,0.106,False
+willike04,Kenrich Williams,OKC,PF,PF,-0.0561383345325692,0.0978595653991235,0.2860603417652383,Off-Ball Perimeter,Secondary Scoring Wing,0.112,False
+willima07,Mark Williams,PHO,C,C,4.390403862440335,0.4519924900610046,-0.3459972161127861,Big,Rim-Running Big,0.33,False
+willipa01,Patrick Williams,CHI,PF,PF,-0.6558079508554817,-0.7510222267887481,0.5438251192391672,Off-Ball Perimeter,Defensive Disruptor,0.016,True
+williro04,Robert Williams,POR,C,C,4.44034861394334,-0.554323173342335,0.7395024686650881,Big,Rim-Running Big,0.25,False
+willivi01,Vince Williams Jr.,2TM,SG,PG,-1.0517623331754438,0.9148801672812326,1.3354255137191218,On-Ball Creator,Shot-Making Guard,0.024,True
+willizi01,Zion Williamson,NOP,PF,PF,2.6081880440778638,2.242651775615994,-0.3252420886901686,Big,Hub Big,0.072,False
+willizi02,Ziaire Williams,BRK,SF,SF,-0.4522279590319916,-1.4906590054475637,0.956516098763842,Off-Ball Perimeter,Defensive Disruptor,0.136,False
+wilsoja03,Jalen Wilson,BRK,PF,PF,-1.1964283065497223,-0.7260055071887226,-0.4959777603628052,Off-Ball Perimeter,Secondary Scoring Wing,0.155,False
+wolfda01,Danny Wolf,BRK,PF,PF,1.1789807169605715,-0.0952517759013331,-0.2769635122515477,Off-Ball Perimeter,Stretch Forward,0.123,False
+yabusgu01,Guerschon Yabusele,2TM,C,C,0.4527914563610686,-2.1041958909917944,-0.6418965355634794,Off-Ball Perimeter,Stretch Forward,0.217,False
+zubaciv01,Ivica Zubac,2TM,C,C,3.676350878215589,1.1023003164944702,-1.9059341046286835,Big,Rim-Running Big,0.097,False

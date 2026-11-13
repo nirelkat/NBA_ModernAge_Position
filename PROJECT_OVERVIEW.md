@@ -40,8 +40,8 @@ Details: [`data/README.md`](data/README.md).
 |---|---|---|---|
 | 01 | `01_EDA.ipynb` | Understand the data and make the preprocessing decisions | `nba_2025_26_mp500.csv` |
 | 02 | `02_Features_Scaling.ipynb` | Build a clean, non-redundant, scaled feature matrix | `features_raw / _power / _standard.csv` |
-| 03 | `03_PCA.ipynb` | Find and name the main axes of playing style | `pca_scores.csv`, `pca_loadings.csv` |
-| 04 | `04_Clustering.ipynb` | Group players into families and archetypes | `archetypes.csv`, `archetype_profiles.csv` |
+| 03 | `03_PCA.ipynb` | Find and name the main axes of playing style | `pca_scores.csv` |
+| 04 | `04_Clustering.ipynb` | Group players into families and archetypes | `archetypes.csv` |
 | 05 | `05_Anomalies.ipynb` | Find statistical unicorns and separate them from border players | `anomalies.csv` |
 | 06 | `06_Validation.ipynb` | Validate the groups against listed and played positions; what archetypes add | `validation_summary.csv` |
 
@@ -51,7 +51,7 @@ Details: [`data/README.md`](data/README.md).
   excluded rather than imputed (median imputation would make non-shooting centres "35% three-point shooters").
 - **Skewness** of the role stats (13 of 23 candidates have |skew| > 1), which motivates a power transform.
 - **Correlation heatmap**: removes redundant groups; per-100 stats preferred over per-game (per-game stats track minutes).
-- **Boxplots by position**: only centres are clearly distinct; usage is almost unrelated to position (η² = 0.05).
+- **Boxplots by position**: only centres are clearly distinct; usage is almost unrelated to position (R² on position dummies = 0.05).
   Listed position matches the most-played position for 77% of players.
 
 ### 02 — Feature Selection & Scaling
@@ -78,7 +78,7 @@ Details: [`data/README.md`](data/README.md).
   | PC2 | 26% | On-ball creator ↔ Off-ball finisher |
   | PC3 | 11% | Disruptor / connector ↔ Self-sufficient scorer |
 
-- Position explains PC1 well (η² ≈ 0.6) but **PC2 and PC3 hardly at all** (η² ≤ 0.16): the five positions are
+- Position explains PC1 well (R² ≈ 0.6) but **PC2 and PC3 hardly at all** (R² ≤ 0.16): the five positions are
   essentially a one-dimensional (size) description of a three-dimensional reality.
 - The axes are identical under both scalers (|cos| ≈ 0.996).
 
@@ -91,7 +91,7 @@ Details: [`data/README.md`](data/README.md).
     Spacer · Defensive Disruptor · Stretch Forward · Hub Big · Rim-Running Big.
 - Per-archetype reliability (bootstrap Jaccard): Rim-Running Big highly stable (0.86), Secondary Scoring Wing unstable
   (0.46, the "versatile / no specialty" middle of the map).
-- **Border players**: 78 players with silhouette < 0.05, each with a "second archetype".
+- **Border players**: 78 players with silhouette < 0.05, each with a "second archetype" (the nearest other one).
 - **DBSCAN** (ε × `min_samples` sweep): never more than two sizeable dense regions (rim-running bigs vs. everyone else);
   at a larger ε only 15 players remain noise.
 
@@ -175,10 +175,14 @@ Dependencies: [`requirements.txt`](requirements.txt).
 | Anomaly detection | DBSCAN noise persistence, distance to centroid, z-scores |
 | Comparison / validation | cross-tabulations read as a confusion matrix (accuracy, precision, recall, F1), R² of a `LinearRegression` on one-hot group dummies, KNN and decision trees with `StratifiedKFold` cross-validation and a majority baseline, silhouette by labelling, PCA maps, group medians and boxplots; ARI with a permutation baseline as a supporting check |
 
+**One measure of "variance explained" throughout.** Wherever the project asks how much of a variable a grouping
+explains (style stats by position in 01, PCA axes by position in 03, style and value stats by position, family and
+archetype in 06), it uses the same tool: the R² of a `LinearRegression` on one-hot group dummies.
+
 **Supporting checks beyond the homework** (used to verify decisions, not as models): variance inflation factor (VIF),
-parallel analysis for PCA, η² (variance explained by position, in notebooks 01 and 03), bootstrap ARI / Jaccard
-stability, k-distance plot, Adjusted Rand Index (ARI) and its permutation baseline (notebook 06), and held-out style
-features for a fairer R² comparison (notebook 06).
+parallel analysis for PCA, bootstrap ARI / Jaccard stability, k-distance plot, exact DBSCAN noise persistence,
+Adjusted Rand Index (ARI) and its permutation baseline (notebook 06), and held-out style features for a fairer R²
+comparison (notebook 06).
 
 **Deliberately not used** (outside the course): Gaussian Mixture Models, hierarchical / Ward clustering, Isolation
 Forest, Local Outlier Factor, Calinski-Harabasz and Davies-Bouldin indices.
@@ -197,7 +201,7 @@ NBA_ModernAge_Position/
 │   ├── README.md                data dictionary and notes
 │   ├── nba_2025_26_players.csv  582 players, all tables merged
 │   ├── raw/                     season-filtered source tables (every team stint)
-│   └── processed/               outputs of each notebook (filtered data, features, PCA, archetypes, anomalies, validation)
+│   └── processed/               outputs of each notebook, only what is used downstream (see data/README.md)
 ├── notebooks/
 │   ├── 01_EDA.ipynb
 │   ├── 02_Features_Scaling.ipynb
