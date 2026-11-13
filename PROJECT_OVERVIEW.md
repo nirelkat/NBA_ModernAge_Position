@@ -42,7 +42,7 @@ Details: [`data/README.md`](data/README.md).
 | 03 | `03_PCA.ipynb` | Find and name the main axes of playing style | `pca_scores.csv`, `pca_loadings.csv` |
 | 04 | `04_Clustering.ipynb` | Group players into families and archetypes | `archetypes.csv`, `archetype_profiles.csv` |
 | 05 | `05_Anomalies.ipynb` | Find statistical unicorns and separate them from border players | `anomalies.csv` |
-| 06 | `06_Validation.ipynb` *(next)* | Compare archetypes with listed and played positions | — |
+| 06 | `06_Validation.ipynb` | Validate the groups against listed and played positions; what archetypes add | `validation_summary.csv` |
 
 ### 01 — Exploratory Data Analysis
 - Inspection (`info`, `head`), **500-minute filter** (582 → 379 players).
@@ -111,6 +111,29 @@ Details: [`data/README.md`](data/README.md).
 - **Being unusual and being in-between are different things**: the silhouette is essentially uncorrelated with the
   anomaly measures.
 
+### 06 — Validation
+- **Adjusted Rand Index** against positions is low but far above chance:
+
+  | Comparison | ARI | Shuffled-label baseline (1,000 shuffles) |
+  |---|---|---|
+  | 8 archetypes vs. listed / played position | 0.14 / 0.16 | mean ≈ 0.000, max ≈ 0.02 (z ≈ 41–44) |
+  | 3 families vs. listed / played position | 0.17 / 0.18 | mean ≈ 0.000, max ≈ 0.02 (z ≈ 44–52) |
+  | Listed vs. played position (reference) | 0.54 | — |
+
+  Archetypes are *related to* positions but are not a relabelling of them.
+- **Cross-tabulations**: only Rim-Running Big is essentially one position (90% listed C); size-weighted archetype
+  purity is 50%. Centres split into Rim-Running Big / Hub Big / Stretch Forward; SG, SF and PF each spread over five
+  archetypes; half of the Primary Creators are not point guards.
+- **η² (variance explained) across the 13 style features**: listed position **0.27**, 3 families 0.39,
+  8 archetypes **0.54** (chance level ≈ 0.01–0.02). Position explains the size features (ORB% 0.55, DRB% 0.53,
+  BLK% 0.46) and is slightly better than archetypes on DRB%, but almost none of usage (0.05 vs. 0.57), steals,
+  mid-range share or turnovers. The gain holds on 7 held-out style descriptors never used for clustering
+  (0.28 → 0.53).
+- **Style, not quality**: archetype explains only about 21% of the variance in BPM (position 7%); every archetype
+  contains players with a negative BPM.
+- **Unicorns vs. positions**: 10 of the 17 statistical unicorns are centres; border players are most common among
+  small forwards (29%) and shooting guards (23%).
+
 ---
 
 ## 4. Tools
@@ -137,7 +160,7 @@ Dependencies: [`requirements.txt`](requirements.txt).
 | Clustering | **k-means** (inertia, silhouette, centroids), **DBSCAN** (ε, `min_samples`, core / border / noise) |
 | Cluster quality | silhouette (average and per player), bootstrap stability |
 | Anomaly detection | DBSCAN noise persistence, distance to centroid, z-scores |
-| Comparison | Adjusted Rand Index (ARI), cross-tabulations |
+| Comparison / validation | Adjusted Rand Index (ARI) with a permutation baseline, cross-tabulations (counts, row and column %), η² per feature, group medians and boxplots |
 
 **Supporting checks beyond the homework** (used to verify decisions, not as models): variance inflation factor (VIF),
 parallel analysis for PCA, η² (variance explained by position), bootstrap ARI / Jaccard stability, k-distance plot.
@@ -159,13 +182,14 @@ NBA_ModernAge_Position/
 │   ├── README.md                data dictionary and notes
 │   ├── nba_2025_26_players.csv  582 players, all tables merged
 │   ├── raw/                     season-filtered source tables (every team stint)
-│   └── processed/               outputs of each notebook (filtered data, features, PCA, archetypes, anomalies)
+│   └── processed/               outputs of each notebook (filtered data, features, PCA, archetypes, anomalies, validation)
 ├── notebooks/
 │   ├── 01_EDA.ipynb
 │   ├── 02_Features_Scaling.ipynb
 │   ├── 03_PCA.ipynb
 │   ├── 04_Clustering.ipynb
-│   └── 05_Anomalies.ipynb
+│   ├── 05_Anomalies.ipynb
+│   └── 06_Validation.ipynb
 └── docs/
     └── HOMEWORK_MAPPING.md      notebook steps ↔ course homework exercises
 ```
@@ -180,23 +204,32 @@ pip install -r requirements.txt
 python scripts/fetch_data.py
 ```
 
-Then run the notebooks in order (01 → 05); each one reads the previous one's output from `data/processed/`. The data
+Then run the notebooks in order (01 → 06); each one reads the previous one's output from `data/processed/`. The data
 is already included in the repository, so the fetch step is only needed to rebuild it.
 
 ---
 
-## 7. Key takeaways so far
+## 7. Key takeaways
 
 1. **Roles are continuous.** There are no empty gaps between most archetypes (low silhouette, a single connected DBSCAN
    cloud). Clusters partition a continuum.
 2. **Positions capture one dimension, size.** On-ball creation, the second-largest source of difference between
-   players, is almost invisible to position labels.
+   players, is almost invisible to position labels: position explains 5% of the variance in usage, archetypes 57%.
+   Over all 13 style features, archetypes explain about twice as much variance as positions (η² 0.54 vs. 0.27).
 3. **"Centre" and "guard" each hide several jobs.** For example, Rim-Running Big, Hub Big and Stretch Forward for
    centres.
 4. **Only the rim-running big is a sharply separated role.** It is the most stable archetype and the only one DBSCAN
    isolates as its own dense region.
-5. **Unusual ≠ in-between.** Unicorns are extreme versions of a role; border players are ordinary profiles that mix two
-   neighbouring roles.
+5. **Unusual ≠ in-between.** Unicorns are extreme versions of a role, mostly centres; border players are ordinary
+   profiles that mix two neighbouring roles, mostly wings.
+6. **Archetypes are related to positions, not a relabelling.** ARI 0.14–0.18, far above the chance baseline but far
+   below the 0.54 agreement between the two position labels themselves.
+7. **Archetypes describe style, not quality.** Every archetype contains both strong and weak players.
 
-**Next step:** `06_Validation.ipynb`, a formal comparison of the archetypes with listed and played positions (ARI,
-cross-tabulations) and a final summary of what data-driven archetypes add to the five-position system.
+**Limitations:** box-score data under-describes defence; one season only; a 500-minute cut-off; k = 8 was chosen
+partly for interpretability (k = 3 is the statistical optimum); the η² comparison on the clustering features favours
+the archetypes (held-out features reduce but do not remove this).
+
+**Next step:** the core pipeline (01 → 06) is complete. Possible extensions: a "closest comparable player" lookup
+(cosine vs. Euclidean similarity), repeating the analysis on earlier seasons to track how roles change, and a short
+written report or slide summary of the findings.

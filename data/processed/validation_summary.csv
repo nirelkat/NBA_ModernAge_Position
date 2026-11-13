@@ -1,0 +1,30 @@
+section,item,observed ARI,null mean,null sd,null max,z vs. null,listed position,played position,3 families,8 archetypes
+ARI,8 archetypes vs. listed position,0.1433,-0.0001,0.0035,0.0162,41.4746,,,,
+ARI,8 archetypes vs. played position,0.1584,0.0,0.0036,0.0181,43.8632,,,,
+ARI,3 families vs. listed position,0.1699,0.0002,0.0038,0.0215,44.3848,,,,
+ARI,3 families vs. played position,0.1768,0.0,0.0034,0.0176,52.0358,,,,
+eta2 style feature,x3p_ar,,,,,,0.2673,0.2627,0.5411,0.72
+eta2 style feature,corner3_rate,,,,,,0.2183,0.2138,0.5627,0.6439
+eta2 style feature,mid_share,,,,,,0.0891,0.0919,0.3365,0.4439
+eta2 style feature,rim_share,,,,,,0.3345,0.3517,0.5217,0.7049
+eta2 style feature,f_tr,,,,,,0.1523,0.1483,0.2634,0.4386
+eta2 style feature,usg_percent,,,,,,0.0531,0.0383,0.4128,0.5736
+eta2 style feature,ast_percent,,,,,,0.3561,0.3229,0.4743,0.5877
+eta2 style feature,tov_percent,,,,,,0.1133,0.097,0.0986,0.246
+eta2 style feature,percent_assisted_x2p_fg,,,,,,0.3537,0.3565,0.5122,0.6511
+eta2 style feature,orb_percent,,,,,,0.5457,0.5369,0.6072,0.7044
+eta2 style feature,drb_percent,,,,,,0.533,0.5303,0.3392,0.5056
+eta2 style feature,blk_percent,,,,,,0.4637,0.4859,0.4008,0.5032
+eta2 style feature,stl_percent,,,,,,0.0783,0.062,0.0143,0.3406
+eta2 held-out feature,average shot distance,,,,,,0.3322,0.3381,0.5499,0.7308
+eta2 held-out feature,dunks share of FGA,,,,,,0.3598,0.3826,0.4956,0.6614
+eta2 held-out feature,total rebound %,,,,,,0.6407,0.6388,0.5235,0.6637
+eta2 held-out feature,points per 100 poss.,,,,,,0.0213,0.0104,0.2883,0.4504
+eta2 held-out feature,% of made 3s assisted,,,,,,0.3264,0.2987,0.4977,0.5824
+eta2 held-out feature,fouls per 100 poss.,,,,,,0.1488,0.1526,0.1759,0.2337
+eta2 held-out feature,share of FGA from 3–10 ft,,,,,,0.137,0.125,0.2778,0.4021
+eta2 value stat,TS%,,,,,,0.1673,,,0.2887
+eta2 value stat,BPM,,,,,,0.0646,,,0.2151
+eta2 value stat,WS/48,,,,,,0.1569,,,0.2418
+eta2 value stat,VORP,,,,,,0.0437,,,0.205
+eta2 value stat,minutes,,,,,,0.0187,,,0.0721

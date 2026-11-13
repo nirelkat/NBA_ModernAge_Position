@@ -133,6 +133,26 @@ from standardisation, and the silhouette.
 
 ---
 
+## 1f. `notebooks/06_Validation.ipynb` — section-by-section mapping
+
+Validation uses only comparison tools practised in the course: partition comparison (ARI), cross-tabulation read like
+a confusion matrix, variance explained (η² = R² on group dummies), group boxplots, and a simple permutation baseline.
+
+| Notebook section | What it does | Homework exercise | Concept reused | Adaptation for the NBA domain |
+|---|---|---|---|---|
+| §1 Load and align | Joins archetypes, anomalies, raw features and the full season table; asserts `player_id` alignment | HW1 1.1 (load & inspect) | ✅ Integrity check before analysis | Four tables from earlier notebooks, checked row by row |
+| **§2 ARI vs. listed and played position** | Families / archetypes vs. `pos` and `pos_played`; listed vs. played position as a reference | **HW4 Q4** (`same_partition` check: comparing two partitions of the same points, independent of label names) | 🔁 Comparing partitions | ARI (chance-corrected) instead of an exact-match check; two versions of ground truth |
+| §2 Permutation baseline | 1,000 label shuffles (group sizes kept) → null distribution of ARI, z-score and p-value | HW3 4.1 (judging a score against its variability) · 03_PCA parallel analysis | 🔁 Is the score better than chance? | 🆕 Permutation test for an unsupervised comparison |
+| **§3 Cross-tabulations** (counts, row %, column %) | Archetype × listed / played position, family × position; purity per archetype; archetypes per position | **HW2 Part 4** (confusion-matrix reading) | 🔁 Reading agreement and disagreement in a cross-tabulation | No "correct" diagonal: rows and columns read as roles vs. positions |
+| **§4 η² per feature: position vs. families vs. archetypes** | Share of each of the 13 style features' variance explained by each grouping; grouped bar chart; mean η² | **HW2 2.2** (R² of simple regressions) | 🔁 Variance explained | η² = R² of a regression on group dummies; compares two category systems feature by feature |
+| §4 Fairness checks | Chance η² for shuffled labels; η² on held-out style descriptors never used for clustering | HW2 2.2 · HW3 4.1 (evaluate on data not used to build the model) | 🔁 Avoiding an optimistic, in-sample comparison | 🆕 Held-out *features* instead of held-out rows |
+| **§5 Archetype profiles + value stats** | Median style features in real units; TS%, BPM, WS/48, VORP, minutes per archetype; BPM boxplots by archetype and by position | **HW1 1.5** (boxplot of a variable by category) · HW4 Q4a (centroids / group means) | ✅ Group comparison with boxplots | Tests whether archetypes describe style or quality |
+| §6 Unicorns and border players vs. positions | Anomaly category × position (rates) and × archetype; median anomaly score and silhouette by position | HW2 Part 4 (cross-tabulation) · HW4 Q1a (silhouette) | 🔁 Cross-tabulating two labelings | Links notebook 05's categories back to the position system |
+| §7 Export | `validation_summary.csv` (ARI with baselines, all η² tables) | — | — | — |
+| §8 Conclusions | What positions capture and miss; continuum; taxonomy; limitations | HW1 3.3 / HW3 4.2 (comparison & recommendation) | ✅ Conclusions backed by numbers | Final summary of the whole project |
+
+---
+
 ## 2. Concept index — where each course concept appears
 
 | Course concept | Homework | Project location |
@@ -142,13 +162,13 @@ from standardisation, and the silhouette.
 | Imputation strategies (Iterative, KNN, median) | HW1 2.3 | 01_EDA §3 (evaluated and rejected for structural NaNs) |
 | Histograms & distribution shape | HW1 1.3 | 01_EDA §4 |
 | Correlation heatmap | HW1 1.4 | 01_EDA §5 |
-| Boxplot by category | HW1 1.5 | 01_EDA §6 |
+| Boxplot by category | HW1 1.5 | 01_EDA §6 · 06_Validation §5 (BPM by archetype and by position) |
 | Dropping unusable columns / rows | HW1 2.1 | 01_EDA §2, §3 · 02 §2 |
 | Categorical encoding | HW1 2.2 | Not needed (`pos` is never an input) |
 | Feature construction | HW1 2.2 | 02 §2 (`mid_share`, `corner3_rate`) |
 | Scaling: StandardScaler / PowerTransformer / QuantileTransformer | HW1 2.4 | 01_EDA §4 · 02 §4 (3-scaler comparison) |
 | Multicollinearity | HW2 2.3 – 2.4 | 01_EDA §5 · 02 §3 (VIF) |
-| R² / variance explained | HW2 2.2 | 01_EDA §6 (η²) · 02 §3 (VIF = 1 / (1 − R²)) |
+| R² / variance explained | HW2 2.2 | 01_EDA §6 (η²) · 02 §3 (VIF = 1 / (1 − R²)) · 03_PCA §4 · 06_Validation §4 (η² of 13 style features: position vs. families vs. archetypes) |
 | Distances & effect of scaling | HW3 1.1, 2.3 | 01_EDA §4 rationale · 02 §5 (distance & neighbour agreement) |
 | Nearest-neighbour lookup | HW3 1.2 · HW4 Q3 | 02 §5b (similar players) |
 | PCA: scree plot | HW1 3.1 | 03_PCA §2 (+ Kaiser & parallel analysis) |
@@ -162,13 +182,14 @@ from standardisation, and the silhouette.
 | DBSCAN, core / border / noise, effect of ε | HW4 Q2, Q4b | 04_Clustering §8 (k-distance plot, ε × min_samples sweep, point types) · 05_Anomalies §2 (noise persistence, controlling distance) |
 | k-means forces outliers into clusters vs. DBSCAN noise | HW4 Q2c, Q4c | 04_Clustering §8c–d · 05_Anomalies §3 (distance to centroid) |
 | Cosine vs. Euclidean similarity, mean-centring | HW4 Q3 | 🔜 player-similarity / "closest comparable player" lookup |
-| Confusion matrix / agreement metrics | HW2 Part 4 | 🔜 06 Validation (ARI, cluster × position crosstab) |
-| Cross-validation & stability | HW3 4.1 | 🔜 06 (bootstrap stability of clusters) |
+| Confusion matrix / agreement metrics | HW2 Part 4 | 06_Validation §3 (archetype / family × position crosstabs, purity) · §6 (anomaly category × position) |
+| Comparing two partitions (`same_partition` → ARI) | HW4 Q4 | 04_Clustering §7 · 06_Validation §2 (ARI vs. listed and played position, with permutation baseline) |
+| Cross-validation & stability | HW3 4.1 | 04_Clustering §2, §5b (bootstrap stability) · 06_Validation §2, §4 (permutation baselines, held-out features) |
 | Neural networks (ANN / CNN) | HW5 | Not used; outside the scope of this unsupervised project |
 
 ---
 
-## 3. Planned notebooks — expected homework links
+## 3. Notebook roadmap — homework links
 
 | Notebook | Main steps | Primary homework links |
 |---|---|---|
@@ -176,4 +197,4 @@ from standardisation, and the silhouette.
 | `03_PCA.ipynb` ✅ done | Scree plot, parallel analysis, loadings, player map, biplot, robustness | HW1 3.1 – 3.3 · HW2 2.2 |
 | `04_Clustering.ipynb` ✅ done | k-means (inertia, silhouette, bootstrap stability), 3 families / 8 archetypes, silhouette border players, DBSCAN sweep and noise | HW4 Q1, Q2, Q4 · HW3 4.1 |
 | `05_Anomalies.ipynb` ✅ done | DBSCAN noise persistence, distance to centroid, extreme z-scores, silhouette quadrant | HW4 Q1, Q2, Q4 · HW1 2.4 |
-| `06_Validation.ipynb` | ARI vs. listed and played positions, cluster profiles | HW2 Part 4 · HW3 4.1 |
+| `06_Validation.ipynb` ✅ done | ARI vs. listed and played positions with permutation baseline, cross-tabulations, η² positions vs. archetypes, profiles and value stats, unicorns vs. positions, conclusions | HW2 2.2, Part 4 · HW4 Q4 · HW1 1.5 · HW3 4.1 |
