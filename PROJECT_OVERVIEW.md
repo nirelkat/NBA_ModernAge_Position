@@ -13,7 +13,8 @@ which groups emerge, how well do they match the official positions, and which pl
 archetypes**, identifies **one-of-a-kind players**, and measures how much the five-position system misses.
 
 **Constraint:** the project deliberately uses **only techniques practised in the course homework** (EDA, scaling,
-PCA, k-means, DBSCAN, silhouette, z-scores, and for validation ARI, cross-tabulations and R² / η²). How each step maps to the homework is documented in
+PCA, k-means, DBSCAN, silhouette, z-scores, and for validation confusion-matrix metrics, KNN and decision trees with
+cross-validation, and R² of a linear regression). How each step maps to the homework is documented in
 [`docs/HOMEWORK_MAPPING.md`](docs/HOMEWORK_MAPPING.md); the notebooks themselves are written as a standalone project.
 
 ---
@@ -114,23 +115,35 @@ Details: [`data/README.md`](data/README.md).
 ### 06 — Validation
 - **Adjusted Rand Index** against positions is low but far above chance:
 
-  | Comparison | ARI | Shuffled-label baseline (1,000 shuffles) |
+  | Comparison | ARI | Permutation baseline (1,000 shuffles) |
   |---|---|---|
-  | 8 archetypes vs. listed / played position | 0.14 / 0.16 | mean ≈ 0.000, max ≈ 0.02 (z ≈ 41–44) |
-  | 3 families vs. listed / played position | 0.17 / 0.18 | mean ≈ 0.000, max ≈ 0.02 (z ≈ 44–52) |
+  | 8 archetypes vs. listed / played position | 0.14 / 0.16 | null mean ≈ 0.000, max ≈ 0.02, p = 0.001 |
+  | 3 families vs. listed / played position | 0.17 / 0.18 | null mean ≈ 0.000, max ≈ 0.02, p = 0.001 |
   | Listed vs. played position (reference) | 0.54 | — |
 
   Archetypes are *related to* positions but are not a relabelling of them.
-- **Cross-tabulations**: only Rim-Running Big is essentially one position (90% listed C); size-weighted archetype
-  purity is 50%. Centres split into Rim-Running Big / Hub Big / Stretch Forward; SG, SF and PF each spread over five
-  archetypes; half of the Primary Creators are not point guards.
-- **η² (variance explained) across the 13 style features**: listed position **0.27**, 3 families 0.39,
-  8 archetypes **0.54** (chance level ≈ 0.01–0.02). Position explains the size features (ORB% 0.55, DRB% 0.53,
-  BLK% 0.46) and is slightly better than archetypes on DRB%, but almost none of usage (0.05 vs. 0.57), steals,
-  mid-range share or turnovers. The gain holds on 7 held-out style descriptors never used for clustering
-  (0.28 → 0.53).
-- **Style, not quality**: archetype explains only about 21% of the variance in BPM (position 7%); every archetype
-  contains players with a negative BPM.
+- **Cross-tabulation read as a confusion matrix**: only Rim-Running Big is essentially one position (90% listed C);
+  size-weighted archetype purity is 50%. Mapping each archetype to its most common position is right for 50% of
+  players (macro F1 0.45). C is recovered best (F1 0.72); no archetype is mostly listed SF, so SF is never predicted.
+- **R² of a regression on one-hot group dummies** (share of variance explained), mean over the 13 style features:
+  listed position **0.27**, 3 families 0.39, 8 archetypes **0.54**. Position explains the size features (ORB% 0.55,
+  DRB% 0.53, BLK% 0.46) and is slightly better than archetypes on DRB%, but almost none of usage (0.05 vs. 0.57),
+  steals, mid-range share or turnovers. The gain holds on 7 held-out style descriptors (0.28 → 0.53).
+- **Supervised check** (13 power-transformed features, 5-fold stratified CV, best setting):
+
+  | Target | Majority baseline | Best KNN accuracy (macro F1) | Best tree accuracy (macro F1) |
+  |---|---|---|---|
+  | Listed position | 0.27 | 0.59 ± 0.05 (0.58), K = 11 | 0.57 ± 0.04 (0.56), depth 4 |
+  | 8 archetypes | 0.16 | 0.88 ± 0.04 (0.87), K = 17 | 0.69 ± 0.04 (0.69), depth 7 |
+  | 3 families | 0.46 | 0.94 ± 0.02 (0.92), K = 12 | 0.87 ± 0.02 (0.85), depth 3 |
+
+  Archetypes and families were built from these features, so their scores are an expected ceiling (partly
+  circular). The finding is that style predicts the listed position only moderately: about 4 players in 10 are
+  misassigned.
+- **Silhouette** in the 13-feature space: listed position 0.023, played position 0.025, archetypes 0.13, families
+  0.21. On the PC1 × PC2 map, position medians are ordered along PC1; archetype medians spread over both axes.
+- **Style, not quality**: archetype explains about 21% of the variance in BPM (position 7%); every archetype contains
+  players with a negative BPM.
 - **Unicorns vs. positions**: 10 of the 17 statistical unicorns are centres; border players are most common among
   small forwards (29%) and shooting guards (23%).
 
@@ -146,7 +159,7 @@ Details: [`data/README.md`](data/README.md).
 | **pandas**, **NumPy** | Loading, merging, filtering, feature engineering |
 | **matplotlib**, **seaborn** | Histograms, boxplots, heatmaps, scatter maps, scree plots |
 | **SciPy** | Skewness / kurtosis, Spearman correlation, pairwise distances |
-| **scikit-learn** | Scaling, PCA, k-means, DBSCAN, nearest neighbours, silhouette, Adjusted Rand Index |
+| **scikit-learn** | Scaling, PCA, k-means, DBSCAN, nearest neighbours, silhouette, Adjusted Rand Index, linear regression, KNN and decision-tree classifiers, stratified cross-validation, classification metrics |
 
 Dependencies: [`requirements.txt`](requirements.txt).
 
@@ -160,14 +173,12 @@ Dependencies: [`requirements.txt`](requirements.txt).
 | Clustering | **k-means** (inertia, silhouette, centroids), **DBSCAN** (ε, `min_samples`, core / border / noise) |
 | Cluster quality | silhouette (average and per player), bootstrap stability |
 | Anomaly detection | DBSCAN noise persistence, distance to centroid, z-scores |
-| Comparison / validation | Adjusted Rand Index (ARI) with a permutation baseline, cross-tabulations (counts, row and column %), η² per feature, group medians and boxplots |
-
-**η² (eta-squared)** is used throughout as the variance explained by a grouping; it equals the R² of a linear
-regression on the group dummies.
+| Comparison / validation | cross-tabulations read as a confusion matrix (accuracy, precision, recall, F1), R² of a `LinearRegression` on one-hot group dummies, KNN and decision trees with `StratifiedKFold` cross-validation and a majority baseline, silhouette by labelling, PCA maps, group medians and boxplots; ARI with a permutation baseline as a supporting check |
 
 **Supporting checks beyond the homework** (used to verify decisions, not as models): variance inflation factor (VIF),
-parallel analysis for PCA, bootstrap ARI / Jaccard stability, k-distance plot, permutation baselines for ARI and η²,
-and held-out style features for a fair η² comparison.
+parallel analysis for PCA, η² (variance explained by position, in notebooks 01 and 03), bootstrap ARI / Jaccard
+stability, k-distance plot, Adjusted Rand Index (ARI) and its permutation baseline (notebook 06), and held-out style
+features for a fairer R² comparison (notebook 06).
 
 **Deliberately not used** (outside the course): Gaussian Mixture Models, hierarchical / Ward clustering, Isolation
 Forest, Local Outlier Factor, Calinski-Harabasz and Davies-Bouldin indices.
@@ -219,7 +230,8 @@ is already included in the repository, so the fetch step is only needed to rebui
    cloud). Clusters partition a continuum.
 2. **Positions capture one dimension, size.** On-ball creation, the second-largest source of difference between
    players, is almost invisible to position labels: position explains 5% of the variance in usage, archetypes 57%.
-   Over all 13 style features, archetypes explain about twice as much variance as positions (η² 0.54 vs. 0.27).
+   Over all 13 style features, archetypes explain about twice as much variance as positions (mean R² 0.54 vs. 0.27),
+   and positions barely form groups in style space (silhouette 0.02 vs. 0.13).
 3. **"Centre" and "guard" each hide several jobs.** For example, Rim-Running Big, Hub Big and Stretch Forward for
    centres.
 4. **Only the rim-running big is a sharply separated role.** It is the most stable archetype and the only one DBSCAN
@@ -227,13 +239,17 @@ is already included in the repository, so the fetch step is only needed to rebui
 5. **Unusual ≠ in-between.** Unicorns are extreme versions of a role, mostly centres; border players are ordinary
    profiles that mix two neighbouring roles, mostly wings.
 6. **Archetypes are related to positions, not a relabelling.** ARI 0.14–0.18, far above the chance baseline but far
-   below the 0.54 agreement between the two position labels themselves.
+   below the 0.54 agreement between the two position labels themselves. Read as a confusion matrix, archetypes
+   "predict" the listed position for only 50% of players, and a classifier that sees only playing style recovers the
+   position for about 59% (vs. 88% for archetypes, which are built from style).
 7. **Archetypes describe style, not quality.** Every archetype contains both strong and weak players.
 
 **Limitations:** box-score data under-describes defence; one season only; a 500-minute cut-off; k = 8 was chosen
-partly for interpretability (k = 3 is the statistical optimum); the η² comparison on the clustering features favours
-the archetypes (held-out features reduce but do not remove this).
+partly for interpretability (k = 3 is the statistical optimum); archetypes were built from the same 13 features used
+in the R², silhouette and cross-validation comparisons, so their scores there are partly circular (held-out features
+reduce but do not remove this).
 
-**Next step:** the core pipeline (01 → 06) is complete. Possible extensions: a "closest comparable player" lookup
-(cosine vs. Euclidean similarity), repeating the analysis on earlier seasons to track how roles change, and a short
-written report or slide summary of the findings.
+**Next step:** the core pipeline (01 → 06) is complete. Possible extensions: assigning a different season's players
+to the 2025-26 archetype centroids (a validation that is not circular, since those players were not used to build
+the archetypes) and tracking how roles change over time; a "closest comparable player" lookup (cosine vs. Euclidean
+similarity); and a short written report or slide summary of the findings.

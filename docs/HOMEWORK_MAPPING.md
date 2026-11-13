@@ -135,21 +135,27 @@ from standardisation, and the silhouette.
 
 ## 1f. `notebooks/06_Validation.ipynb` — section-by-section mapping
 
-Validation uses only comparison tools practised in the course: partition comparison (ARI), cross-tabulation read like
-a confusion matrix, variance explained (η² = R² on group dummies), group boxplots, and a simple permutation baseline.
+Validation is built from tools practised in the course: confusion-matrix metrics, KNN and decision trees with
+stratified cross-validation, R² of a linear regression on one-hot dummies, the silhouette, PCA scatter plots and group
+boxplots. The Adjusted Rand Index and its permutation baseline are supporting checks beyond the homework.
 
 | Notebook section | What it does | Homework exercise | Concept reused | Adaptation for the NBA domain |
 |---|---|---|---|---|
-| §1 Load and align | Joins archetypes, anomalies, raw features and the full season table; asserts `player_id` alignment | HW1 1.1 (load & inspect) | ✅ Integrity check before analysis | Four tables from earlier notebooks, checked row by row |
-| **§2 ARI vs. listed and played position** | Families / archetypes vs. `pos` and `pos_played`; listed vs. played position as a reference | **HW4 Q4** (`same_partition` check: comparing two partitions of the same points, independent of label names) | 🔁 Comparing partitions | ARI (chance-corrected) instead of an exact-match check; two versions of ground truth |
-| §2 Permutation baseline | 1,000 label shuffles (group sizes kept) → null distribution of ARI, z-score and p-value | HW3 4.1 (judging a score against its variability) · 03_PCA parallel analysis | 🔁 Is the score better than chance? | 🆕 Permutation test for an unsupervised comparison |
-| **§3 Cross-tabulations** (counts, row %, column %) | Archetype × listed / played position, family × position; purity per archetype; archetypes per position | **HW2 Part 4** (confusion-matrix reading) | 🔁 Reading agreement and disagreement in a cross-tabulation | No "correct" diagonal: rows and columns read as roles vs. positions |
-| **§4 η² per feature: position vs. families vs. archetypes** | Share of each of the 13 style features' variance explained by each grouping; grouped bar chart; mean η² | **HW2 2.2** (R² of simple regressions) | 🔁 Variance explained | η² = R² of a regression on group dummies; compares two category systems feature by feature |
-| §4 Fairness checks | Chance η² for shuffled labels; η² on held-out style descriptors never used for clustering | HW2 2.2 · HW3 4.1 (evaluate on data not used to build the model) | 🔁 Avoiding an optimistic, in-sample comparison | 🆕 Held-out *features* instead of held-out rows |
-| **§5 Archetype profiles + value stats** | Median style features in real units; TS%, BPM, WS/48, VORP, minutes per archetype; BPM boxplots by archetype and by position | **HW1 1.5** (boxplot of a variable by category) · HW4 Q4a (centroids / group means) | ✅ Group comparison with boxplots | Tests whether archetypes describe style or quality |
-| §6 Unicorns and border players vs. positions | Anomaly category × position (rates) and × archetype; median anomaly score and silhouette by position | HW2 Part 4 (cross-tabulation) · HW4 Q1a (silhouette) | 🔁 Cross-tabulating two labelings | Links notebook 05's categories back to the position system |
-| §7 Export | `validation_summary.csv` (ARI with baselines, all η² tables) | — | — | — |
-| §8 Conclusions | What positions capture and miss; continuum; taxonomy; limitations | HW1 3.3 / HW3 4.2 (comparison & recommendation) | ✅ Conclusions backed by numbers | Final summary of the whole project |
+| §1 Load and align | Joins archetypes, power and raw features, anomalies and the full season table; asserts `player_id` alignment | HW1 1.1 (load & inspect) | ✅ Integrity check before analysis | Five tables from earlier notebooks, checked row by row |
+| **§2 ARI vs. listed and played position** | Families / archetypes vs. `pos` and `pos_played`; listed vs. played position as a reference | *Supporting check beyond the homework* · related to HW4 Q4 (`same_partition`: comparing two partitions of the same points) | 🆕 Chance-corrected partition comparison | Two versions of ground truth |
+| §2 Permutation baseline | 1,000 label shuffles (fixed seed, group sizes kept) → null distribution of ARI, permutation p-value | *Supporting check beyond the homework* | 🆕 Is the score better than chance? | Shows ARI is low but far above chance |
+| **§3 Cross-tabulations** (counts, row %) | Archetype × listed / played position, family × position; purity per archetype | **HW2 Part 4** (reading a confusion matrix) | 🔁 Agreement / disagreement in a cross-tabulation | Rows read as roles, columns as positions |
+| **§3 Confusion matrix of the majority mapping** | Each archetype "predicts" its most common position; accuracy, precision / recall / F1 per position, `classification_report`, `ConfusionMatrixDisplay` | **HW2 4.1 – 4.3** (confusion matrix, accuracy, precision, recall, F1) · **HW3 2.2** (`classification_report`) | ✅ Same metrics | Low score read as "positions hide several roles", not as a failed model |
+| **§4 R² on one-hot dummies** | `LinearRegression` on `pd.get_dummies(drop_first=True)` of position / archetype / family for each of 13 style features; `r2_score`; grouped bar chart and mean R² | **HW2 2.2** (R² of a regression) · **HW1 2.2** (one-hot encoding) | ✅ Linear regression + R²; ✅ dummy encoding | R² = share of a feature's variance explained by group membership |
+| §4 Held-out features | Same R² on 7 style descriptors never used for clustering | HW2 2.2 · HW3 4.1 (evaluate on data the model was not built from) | 🔁 Avoiding an optimistic, in-sample comparison | Held-out *features* rather than held-out rows |
+| **§5 KNN and decision tree with stratified CV** | Predict listed position, archetype and family from the 13 power-transformed features; K = 1–30, `max_depth` = 1–15; `StratifiedKFold(5, shuffle=True, random_state=42)` + `cross_validate` (accuracy, macro F1) | **HW3 2.1 – 2.2** (KNN, evaluation) · **HW3 3.1** (decision tree, depth) · **HW3 4.1** (cross-validation) | ✅ Same models, parameter sweeps and CV | Archetype / family scores act as a ceiling (circular by construction); the position score is the finding |
+| §5 Majority-class baseline | Always predict the most common class, scored with the same folds | HW3 2.2 / 4.1 (baseline to beat) | ✅ Baseline comparison | One baseline per target |
+| **§6 Silhouette by labelling** | `silhouette_score` on the 13 features for listed position, played position, archetypes, families | **HW4 Q1** (silhouette) | ✅ Average silhouette | Applied to given labels (positions) as well as to clusters |
+| §6 PCA maps side by side | PC1 × PC2 coloured by listed position and by archetype, group medians marked | **HW1 3.2** (PCA scatter coloured by category) | ✅ Same plot | Two colourings compared directly |
+| **§7 Archetype profiles + value stats** | Median style features in real units; TS%, BPM, WS/48, VORP, minutes; BPM boxplots by archetype and by position; R² of value stats | **HW1 1.5** (boxplot of a variable by category) · HW2 2.2 (R²) | ✅ Group comparison with boxplots | Tests whether archetypes describe style or quality |
+| §8 Unicorns and border players vs. positions | Anomaly category × position (rates) and × archetype | HW2 Part 4 (cross-tabulation) · HW4 Q1a (silhouette) | 🔁 Cross-tabulating two labelings | Links the anomaly notebook back to positions |
+| §9 Export | `validation_summary.csv` (ARI, R², confusion-matrix scores, CV results, silhouettes) | — | — | — |
+| §10 Conclusions | What positions capture and miss; continuum; taxonomy; limitations incl. circularity | HW1 3.3 / HW3 4.2 (comparison & recommendation) | ✅ Conclusions backed by numbers | Final summary of the whole project |
 
 ---
 
@@ -162,29 +168,31 @@ a confusion matrix, variance explained (η² = R² on group dummies), group boxp
 | Imputation strategies (Iterative, KNN, median) | HW1 2.3 | 01_EDA §3 (evaluated and rejected for structural NaNs) |
 | Histograms & distribution shape | HW1 1.3 | 01_EDA §4 |
 | Correlation heatmap | HW1 1.4 | 01_EDA §5 |
-| Boxplot by category | HW1 1.5 | 01_EDA §6 · 06_Validation §5 (BPM by archetype and by position) |
+| Boxplot by category | HW1 1.5 | 01_EDA §6 · 06_Validation §7 (BPM by archetype and by position) |
 | Dropping unusable columns / rows | HW1 2.1 | 01_EDA §2, §3 · 02 §2 |
-| Categorical encoding | HW1 2.2 | Not needed (`pos` is never an input) |
+| Categorical encoding (one-hot) | HW1 2.2 | Never a clustering input · 06_Validation §4 (one-hot dummies of position / archetype / family for R²) |
 | Feature construction | HW1 2.2 | 02 §2 (`mid_share`, `corner3_rate`) |
 | Scaling: StandardScaler / PowerTransformer / QuantileTransformer | HW1 2.4 | 01_EDA §4 · 02 §4 (3-scaler comparison) |
 | Multicollinearity | HW2 2.3 – 2.4 | 01_EDA §5 · 02 §3 (VIF) |
-| R² / variance explained | HW2 2.2 | 01_EDA §6 (η²) · 02 §3 (VIF = 1 / (1 − R²)) · 03_PCA §4 · 06_Validation §4 (η² of 13 style features: position vs. families vs. archetypes) |
+| R² / variance explained | HW2 2.2 | 01_EDA §6 (η²) · 02 §3 (VIF = 1 / (1 − R²)) · 03_PCA §4 (η²) · 06_Validation §4 (`LinearRegression` + `r2_score` on group dummies, 13 style features) and §7 (value stats) |
 | Distances & effect of scaling | HW3 1.1, 2.3 | 01_EDA §4 rationale · 02 §5 (distance & neighbour agreement) |
 | Nearest-neighbour lookup | HW3 1.2 · HW4 Q3 | 02 §5b (similar players) |
 | PCA: scree plot | HW1 3.1 | 03_PCA §2 (+ Kaiser & parallel analysis) |
-| PCA: 2-component scatter coloured by category | HW1 3.2 | 03_PCA §4 (listed & played position) · §3 loadings |
+| PCA: 2-component scatter coloured by category | HW1 3.2 | 03_PCA §4 (listed & played position) · §3 loadings · 06_Validation §6 (position vs. archetype, side by side) |
 | PCA comparison across preprocessing choices | HW1 3.3 | 03_PCA §5 (PowerTransformer vs. StandardScaler) |
 | k-means (implementation & behaviour) | HW4 Q4a | 04_Clustering §2, §4 |
 | Choosing k: inertia vs. silhouette, business constraints | HW4 Q1 | 04_Clustering §2, §3 (3 families / 8 archetypes) |
 | Per-point silhouette (border points) | HW4 Q1a | 04_Clustering §5a, §6 (border players) · 05_Anomalies §5 (unicorns vs. border players) |
+| Average silhouette of a labelling | HW4 Q1 | 04_Clustering §2 (choosing k) · 06_Validation §6 (positions vs. archetypes vs. families) |
 | Inertia as a sum of point-to-centroid distances | HW4 Q1 | 05_Anomalies §3 (distance to centroid as an outlier measure) |
 | Standardised values as z-scores | HW1 2.4 | 05_Anomalies §4 (extreme z-scores, specialist vs. rare combination) |
 | DBSCAN, core / border / noise, effect of ε | HW4 Q2, Q4b | 04_Clustering §8 (k-distance plot, ε × min_samples sweep, point types) · 05_Anomalies §2 (noise persistence, controlling distance) |
 | k-means forces outliers into clusters vs. DBSCAN noise | HW4 Q2c, Q4c | 04_Clustering §8c–d · 05_Anomalies §3 (distance to centroid) |
 | Cosine vs. Euclidean similarity, mean-centring | HW4 Q3 | 🔜 player-similarity / "closest comparable player" lookup |
-| Confusion matrix / agreement metrics | HW2 Part 4 | 06_Validation §3 (archetype / family × position crosstabs, purity) · §6 (anomaly category × position) |
-| Comparing two partitions (`same_partition` → ARI) | HW4 Q4 | 04_Clustering §7 · 06_Validation §2 (ARI vs. listed and played position, with permutation baseline) |
-| Cross-validation & stability | HW3 4.1 | 04_Clustering §2, §5b (bootstrap stability) · 06_Validation §2, §4 (permutation baselines, held-out features) |
+| Confusion matrix, accuracy, precision, recall, F1, `classification_report` | HW2 Part 4 (4.1 – 4.3) · HW3 2.2 | 06_Validation §3 (archetype → majority position) · §5 (CV accuracy and macro F1) · §8 (anomaly category × position) |
+| KNN and decision tree classifiers, parameter sweeps, majority baseline | HW3 2.1 – 2.2, 3.1 | 06_Validation §5 (predicting position vs. archetype vs. family from style) |
+| Comparing two partitions (`same_partition` → ARI; ARI itself is a supporting check beyond the homework) | HW4 Q4 | 04_Clustering §7 · 06_Validation §2 (ARI vs. listed and played position, with permutation baseline) |
+| Cross-validation & stability | HW3 4.1 | 04_Clustering §2, §5b (bootstrap stability) · 06_Validation §5 (`StratifiedKFold` + `cross_validate`) |
 | Neural networks (ANN / CNN) | HW5 | Not used; outside the scope of this unsupervised project |
 
 ---
@@ -197,4 +205,4 @@ a confusion matrix, variance explained (η² = R² on group dummies), group boxp
 | `03_PCA.ipynb` ✅ done | Scree plot, parallel analysis, loadings, player map, biplot, robustness | HW1 3.1 – 3.3 · HW2 2.2 |
 | `04_Clustering.ipynb` ✅ done | k-means (inertia, silhouette, bootstrap stability), 3 families / 8 archetypes, silhouette border players, DBSCAN sweep and noise | HW4 Q1, Q2, Q4 · HW3 4.1 |
 | `05_Anomalies.ipynb` ✅ done | DBSCAN noise persistence, distance to centroid, extreme z-scores, silhouette quadrant | HW4 Q1, Q2, Q4 · HW1 2.4 |
-| `06_Validation.ipynb` ✅ done | ARI vs. listed and played positions with permutation baseline, cross-tabulations, η² positions vs. archetypes, profiles and value stats, unicorns vs. positions, conclusions | HW2 2.2, Part 4 · HW4 Q4 · HW1 1.5 · HW3 4.1 |
+| `06_Validation.ipynb` ✅ done | ARI + permutation baseline, crosstabs read as a confusion matrix, R² on group dummies, KNN / decision tree with stratified CV, silhouette by labelling, PCA maps, profiles and value stats, unicorns vs. positions, conclusions | HW2 2.2, Part 4 · HW3 2.1 – 2.2, 3.1, 4.1 · HW4 Q1 · HW1 1.5, 2.2, 3.2 |
